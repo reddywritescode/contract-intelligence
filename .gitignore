@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+.next/
+
+# Env — all secrets stay local
+.env
+.env.*
+!.env.example
+*.env.local
+
+# Uploaded contract files
+uploads/
+
+# Sensitive/private transcripts
+*_otter.ai.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp

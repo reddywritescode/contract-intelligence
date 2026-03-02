@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Sample Contracts and Business Forms - Competitive Intelligence for Investors</title>
+
+<META NAME="description" CONTENT="Business Contracts, Employment Agreements, Franchise Agreements and Other Business Contracts, Forms and Agreeements.  Competitive Intelligence for Investors.">
+
+<META NAME="keywords" CONTENT="competitive intelligence, business contract, business forms, SEC filings, SEC EDGAR, material contracts">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="fb:admins" content="609876513" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+
+    }
+/* 
+	div.index li {
+	margin:1em 0;
+	   }
+ */
+	.breadcrumb {
+	margin-bottom:0px;
+	}
+	pre {
+	background-color:#FFFFFF;
+	border:none;
+	}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #EEE;
+      color: #333;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BXPCTK7BY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4BXPCTK7BY');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5933846261594825",
+    enable_page_level_ads: true
+  });
+</script></head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://www.onecle.com/"><strong><font color="#EEEEEE">one</font><font color="#EE3333">cle</font></strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.onecle.com/">Home</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="http://contracts.onecle.com/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Business Contracts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://contracts.onecle.com/type/">By Contract Type</a>
+          <a class="dropdown-item" href="http://contracts.onecle.com/industries/">By Industry</a>
+          <a class="dropdown-item" href="http://contracts.onecle.com/alpha/">By Company Name</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://law.onecle.com/">Laws</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://contracts.onecle.com/consumer/incorporation.shtml">Incorporation</a>
+      </li>
+      	<li class="nav-item">
+        <a class="nav-link" href="http://lawyers.onecle.com/">Lawyer Directory</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav aria-label="breadcrumb"><ol itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="breadcrumb">
+	<li class="breadcrumb-item"><a href="http://www.onecle.com/" itemprop="url"><span itemprop="title">Home</span></a></li><li class="breadcrumb-item active">Sample Business Contracts</li>
+</ol></nav>
+
+<div>
+<script>
+  (function() {
+    var cx = '016782931958625056904:77mdzlxjmx4';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+<div class="jumbotron text-center" style="padding:40pt;"><h1>Sample Business Contracts</h1>
+<p>The U.S. Securities and Exchange Commission has a repository of securities filings that include reports, disclosures and financial data from domestic and foreign companies. The material contracts that certain companies are required to disclose provide a wealth of information for commercial lawyers and business investors who may have questions about a particular contract or are interested in seeing how other parties have drafted their legal  agreements.</p>
+</div>
+<div class="container">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+
+<h2 class="index">Popular Free Forms</h2>
+<div class="index">
+<ul class="list-group">
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Ffamily-and-personal%2Fpersonal-finance%2Fpersonal-loans%2Fdocument%2Floan-agreement" rel="nofollow">Loan Agreement</a></li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Fbusiness-operations%2Fproduct-or-service-sales%2Fdocument%2Fgeneral-contract-for-services" rel="nofollow">General Contract for Services</a></li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Ffamily-and-personal%2Fpersonal-finance%2Fpersonal-loans%2Fdocument%2Fpromissory-note" rel="nofollow">Promissory Note</a></li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Femployers-and-hr%2Frecruiting-and-hiring%2Fdocument%2Femployment-contract" rel="nofollow">Employment Agreement</a></li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Femployers-and-hr%2Fcompany-policies%2Fdocument%2Fnoncompete-agreement" rel="nofollow">Noncompete Agreement</a></li>
+</ul>
+</div>
+
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+<h4>Sponsored Links</h4>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Contracts Responsive Top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5933846261594825"
+     data-ad-slot="7098014696"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div></div>
+
+
+<div class="container">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+
+<h2>By Contract Type</h2>
+</div></div></div>
+
+<div class="container" style="padding-bottom:40pt;">
+	<div class="row ">
+		<div class="col-sm-6" style="text-align:left;">
+
+<h3><a href="//contracts.onecle.com/type/16.shtml">Real Estate Lease</a></h3>
+
+<ul>
+<li><a href="//contracts.onecle.com/type/242.shtml">Alabama Lease</a></li>
+<li><a href="//contracts.onecle.com/type/122.shtml">Arizona Lease</a></li>
+<li><a href="//contracts.onecle.com/type/247.shtml">Arkansas Lease</a></li>
+<li><a href="//contracts.onecle.com/type/99.shtml">California Lease</a></li>
+<li><a href="//contracts.onecle.com/type/230.shtml">Colorado Lease</a></li>
+<li><a href="//contracts.onecle.com/type/263.shtml">Connecticut Lease</a></li>
+<li><a href="//contracts.onecle.com/type/259.shtml">Delaware Lease</a></li>
+<li><a href="//contracts.onecle.com/type/264.shtml">District of Columbia (DC) Lease</a></li>
+<li><a href="//contracts.onecle.com/type/108.shtml">Florida Lease</a></li>
+<li><a href="//contracts.onecle.com/type/110.shtml">Georgia Lease</a></li>
+<li><a href="//contracts.onecle.com/type/250.shtml">Hawaii Lease</a></li>
+<li><a href="//contracts.onecle.com/type/240.shtml">Idaho Lease</a></li>
+<li><a href="//contracts.onecle.com/type/111.shtml">Illinois Lease</a></li>
+<li><a href="//contracts.onecle.com/type/251.shtml">Indiana Lease</a></li>
+<li><a href="//contracts.onecle.com/type/248.shtml">Iowa Lease</a></li>
+<li><a href="//contracts.onecle.com/type/237.shtml">Kansas Lease</a></li>
+<li><a href="//contracts.onecle.com/type/254.shtml">Kentucky Lease</a></li>
+<li><a href="//contracts.onecle.com/type/262.shtml">Louisiana Lease</a></li>
+<li><a href="//contracts.onecle.com/type/255.shtml">Maine Lease</a></li>
+<li><a href="//contracts.onecle.com/type/112.shtml">Maryland Lease</a></li>
+<li><a href="//contracts.onecle.com/type/109.shtml">Massachusetts Lease</a></li>
+<li><a href="//contracts.onecle.com/type/232.shtml">Michigan Lease</a></li>
+<li><a href="//contracts.onecle.com/type/113.shtml">Minnesota Lease</a></li>
+<li><a href="//contracts.onecle.com/type/246.shtml">Mississippi Lease</a></li>
+<li><a href="//contracts.onecle.com/type/238.shtml">Missouri Lease</a></li>
+<li><a href="//contracts.onecle.com/type/261.shtml">Montana Lease</a></li>
+<li><a href="//contracts.onecle.com/type/249.shtml">Nebraska Lease</a></li>
+<li><a href="//contracts.onecle.com/type/103.shtml">Nevada Lease</a></li>
+<li><a href="//contracts.onecle.com/type/241.shtml">New Hampshire Lease</a></li>
+<li><a href="//contracts.onecle.com/type/114.shtml">New Jersey Lease</a></li>
+<li><a href="//contracts.onecle.com/type/239.shtml">New Mexico Lease</a></li>
+<li><a href="//contracts.onecle.com/type/105.shtml">New York Lease</a></li>
+<li><a href="//contracts.onecle.com/type/229.shtml">North Carolina Lease</a></li>
+<li><a href="//contracts.onecle.com/type/260.shtml">Ohio Lease</a></li>
+<li><a href="//contracts.onecle.com/type/265.shtml">Oklahoma Lease</a></li>
+<li><a href="//contracts.onecle.com/type/104.shtml">Oregon Lease</a></li>
+<li><a href="//contracts.onecle.com/type/253.shtml">South Carolina Lease</a></li>
+<li><a href="//contracts.onecle.com/type/106.shtml">Pennsylvania Lease</a></li>
+<li><a href="//contracts.onecle.com/type/126.shtml">Tennessee Lease</a></li>
+<li><a href="//contracts.onecle.com/type/107.shtml">Texas Lease</a></li>
+<li><a href="//contracts.onecle.com/type/115.shtml">Utah Lease</a></li>
+<li><a href="//contracts.onecle.com/type/243.shtml">Vermont Lease</a></li>
+<li><a href="//contracts.onecle.com/type/102.shtml">Virginia Lease</a></li>
+<li><a href="//contracts.onecle.com/type/101.shtml">Washington Lease</a></li>
+<li><a href="//contracts.onecle.com/type/257.shtml">West Virginia Lease</a></li>
+<li><a href="//contracts.onecle.com/type/129.shtml">Wisconsin Lease</a></li>
+<li><a href="//contracts.onecle.com/type/258.shtml">Wyoming Lease</a></li></ul>
+
+<li><a href="//contracts.onecle.com/type/168.shtml">Lease Guarantee</a></li>
+
+
+
+<h3>Business Formation</h3>
+<ul>
+<li><a href="//contracts.onecle.com/type/178.shtml">Articles of Association</a></li>
+<li><a href="//contracts.onecle.com/type/150.shtml">Articles of Incorporation</a></li>
+<li><a href="//contracts.onecle.com/type/8.shtml">Bylaws</a></li>
+<li><a href="//contracts.onecle.com/type/7.shtml">Certificate of Incorporation</a></li>
+<li><a href="//contracts.onecle.com/type/76.shtml">LLC Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/172.shtml">LLC Operating Agreement</a></li>
+</ul>
+
+<h3>Employment / Labor</h3>
+<ul>
+<li><a href="//contracts.onecle.com/type/316.shtml">401(k) Plan</a></li>
+<li><a href="//contracts.onecle.com/type/39.shtml">Benefit Plan</a></li>
+<li><a href="//contracts.onecle.com/type/180.shtml">Bonus Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/143.shtml">Bonus Plan</a></li>
+<li><a href="//contracts.onecle.com/type/152.shtml">Bonus Program</a></li>
+<li><a href="//contracts.onecle.com/type/201.shtml">Capital Accumulation Plan</a></li>
+<li><a href="//contracts.onecle.com/type/22.shtml">Change in Control Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/155.shtml">Collective Bargaining Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/289.shtml">Compensation Committee Charter</a></li>
+<li><a href="//contracts.onecle.com/type/207.shtml">Compensation Plan</a></li>
+<li><a href="//contracts.onecle.com/type/64.shtml">Consulting Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/24.shtml">Deferred Compensation Plan</a></li>
+<li><a href="//contracts.onecle.com/type/97.shtml">Director Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/149.shtml">Director Compensation Plan</a></li>
+<li><a href="//contracts.onecle.com/type/204.shtml">Equity Accumulation Plan</a></li>
+<li><a href="//contracts.onecle.com/type/142.shtml">Equity Incentive Plan</a></li>
+<li><a href="//contracts.onecle.com/type/205.shtml">Equity Participation Plan</a></li>
+<li><a href="//contracts.onecle.com/type/296.shtml">Employee Matters Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/5.shtml">Employee Stock Purchase Plan</a></li>
+<li><a href="//contracts.onecle.com/type/2.shtml">Employment Contract</a></li>
+<li><a href="//contracts.onecle.com/type/124.shtml">Incentive Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/14.shtml">Incentive Plan</a></li>
+<li><a href="//contracts.onecle.com/type/305.shtml">Indemnification Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/11.shtml">Indemnity Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/276.shtml">Independent Contractor Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/92.shtml">Labor Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/21.shtml">Non-Compete Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/199.shtml">Non-Disclosure Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/189.shtml">Offer Letter</a></li>
+<li><a href="//contracts.onecle.com/type/231.shtml">Relocation Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/307.shtml">Relocation Policy</a></li>
+<li><a href="//contracts.onecle.com/type/23.shtml">Retirement Plan</a></li>
+<li><a href="//contracts.onecle.com/type/309.shtml">Resignation Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/319.shtml">Resignation Letter</a></li>
+<li><a href="//contracts.onecle.com/type/43.shtml">Restricted Stock Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/202.shtml">Restricted Stock Plan</a></li>
+<li><a href="//contracts.onecle.com/type/38.shtml">Severance Agreement and Separation Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/37.shtml">Severance Plan</a></li>
+</ul>
+
+
+<h3>Intellectual Property</h3>
+<ul>
+<li><a href="//contracts.onecle.com/type/157.shtml">Copyright Assignment Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/158.shtml">Copyright License Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/163.shtml">End User License Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/235.shtml">Invention Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/224.shtml">Patent Assignment Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/191.shtml">Patent License Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/234.shtml">Proprietary Information Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/220.shtml">Technology Transfer Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/225.shtml">Trademark Assignment Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/190.shtml">Trademark License Agreement</a></li>
+</ul>
+
+
+
+<h3>Corporate Governance</h3>
+<ul>
+<li><a href="//contracts.onecle.com/type/83.shtml">Code of Ethics</a></li>
+<li><a href="//contracts.onecle.com/type/96.shtml">Corporate Governance Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/290.shtml">Corporate Governance Charter</a></li>
+<li><a href="//contracts.onecle.com/type/236.shtml">Governance Agreement</a></li>
+</ul>
+
+
+<h3>Construction / Property Management</h3>
+<ul>
+<li><a href="//contracts.onecle.com/type/154.shtml">Build-to-Suit Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/153.shtml">Building and Property Management Services Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/56.shtml">Construction Contract</a></li>
+</ul>
+
+<h3>Loan</h3>
+<ul>
+<li><a href="//contracts.onecle.com/type/151.shtml">Bond Purchase Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/287.shtml">Bridge Loan Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/75.shtml">Debenture</a></li>
+<li><a href="//contracts.onecle.com/type/203.shtml">Collateral Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/34.shtml">Credit Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/46.shtml">Guaranty Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/30.shtml">Loan Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/208.shtml">Loan Purchase Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/173.shtml">Mortgage Financing Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/278.shtml">Note Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/63.shtml">Note Purchase Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/67.shtml">Promissory Note</a></li>
+</ul>
+
+
+<h3>Sales</h3>
+<ul>
+<li><a href="//contracts.onecle.com/type/256.shtml">Accounts Receivable Financing Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/71.shtml">Accounts Receivable Purchase Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/187.shtml">Advertising Contract</a></li>
+<li><a href="//contracts.onecle.com/type/299.shtml">Buy Sell Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/244.shtml">Channel Lease Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/147.shtml">Distribution Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/125.shtml">OEM Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/80.shtml">Sales Contract</a></li>
+
+</ul>
+
+<h3>Stocks</h3>
+<ul>
+<li><a href="//contracts.onecle.com/type/140.shtml">Investment Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/206.shtml">Investment Plan</a></li>
+<li><a href="//contracts.onecle.com/type/304.shtml">Investors&rsquo; Rights Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/68.shtml">Shareholder Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/10.shtml">Shareholders' Rights Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/123.shtml">Stock Appreciation Rights Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/303.shtml">Stock Grant Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/13.shtml">Stock Option Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/42.shtml">Stock Option Plan</a></li>
+<li><a href="//contracts.onecle.com/type/12.shtml">Stock Plan</a></li>
+<li><a href="//contracts.onecle.com/type/6.shtml">Stock Purchase Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/228.shtml">Stock Transfer Agreement</a></li>
+</ul>
+
+</div><div class="col-sm-6" style="text-align:left;">
+
+<h3>Miscellaneous</h3>
+<ul>
+<li><a href="//contracts.onecle.com/type/301.shtml">Accession Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/311.shtml">Administration Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/285.shtml">Administrative Services Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/273.shtml">Agency Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/310.shtml">Allocation Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/197.shtml">Arbitration Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/214.shtml">Asset Management Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/19.shtml">Asset Purchase Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/192.shtml">Asset Transfer Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/179.shtml">Assignment Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/195.shtml">Assumption Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/210.shtml">Assurance Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/288.shtml">Audit Committee Charter</a></li>
+<li><a href="//contracts.onecle.com/type/70.shtml">Bankruptcy Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/35.shtml">Business Separation Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/127.shtml">Charity Plans</a></li>
+<li><a href="//contracts.onecle.com/type/286.shtml">Charter Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/233.shtml">Clinical Trial Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/268.shtml">Co-Brand Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/90.shtml">Collaboration Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/188.shtml">Commercialization Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/252.shtml">Commitment Letter</a></li>
+<li><a href="//contracts.onecle.com/type/156.shtml">Concession Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/200.shtml">Confidentiality Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/226.shtml">Continuing Disclosure Undertaking</a></li>
+<li><a href="//contracts.onecle.com/type/74.shtml">Contribution Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/317.shtml">Conversion Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/182.shtml">Cooperation Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/131.shtml">Custodial Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/277.shtml">Dealer Managers Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/219.shtml">Deed of Trust</a></li>
+<li><a href="//contracts.onecle.com/type/146.shtml">Deposit Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/184.shtml">Development Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/138.shtml">Director Designation Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/20.shtml">Dissolution Plans</a></li>
+<li><a href="//contracts.onecle.com/type/135.shtml">Donation Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/160.shtml">Drilling Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/161.shtml">Drug Development Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/130.shtml">Earn Out Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/162.shtml">Easement, Use and Right of Access Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/133.shtml">Economic Development Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/44.shtml">Equipment Lease</a></li>
+<li><a href="//contracts.onecle.com/type/78.shtml">Escrow Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/77.shtml">Exchange Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/215.shtml">Exclusivity Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/292.shtml">Facility Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/211.shtml">Factoring Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/164.shtml">Fixture Filing Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/269.shtml">Forbearance Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/302.shtml">Formation Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/270.shtml">Foundry Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/293.shtml">Framework Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/79.shtml">Franchise Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/17.shtml">Funding Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/98.shtml">Gas Lease and Oil Lease</a></li>
+<li><a href="//contracts.onecle.com/type/165.shtml">Gas Supply Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/314.shtml">Hedge Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/294.shtml">Hosting Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/51.shtml">Indenture</a></li>
+<li><a href="//contracts.onecle.com/type/166.shtml">Installment Purchase Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/282.shtml">Insurance Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/128.shtml">Insurance Plans</a></li>
+<li><a href="//contracts.onecle.com/type/218.shtml">Integrator Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/275.shtml">Intercompany Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/167.shtml">Interconnection Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/28.shtml">Intercreditor Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/212.shtml">Interest Rate Lock Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/194.shtml">Interest Transfer Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/213.shtml">ISDA Master Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/245.shtml">Joinder Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/60.shtml">Joint Venture Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/169.shtml">Legal Opinion</a></li>
+<li><a href="//contracts.onecle.com/type/222.shtml">Letter of Intent</a></li>
+<li><a href="//contracts.onecle.com/type/32.shtml">License Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/170.shtml">Liquidating Trust Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/267.shtml">Liquidity Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/132.shtml">Litigation Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/121.shtml">Lock-Up Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/86.shtml">Management Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/47.shtml">Manufacturing Contract</a></li>
+<li><a href="//contracts.onecle.com/type/186.shtml">Marketing Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/41.shtml">Merger Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/198.shtml">Mineral Lease and Coal Lease</a></li>
+<li><a href="//contracts.onecle.com/type/283.shtml">Netting Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/312.shtml">Nominee Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/196.shtml">Novation Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/61.shtml">Operating Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/174.shtml">Operations Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/175.shtml">Outsourced and Custom Development Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/284.shtml">Outsourcing Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/81.shtml">Participation Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/36.shtml">Partnership Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/227.shtml">Pension Equalization Plan</a></li>
+<li><a href="//contracts.onecle.com/type/134.shtml">Placement Agent Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/55.shtml">Pledge Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/136.shtml">Pooling Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/266.shtml">Private Placement Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/298.shtml">Procurement Contract</a></li>
+<li><a href="//contracts.onecle.com/type/280.shtml">Profit Maintenance Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/315.shtml">Profit Sharing Plan</a></li>
+<li><a href="//contracts.onecle.com/type/3.shtml">Project Finance Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/73.shtml">Proxy Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/176.shtml">Proxy Card</a></li>
+<li><a href="//contracts.onecle.com/type/185.shtml">Purchase Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/223.shtml">Recapitalization Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/193.shtml">Redemption Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/1.shtml">Registration Rights Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/272.shtml">Remediation Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/139.shtml">Reorganization Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/209.shtml">Replacement Capital Covenant</a></li>
+<li><a href="//contracts.onecle.com/type/141.shtml">Repurchase Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/57.shtml">Research Contract</a></li>
+<li><a href="//contracts.onecle.com/type/217.shtml">Reseller Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/91.shtml">Restructuring Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/306.shtml">Retention Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/145.shtml">Retirement Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/297.shtml">Right of First Refusal</a></li>
+<li><a href="//contracts.onecle.com/type/40.shtml">Rights Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/271.shtml">Secondment Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/29.shtml">Security Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/4.shtml">Services Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/88.shtml">Settlement Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/291.shtml">Share Entrustment Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/274.shtml">Shortfall Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/279.shtml">Split Dollar Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/62.shtml">Sponsorship Agreements</a></li>
+
+<li><a href="//contracts.onecle.com/type/31.shtml">Subordination Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/137.shtml">Subscription Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/183.shtml">Supply Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/281.shtml">Support Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/54.shtml">Tag-Along Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/18.shtml">Tax Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/300.shtml">Tax Sharing Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/308.shtml">Time Sharing Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/221.shtml">Transition Services Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/72.shtml">Trust Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/65.shtml">Underwriting Agreement</a></li>
+<li><a href="//contracts.onecle.com/type/53.shtml">Voting Agreements</a></li>
+<li><a href="//contracts.onecle.com/type/295.shtml">Waiver</a></li>
+<li><a href="//contracts.onecle.com/type/9.shtml">Warrant Agreement</a></li>
+
+</ul>
+</div></div></div>
+
+
+
+
+	<footer class="container-fluid">
+
+<div class="row">
+  <div class="col-sm-6"><h4>Business Contracts</h4>
+  <p><a href="//contracts.onecle.com/type/19.shtml">Asset Purchase</a><br>
+<a href="//contracts.onecle.com/type/35.shtml">Business Separation</a><br>
+<a href="//contracts.onecle.com/type/90.shtml">Collaboration</a><br>
+<a href="//contracts.onecle.com/type/56.shtml">Construction</a><br>
+<a href="//contracts.onecle.com/type/64.shtml">Consulting</a><br>
+<a href="//contracts.onecle.com/type/147.shtml">Distribution</a><br>
+<a href="//contracts.onecle.com/type/2.shtml">Employment</a><br>
+<a href="//contracts.onecle.com/type/79.shtml">Franchise</a><br>
+<a href="//contracts.onecle.com/type/11.shtml">Indemnification</a><br>
+<a href="//contracts.onecle.com/type/60.shtml">Joint Venture</a><br>
+<a href="//contracts.onecle.com/type/16.shtml">Lease</a><br>
+<a href="//contracts.onecle.com/type/32.shtml">License</a><br>
+<a href="//contracts.onecle.com/type/76.shtml">LLC</a><br>
+<a href="//contracts.onecle.com/type/30.shtml">Loan</a><br>
+<a href="//contracts.onecle.com/type/86.shtml">Management</a><br>
+<a href="//contracts.onecle.com/type/47.shtml">Manufacturing/Supply</a><br>
+<a href="//contracts.onecle.com/type/41.shtml">Merger</a><br>
+<a href="//contracts.onecle.com/type/21.shtml">Non-Competition</a><br>
+<a href="//contracts.onecle.com/type/189.shtml">Offer Letter</a><br>
+<a href="//contracts.onecle.com/type/36.shtml">Partnership</a><br>
+<a href="//contracts.onecle.com/type/67.shtml">Promissory Note</a><br>
+<a href="//contracts.onecle.com/type/80.shtml">Sales</a><br>
+<a href="//contracts.onecle.com/type/4.shtml">Services</a><br>
+<a href="//contracts.onecle.com/type/38.shtml">Severance</a><br>
+<a href="//contracts.onecle.com/type/68.shtml">Shareholder</a><br>
+<a href="//contracts.onecle.com/type/6.shtml">Stock Purchase</a></p>
+  </div>
+  <div class="col-sm-6"><h4>Consumer Forms</h4>
+  <p><a href="//contracts.onecle.com/consumer/divorce.shtml">Divorce</a><br>
+<a href="//contracts.onecle.com/consumer/dmv.shtml">DMV</a><br>
+<a href="//contracts.onecle.com/consumer/durable-power-of-attorney.shtml">Durable Power of Attorney</a><br>
+<a href="//contracts.onecle.com/consumer/employment.shtml">Employment</a><br>
+<a href="//contracts.onecle.com/consumer/government-forms.shtml">Government</a><br>
+<a href="//contracts.onecle.com/consumer/identity-theft.shtml">Identity Theft</a><br>
+<a href="//contracts.onecle.com/consumer/landlord-tenant.shtml">Landlord-Tenant</a><br>
+<a href="//contracts.onecle.com/consumer/living-will-advance-directive.shtml">Living Will</a><br>
+<a href="//contracts.onecle.com/consumer/mechanics-lien.shtml">Mechanic's Lien</a><br><a href="//contracts.onecle.com/consumer/medical.shtml">Medical</a><br>
+<a href="//contracts.onecle.com/consumer/probate.shtml">Probate</a><br>
+<a href="//contracts.onecle.com/consumer/workers-compensation.shtml">Workers' Compensation</a></p>
+
+
+  <p class="line"><a href="http://www.onecle.com/blog/index.php">Contracts Blog</a></p>
+<p><a href="//contracts.onecle.com/type/">View All Types</a><br>
+<a href="//contracts.onecle.com/industries/">View All Industries</a><br>
+<a href="//contracts.onecle.com/alpha/">View All Companies</a></p>
+
+  
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-sm-12">
+
+
+		<a href="//www.onecle.com/info/copyright.shtml">Copyright &copy; 2026 Onecle Inc.</a> No claim to contracts derived from securities filings.<br><br>
+		
+		
+		<a href="//www.onecle.com/info/terms.shtml">Terms of Service</a> | <a href="//www.onecle.com/info/privacy.shtml">Privacy Policy</a>
+	</div>
+</div>
+
+</footer>
+</body>
+</html>

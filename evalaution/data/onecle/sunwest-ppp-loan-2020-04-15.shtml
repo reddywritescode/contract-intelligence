@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Agreement - Veritone Inc. and Sunwest Bank - Sample Contracts and Business Forms </title>
+
+<META NAME="description" CONTENT=",844,600 Loan Agreement dated April 15, 2020 under the Paycheck Protection Program between Veritone, Inc. and Sunwest Bank">
+
+<META NAME="keywords" CONTENT="competitive intelligence, business contract, business forms, SEC filings, SEC EDGAR, material contracts">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="fb:admins" content="609876513" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+
+    }
+/* 
+	div.index li {
+	margin:1em 0;
+	   }
+ */
+	.breadcrumb {
+	margin-bottom:0px;
+	}
+	pre {
+	background-color:#FFFFFF;
+	border:none;
+	}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #EEE;
+      color: #333;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BXPCTK7BY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4BXPCTK7BY');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5933846261594825",
+    enable_page_level_ads: true
+  });
+</script></head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://www.onecle.com/"><strong><font color="#EEEEEE">one</font><font color="#EE3333">cle</font></strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.onecle.com/">Home</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="http://contracts.onecle.com/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Business Contracts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://contracts.onecle.com/type/">By Contract Type</a>
+          <a class="dropdown-item" href="http://contracts.onecle.com/industries/">By Industry</a>
+          <a class="dropdown-item" href="http://contracts.onecle.com/alpha/">By Company Name</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://law.onecle.com/">Laws</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://contracts.onecle.com/consumer/incorporation.shtml">Incorporation</a>
+      </li>
+      	<li class="nav-item">
+        <a class="nav-link" href="http://lawyers.onecle.com/">Lawyer Directory</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+	<li class="breadcrumb-item"><a href="//www.onecle.com/">Home</a></li>
+	<li class="breadcrumb-item"><a href="/index.shtml">Sample Business Contracts</a></li>
+	<li class="breadcrumb-item active" aria-current="page">
+			
+
+	</li>
+</ol>
+</nav>
+<div>
+<script>
+  (function() {
+    var cx = '016782931958625056904:77mdzlxjmx4';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+<div class="container" style="padding-bottom:40pt;">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+
+<p style="text-align:right;font-size:0.8em;"><a href="//print.onecle.com/contracts/veritone/sunwest-ppp-loan-2020-04-15.shtml" target="_blank" rel="noopener">printer-friendly</a></p>
+
+<h1>Sample Business Contracts</h1>
+<p>Loan Agreement - Veritone Inc. and Sunwest Bank</p>
+<div class="container">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+
+<h2 class="index">Loan Forms</h2>
+<div class="index">
+<ul class="list-group">
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Ffamily-and-personal%2Fpersonal-finance%2Fpersonal-loans%2Fdocument%2Floan-agreement" rel="nofollow">Loan Agreement</a></li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Ffamily-and-personal%2Fpersonal-finance%2Fpersonal-loans%2Fdocument%2Fpromissory-note" rel="nofollow">Promissory Note</a></li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Ffamily-and-personal%2Fpersonal-finance%2Fpersonal-loans%2Fdocument%2Fpromissory-note-with-installment-payments" rel="nofollow">Promissory Note with Installment Payments</a></li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Ffamily-and-personal%2Fpersonal-finance%2Fpersonal-loans%2Fdocument%2Fpromissory-note-due-on-a-specific-date" rel="nofollow">Promissory Note Due on a Specific Date</a></li>
+	<li class="list-group-item"><a href="https://contracts.onecle.com/type/30.shtml">More Loan Agreements</a></li>
+</ul>
+</div>
+
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+<h4>Sponsored Links</h4>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Contracts Responsive Top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5933846261594825"
+     data-ad-slot="7098014696"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div></div>
+
+
+
+<p style="text-align:center;margin-top:3pt;margin-bottom:0pt;margin-left:12.62%;margin-right:11.78%;text-indent:0%;font-weight:bold;">
+	LOAN AGREEMENT
+</p>
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;text-indent:7.43%;">
+	THIS LOAN AGREEMENT, made and entered into this 15TH day of APRIL, 2020, by and between VERITONE, INC. (collectively, "Borrower") and Sunwest Bank ("Lender").
+</p>
+<br />
+<p style="text-align:center;margin-top:4pt;margin-bottom:0pt;margin-left:12.58%;margin-right:11.78%;text-indent:0%;">
+	W I T N E S S E T H
+</p>
+<br />
+<p style="text-align:justify;margin-top:4pt;margin-bottom:0pt;margin-left:1.86%;text-indent:7.64%;">
+	WHEREAS, of even date herewith, Lender and Borrower have entered into that certain U.S. Small Business Administration ("SBA") loan wherein the Lender agreed to provide a loan (the "Loan") to Borrower for up to FOUR MILLION EIGHT HUNDRED FORTY-FOUR THOUSAND SIX HUNDRED and 00 /100 DOLLARS ($ 4,844,600.00) under the Paycheck Protection Program offered by the SBA under the Coronavirus Aid, Relief, and Economic Security Act (CARES Act), section 7(a)(36) of the Small Business Act; and
+</p>
+<br />
+<p style="text-align:justify;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.24%;text-indent:7.43%;">
+	WHEREAS, in order to loan funds to Borrower, Lender enters into this Loan Agreement with Borrower for the purposes herein contained; and
+</p>
+<br />
+<p style="text-align:justify;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.03%;text-indent:7.43%;">
+	NOW, THEREFORE, for and in consideration of the premises, the sum of Ten ($10.00) Dollars and other good and valuable consideration the receipt and sufficiency of which are hereby acknowledged, the parties agree as follows:
+</p>
+<br />
+<p style="text-align:center;margin-bottom:0pt;margin-top:0pt;margin-left:12.62%;margin-right:11.78%;text-indent:0%;font-weight:bold;">
+	ARTICLE I
+</p>
+<p style="text-align:center;margin-bottom:0pt;margin-top:0pt;margin-left:12.62%;margin-right:11.78%;text-indent:0%;font-weight:bold;">
+	AMOUNT AND TERMS OF LOAN
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.76%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.15pt;">
+					1.1
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.15pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					RECITALS. Each of the above recitals are hereby incorporated into and made a part of this Agreement by this reference.
+				</p>
+				</td>
+				<td valign="top" style="width:1.24%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.15pt;">
+					1.2
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.15pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					LOAN AND NOTE. The term "Loan" herein shall refer to the indebtedness of Borrower to Lender evidenced by a Note in the original principal amount of FOUR MILLION EIGHT HUNDRED FORTY-FOUR&nbsp;&nbsp;THOUSAND SIX HUNDRED&nbsp;&nbsp;and&nbsp;&nbsp;00/100&nbsp;&nbsp;DOLLARS ($ 4,844,600.00) in form satisfactory to Lender (the "Note").
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:4pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.15pt;">
+					1.3
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:4pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.15pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					FORGIVENESS. The Note is subject to partial or full forgiveness, the terms of which are dictated by the SBA, the CARES Act, section 7(a)(36) of the Small Business Act, all rules and regulations promulgated thereunder including, without limitation, Interim Final Rule RIN 3245-AH34, subsequent SBA guidance, and the Code of Federal Regulations (the "Forgiveness"). Borrower acknowledges that the calculation methodology for the amount of Forgiveness (the "Forgiveness Amount") is solely dictated by SBA and federal rules, regulations, and laws, and is not dictated by the policies, procedures, or guidelines of Lender. Therefore, Borrower agrees to hold Lender and its respective affiliates, subsidiaries, directors, officers and employees ("Lender Parties") harmless against, and releases Lender Parties from, all losses, claims, and damages which Borrower and its affiliates, subsidiaries, directors, officers and employees incur arising out of or relating to the Forgiveness and the calculation of the Forgiveness Amount.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p style="margin-bottom:0pt;margin-top:0pt;text-indent:0%;">
+	<br>
+</p>
+<hr style="page-break-after:always;width:100%;">
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.15pt;">
+					1.4
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.15pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					FORGIVENESS DOCUMENTATION. As a part of the application for the Loan, Borrower has provided Lender certain documentation verifying the number of full-time equivalent employees on the Borrower's payroll as well as the dollar amounts of payroll costs, covered mortgage interest payments, covered rent payments, covered utilities for the Loan, and other supporting documentation ("Documentation"). Any request for Forgiveness must be accompanied with supporting documentation similar in form and fashion to the Documentation, as well as any other tax filings, cancelled checks and additional information Lender or SBA may request.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:34.97%;margin-right:33.88%;text-indent:8.52%;font-weight:bold;">
+	ARTICLE II CONDITION OF LENDING
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:0pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.65pt;">
+					2.1
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:0pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.65pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					CONDITIONS PRECEDENT TO THE LOAN. As a condition precedent to Lender making the Loan, the Borrower shall deliver to Lender on or before the date of the Loan closing, the following, in form and substance satisfactory to Lender:
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:16.93%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;">
+					a.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Note; and
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.24%;text-indent:14.87%;letter-spacing:-0.05pt;">
+	b.Such other documents as reasonably may be required by the Lender or Lender's counsel.
+</p>
+<br />
+<p style="text-align:justify;margin-bottom:0pt;margin-top:0pt;margin-left:1.13%;margin-right:1.03%;text-indent:8.38%;">
+	The Loan documents as provided above (collectively, the "Loan Documents"), when prepared, shall set forth the matters contained in the Loan Agreement and contain such other provisions as are deemed necessary or desirable by Lender. The form and substance of all such documents must be satisfactory to Lender prior to disbursement by Lender of any of the proceeds of the Loan.
+</p>
+<br />
+<p style="text-align:center;margin-bottom:0pt;margin-top:0pt;margin-left:12.61%;margin-right:11.78%;text-indent:0%;font-weight:bold;">
+	ARTICLE III
+</p>
+<p style="text-align:center;margin-bottom:0pt;margin-top:0pt;margin-left:20.01%;margin-right:11.78%;text-indent:0%;font-weight:bold;">
+	REPRESENTATIONS AND WARRANTIES OF BORROWER
+</p>
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:9.5%;text-indent:0%;">
+	The Borrower represents and warrants to, and agrees with the Lender as follows:
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:9.49%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.2pt;">
+					3.1
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					POWER AND AUTHORIZATION.
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.03%;text-indent:14.87%;letter-spacing:-0.3pt;">
+	a.The Borrower has authorized the execution and delivery of the Note and all other documents contemplated by this Loan Agreement, and such execution and delivery will not violate any law, or any other agreement to which Borrower is a party.
+</p>
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.03%;text-indent:14.87%;letter-spacing:-0.3pt;">
+	b.This Loan Agreement constitutes, and upon execution and delivery thereof, the Note, and the Loan Documents will constitute, legal, valid and binding obligations of the Borrower enforceable against the Borrower.
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					3.2
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					BORROWER AND OPERATING COMPANY CERTIFICATIONS. The Borrower, for itself and its operating company, affirm that the SBA representations and certifications stated in Exhibit A are true and correct and are incorporated by reference.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p style="margin-bottom:0pt;margin-top:0pt;text-indent:0%;">
+	<br>
+</p>
+<hr style="page-break-after:always;width:100%;">
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					3.3
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					FINANCIAL CONDITION. The reports and financial statements of Borrower submitted to Lender in connection with the Loan have been prepared from Borrower's records in accordance with generally accepted accounting principles and practices, consistently applies, fairly reflect the financial condition of Borrower for the periods therein defined. No material adverse changes have since occurred.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:31.83%;margin-right:32.64%;text-indent:11.25%;font-weight:bold;">
+	ARTICLE IV COVENANTS BY BORROWER
+</p>
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;text-indent:7.43%;">
+	Until all the obligations of Borrower under this Agreement have been performed and paid in full, Borrower covenants and agrees as follows:
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:0pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.6pt;">
+					4.1
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:0pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.6pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					MAINTENANCE OF BUSINESS AND CORPORATE EXISTENCE. Borrower shall comply with all valid and applicable statutes, ordinances, rules and regulations and shall keep in force and effect all licenses, permits, bonds and franchises necessary for the proper conduct of its business.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.6pt;">
+					4.2
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.6pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					MANAGEMENT AND OWNERSHIP. No material change shall be made without the prior written consent of Lender in the management or ownership of Borrower, or in the manner in which its business is conducted. Said consent shall not be unreasonably withheld by Lender.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.6pt;">
+					4.3
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.6pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					TAXES. Borrower shall pay promptly, when due, all taxes, assessments and governmental charges or levies imposed upon the Borrower or upon the income or any property of the Borrower.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.6pt;">
+					4.4
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.6pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					EXAMINATION OF RECORDS. Borrower shall permit any representative of Lender to examine and to audit any or all of Borrower's books and records and to copy portions thereof upon receipt of reasonable notification and request.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.6pt;">
+					4.5
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.6pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					USA PATRIOT ACT VERIFICATION INFORMATION. Borrower shall provide evidence of its legal name, tax identification number, and street address, and a driver's license and date of birth (if the Borrower is an individual), satisfactory to and sufficient for the Bank to verify the identity of the Borrower, as required under the USA Patriot Act. Borrower shall notify Bank promptly of any change in such information.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:37.41%;margin-right:35.74%;text-indent:6.17%;font-weight:bold;">
+	ARTICLE V EVENTS OF DEFAULT
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.76%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.1pt;">
+					5.1
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					The occurrence of any one or more of the following shall constitute an "Event of Default":
+				</p>
+				</td>
+				<td valign="top" style="width:1.24%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p style="margin-bottom:0pt;margin-top:0pt;text-indent:0%;">
+	<br>
+</p>
+<hr style="page-break-after:always;width:100%;">
+<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.24%;text-indent:14.87%;letter-spacing:-0.2pt;">
+	a.Nonpayment, when due, of any principal, accrued interest, premium, fee or other charge due under the Note.
+</p>
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.24%;text-indent:14.87%;letter-spacing:-0.2pt;">
+	b.Default by Borrower in the due observance or performance of any term, covenant, condition or agreement on its part to be performed under this Loan Agreement, the Note, or under any other document contemplated by this Loan Agreement.
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:16.93%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.2pt;">
+					c.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					If Borrower shall:
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:24.38%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;">
+					1)
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Make a general assignment for the benefit of its creditors;
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:24.38%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;">
+					2)
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					File a voluntary petition in bankruptcy;
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:24.38%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;">
+					3)
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Be adjudicated as bankrupt or insolvent;
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:24.38%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:0pt;margin-bottom:0pt;letter-spacing:-0.05pt;">
+					4)
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:0pt;margin-bottom:0pt;letter-spacing:-0.05pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					File any petition or answer seeking, consenting to, or acquiescing in, reorganization, arrangement, composition, liquidation, dissolution or similar relief, under any present or future statute, law or regulation;
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:24.38%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;">
+					5)
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					File an answer admitting or failing to deny the material allegations of the petition against it for any such relief;
+				</p>
+				</td>
+				<td valign="top" style="width:1.24%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:24.38%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;">
+					6)
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Admit in writing its inability to pay its debts as they mature;
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:24.38%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;">
+					7)
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Discontinue business; or
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:24.38%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;">
+					8)
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.05pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Be unable to pay debts as they become due.
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.24%;text-indent:14.87%;letter-spacing:-0.2pt;">
+	d.Borrower fails to have vacated or set aside within thirty (30) days of its entry any court order appointing a receiver or trustee for all or a substantial portion of the Borrower's property.
+</p>
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.24%;text-indent:14.87%;letter-spacing:-0.2pt;">
+	e.Any warranty, representation or statements made or furnished to Lender by Borrower in connection with the Loan or in connection with this Agreement (including any warranty, representation or statement in the application of Borrower for the Loan or in any accompanying financial statements) or to induce Lender to make the Loan, proves to be untrue, misleading or false in any material respect.
+</p>
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.24%;text-indent:14.87%;letter-spacing:-0.2pt;">
+	f.Borrower defaults in the payment of any principal or interest on any obligation to Lender or to any other creditor.
+</p>
+<br />
+<p style="text-align:center;margin-bottom:0pt;margin-top:0pt;margin-left:12.62%;margin-right:11.78%;text-indent:0%;font-weight:bold;">
+	ARTICLE VI
+</p>
+<p style="text-align:center;margin-bottom:0pt;margin-top:0pt;margin-left:13.72%;margin-right:11.78%;text-indent:0%;font-weight:bold;">
+	REMEDIES ON EVENT OF DEFAULT
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.25pt;">
+					6.1
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.25pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					DECLARE NOTE DUE. Upon the occurrence of any Event of Default as defined in this Agreement, the Note, or any other document contemplated by this Agreement, then in any such event, Lender at its option, may declare the entire unpaid balance of the Note to be forthwith due and payable, and thereupon such balance shall become so due and payable without presentment, protest or further demand or notice of any kind, all of which are hereby expressly waived, and Borrower will forthwith pay to Lender the entire principal of and interest accrued on the Note.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p style="margin-bottom:0pt;margin-top:0pt;text-indent:0%;">
+	<br>
+</p>
+<hr style="page-break-after:always;width:100%;">
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.25pt;">
+					6.2
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.25pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					OTHER REMEDIES. Upon the occurrence or discovery of an Event of Default the Lender shall, in addition to its option to declare the entire unpaid amount of the Note due and payable, at its option exercise any and all rights of setoff which Lender may have against any account, fund or property of any kind, tangible or intangible, belonging to Borrower and which shall be in Lender's possession or under Lender's control.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<br />
+<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;margin-left:36.79%;margin-right:41.12%;text-indent:2.11%;font-weight:bold;">
+	ARTICLE VII MISCELLANEOUS
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					7.1
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					CLOSING. The Lender shall not be obligated to make the Loan or advance any funds until Borrower has fully met all requirements herein set forth to be met by Borrower, and until Borrower has paid to Lender and any other parties entitled thereto, all fees and other charges due in connection with the Loan.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.76%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					7.2
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					AMENDMENTS. No amendment of any provisions of this Loan Agreement, nor consent to any departure of Borrower therefrom, shall in any event be effective unless the same shall be in writing and signed by Lender and then such waiver or consent shall be effective only in the specific instance and for the specific purpose for which given.
+				</p>
+				</td>
+				<td valign="top" style="width:1.24%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					7.3
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					NOTICES. All notices and other communications provided for hereunder shall be in writing and mailed or telegraphed or delivered. If to Borrower, the address noted in the Note. If to Lender, 2050 Main Street, Suite 300, Irvine, CA 92614, Attn: PPP Processing.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					7.4
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					GOVERNING LAW AND PARTIES BOUND. This Agreement and the Note shall be governed by and construed in accordance with the laws of the State of California and shall be binding upon and shall inure to the benefit of the parties hereto, their successors and assigns.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					7.5
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					ATTORNEY'S FEES AND EXPENSES. If Lender shall incur any cost or expense, including, without limitation, reasonable attorney's fees, in connection with enforcing this Agreement, the Note or the Loan, in any manner whatsoever, direct or indirect, whether with regard to the collection of amounts due, defense of Lender or otherwise, upon demand by Lender, Borrower shall pay the same or shall reimburse Lender therefor in full.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					7.6
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					ASSIGNMENT BY BORROWER. No commitment issued by Lender to Borrower for the Loan nor any of Borrower's rights hereunder shall be assignable by Borrower without the prior written consent of Lender.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.76%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					7.7
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					NO WAIVER: REMEDIES. No failure on the part of the Lender, and no delay in exercising any right under this Loan Agreement, shall operate as a waiver thereof; nor shall any single or partial exercise of any right under this Loan Agreement preclude any other or further exercise thereof or the exercise of any other right.
+				</p>
+				</td>
+				<td valign="top" style="width:1.24%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p style="margin-bottom:0pt;margin-top:0pt;text-indent:0%;">
+	<br>
+</p>
+<hr style="page-break-after:always;width:100%;">
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					7.8
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					SEVERABILITY. In the event that any clause or provisions of this Loan Agreement or any document instrument contemplated by this Agreement shall be held to be invalid by any court of competent jurisdiction, the invalidity of such clause or provision shall not affect any of the remaining portions or provisions of this Loan Agreement.
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:9.49%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:7.45%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.2pt;">
+					7.9
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					TIME. Time is the essence of this Agreement.
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:98.97%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:7.43%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;">
+					7.10
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;text-indent:7.43%;letter-spacing:-0.2pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					CONSENT TO SHARE INFORMATION. Borrower understands and acknowledges that Lender the other "Receiving Parties," as hereafter defined, are authorized to obtain, use and share the undersigned's tax information, financial information, and Loan information for purposes of (i) originating, maintaining, managing, monitoring, servicing, selling, insuring, participating, or securitizing the Loan; (ii) marketing purposes, or (iii) as otherwise permitted by applicable laws, including state and federal privacy and data security laws. This includes Lender's affiliates, agents, and any aforementioned parties' respective successors and assigns. The term "Receiving Parties," as used above, includes (i) any actual owners of the Loan,
+				</p>
+				</td>
+				<td valign="top" style="width:1.03%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p style="text-align:left;margin-top:0pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.03%;text-indent:0%;">
+	(ii)any potential purchasers of the Loan, or (iii) any acquirers of any beneficial or other interest in the Loan (including, but not limited to, the United States Small Business Administration, any investor or participant to whom the Bank may sell or participate all or any portion of the loan, any mortgage/title insurer, guarantor, any servicers or service providers for the forgoing parties and any of aforementioned parties' respective successors and assigns).
+</p>
+<br />
+<br />
+<br />
+<p style="text-align:center;margin-top:10pt;margin-bottom:0pt;margin-left:12.57%;margin-right:11.78%;text-indent:0%;">
+	[SEPARATE SIGNATURE PAGE FOLLOWS]
+</p>
+<br />
+<hr style="page-break-after:always;width:100%;">
+<p style="margin-top:3pt;margin-bottom:0pt;margin-left:2.07%;margin-right:2.07%;text-indent:7.43%;">
+	IN WITNESS WHEREOF, the parties have executed this Loan Agreement as of the date first above written.
+</p>
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.58%;margin-right:18.8%;text-indent:0%;">
+	BORROWER: VERITONE, INC.
+</p>
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.58%;margin-right:3.1%;text-indent:0%;">
+	By: /s/ Chad Steelberg
+</p>
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.58%;margin-right:3.1%;text-indent:0%;">
+	Name: CHAD STEELBERG
+</p>
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.58%;text-indent:0%;">
+	Title: CEO
+</p>
+<br />
+<p style="margin-top:0pt;margin-bottom:0pt;margin-left:61.58%;margin-right:3.1%;text-indent:0%;">
+	By: /s/ Jeffrey Coyne
+</p>
+<p style="margin-top:0pt;margin-bottom:0pt;margin-left:61.58%;margin-right:3.1%;text-indent:0%;">
+	Name: JEFFREY COYNE
+</p>
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.58%;text-indent:0%;">
+	Title: SECRETARY
+</p>
+<br />
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.58%;margin-right:18.8%;text-indent:0%;">
+	LENDER: SUNWEST BANK
+</p>
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.58%;text-indent:0%;">
+	By: /s/ Thomas J. Chavez
+</p>
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.58%;text-indent:0%;">
+	AUTHORIZED SIGNER
+</p>
+<br />
+<br />
+<hr style="page-break-after:always;width:100%;">
+<p style="text-align:center;margin-top:3pt;margin-bottom:0pt;margin-left:12.62%;margin-right:11.82%;text-indent:0%;">
+	EXHIBIT A
+</p>
+<br />
+<p style="text-align:center;margin-bottom:0pt;margin-top:0pt;margin-left:12.65%;margin-right:11.82%;text-indent:0%;">
+	Borrower and Operating Company Certifications
+</p>
+<br />
+<p style="text-align:justify;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;text-indent:0%;font-weight:bold;">
+	In order to induce Lender to make an SBA guaranteed Loan to Borrower:
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.8%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.73%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;">
+					A.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Borrower certifies that it is eligible to receive a loan under the rules in effect at the time the loan is made that have been issued by the Small Business Administration (SBA) implementing the Paycheck Protection Program under Division A, Title I of the Coronavirus Aid, Relief, and Economic Security Act (CARES Act) (the Paycheck Protection Program Rule).
+				</p>
+				</td>
+				<td valign="top" style="width:3.52%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.8%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.73%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;">
+					B.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Borrower (1) is an independent contractor, eligible self-employed individual, or sole proprietor or (2) employs no more than the greater of 500 employees or, if applicable, the size standard established by the SBA in 13 C.F.R. 121.201 for the Applicant's industry.
+				</p>
+				</td>
+				<td valign="top" style="width:1.66%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.79%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.74%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;">
+					C.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Borrower affirms the representations in the SBA Form 2483 application and states that:
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<p style="text-align:justify;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;">
+	It was in operation on February 15, 2020 and had employees for whom it paid salaries and payroll taxes or paid independent contractors, as reported on Form(s) 1099-MISC.
+</p>
+<br />
+<p style="text-align:justify;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.24%;text-indent:0%;">
+	Current economic uncertainty makes this loan request necessary to support the ongoing operations of the Borrower. The funds will be used to retain workers and maintain payroll or make mortgage interest payments, lease payments, and utility payments, as specified under the Paycheck Protection Program Rule. If the funds are knowingly used for unauthorized purposes, the federal government may hold Borrower and Loan applicant legally liable, such as for charges of fraud.
+</p>
+<br />
+<p style="text-align:justify;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;">
+	The Borrower will provide to the Lender documentation verifying the number of full-time equivalent employees on the Borrower's payroll as well as the dollar amounts of payroll costs, covered mortgage interest payments, covered rent payments, and covered utilities for the eight- week period following the Loan.
+</p>
+<br />
+<p style="text-align:justify;margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;">
+	That Loan forgiveness will be provided for the sum of documented payroll costs, covered mortgage interest payments, covered rent payments, and covered utilities, and not more than 25% of the forgiven amount may be for non-payroll costs.
+</p>
+<br />
+<p style="text-align:justify;margin-top:0pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.24%;text-indent:0%;">
+	During the period beginning on February 15, 2020 and ending on December 31, 2020, the Borrower has not and will not receive another loan under the Paycheck Protection Program.
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.8%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.73%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;">
+					D.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					All SBA loan proceeds will be used only for business-related purposes as specified in the loan application and consistent with the Paycheck Protection Program Rule.
+				</p>
+				</td>
+				<td valign="top" style="width:1.87%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.8%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.73%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;letter-spacing:-0.1pt;">
+					E.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Borrower acknowledges that the Lender will confirm the eligible loan amount using required documents submitted. Borrower understands, acknowledges and agrees that the Lender can share any tax information that it has provided with SBA's authorized 
+				</p>
+				</td>
+				<td valign="top" style="width:4.35%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<hr style="page-break-after:always;width:100%;">
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.8%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.73%;white-space:nowrap"></td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					representatives, including authorized representatives of the SBA Office of Inspector General, for the purpose of compliance with SBA Loan Program Requirements and all SBA reviews
+				</p>
+				</td>
+				<td valign="top" style="width:4.35%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.8%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.73%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;">
+					F.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Any loan received by the Borrower under Section 7(b)(2) of the Small Business Act between January 31, 2020 and April 3, 2020 was for a purpose other than paying payroll costs and other allowable uses loans under the Paycheck Protection Program Rule.
+				</p>
+				</td>
+				<td valign="top" style="width:2.69%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.79%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.74%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;color:#211F1F;letter-spacing:-0.1pt;">
+					G.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;color:#211F1F;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Borrower and its operating company ("Operating Company") certify that:
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p style="text-align:justify;margin-top:10pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;font-weight:bold;color:#211F1F;">
+	Adverse Change - That there has been no adverse change in Borrower's (and Operating Company's) financial condition, organization, operations or fixed assets since the date the Loan application was signed.
+</p>
+<p style="text-align:justify;margin-top:10pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;font-weight:bold;color:#211F1F;">
+	Child Support - No principal who owns at least 50% of the ownership or voting interest of the company is delinquent more than 60 days under the terms of any (1) administrative order, (2) court order, or (3) repayment agreement requiring payment of child support.
+</p>
+<p style="text-align:justify;margin-top:10pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;font-weight:bold;color:#211F1F;">
+	Current Taxes - Borrower and Operating Company are current (or will be current with any loan proceeds specified for eligible tax payments) on all federal, state, and local taxes, including but not limited to income taxes, payroll taxes, real estate taxes, and sales taxes.
+</p>
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.79%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.74%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:9pt;margin-bottom:0pt;letter-spacing:-0.1pt;">
+					H.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:9pt;margin-bottom:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Borrower and Operating Company certify that they will:
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p style="text-align:justify;margin-top:10pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;font-weight:bold;color:#211F1F;">
+	Books, Records, and Reports - Keep proper books of account in a manner satisfactory to Lender; furnish financial statements or reports whenever Lender requests them; allow Lender or SBA, at Borrower's or Operating Company's expense, to: (1) inspect and audit books, records and papers relating to Borrower's and Operating Company's financial or business condition; and (2) inspect and appraise any of Borrower's and Operating Company's assets; and (3) allow all government authorities to furnish reports of examinations, or any records pertaining to Borrower and Operating Company, upon request by Lender or SBA.
+</p>
+<p style="text-align:justify;margin-top:10pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;font-weight:bold;color:#211F1F;">
+	Equal Opportunity - Post SBA Form 722, Equal Opportunity Poster, where it is clearly visible to employees, applicants for employment and the general public.
+</p>
+<p style="text-align:justify;margin-top:10pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;font-weight:bold;color:#211F1F;">
+	American-made Products - To the extent practicable, purchase only American-made equipment and products with the proceeds of the Loan.
+</p>
+<p style="text-align:justify;margin-top:10pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;font-weight:bold;color:#211F1F;">
+	Taxes - Pay all federal, state, and local taxes, including income, payroll, real estate and sales taxes of the business when they come due.
+</p>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.8%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.73%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;">
+					I.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Borrower and Operating Company certify that they will not, without Lender's prior written consent:
+				</p>
+				</td>
+				<td valign="top" style="width:1.04%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p style="text-align:justify;margin-top:10pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;font-weight:bold;color:#211F1F;">
+	Distributions - Make any distribution of company assets that will adversely affect the financial condition of Borrower and/or Operating Company.
+</p>
+<p style="text-align:justify;margin-top:10pt;margin-bottom:0pt;margin-left:2.07%;margin-right:1.04%;text-indent:0%;font-weight:bold;">
+	Ownership Changes - Change the ownership structure or interests in the business during the term of the Loan.
+</p>
+<hr style="page-break-after:always;width:100%;">
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.79%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.74%;white-space:nowrap"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;letter-spacing:-0.1pt;">
+					J.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-top:3pt;margin-bottom:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Borrower is not engaged in any activity that is illegal under federal, state or local law.
+				</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<div align="left">
+	<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; width:100%;">
+		<tbody>
+			<tr>
+				<td valign="top" style="width:5.8%;white-space:nowrap"> <br />
+				</td>
+				<td valign="top" style="width:3.73%;white-space:nowrap"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;">
+					K.
+				</p>
+				</td>
+				<td valign="top"> 
+				<p style="text-align:left;margin-bottom:0pt;margin-top:0pt;letter-spacing:-0.1pt;font-weight:normal;font-style:normal;text-transform:none;font-variant: normal;font-family:Times New Roman;">
+					Borrower and Operating Company, if any, warrants and represents that all information provided to Lender, including without limitation, all information regarding the Borrower's and Operating Company's, if any, financial condition, is accurate to the best of its knowledge and that Borrower and Operating Company, if any, has not withheld any material information. Borrower and Operating Company, if any, acknowledges that for the purpose of this transaction, Lender is acting on behalf of SBA, an agency of the United States Government, except that SBA accepts no liability or responsibility for any wrongful act or omission by Lender. Borrower and Operating Company, if any, further acknowledges that any false statements to Lender can be considered a false statement to the federal government under 18 U.S.C. §§ 1001 and 3571 by imprisonment of not more than five years and/or a fine of up to $250,000; under 15 U.S.C. § 645 by imprisonment of not more than two years and/or a fine of not more than $5,000; and, if submitted to a federally insured institution, under 18 U.S.C. § 1014 by imprisonment of not more than thirty years and/or a fine of not more than $1,000,000. Borrower and Operating Company, if any, further acknowledges that Lender and SBA are relying upon the information submitted by the Borrower and Operating Company, if any.
+				</p>
+				</td>
+				<td valign="top" style="width:1.45%;white-space:nowrap"> <br />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:2.07%;text-indent:7.45%;">
+	IN WITNESS WHEREOF, the Borrower, on behalf of itself and the Operating Company, acknowledges having read this exhibit and certifies as to the above statements.
+</p>
+<br />
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.78%;margin-right:18.86%;text-indent:0%;">
+	BORROWER: VERITONE, INC.
+</p>
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.78%;margin-right:3.11%;text-indent:0%;">
+	By: /s/ Chad Steelberg
+</p>
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.78%;margin-right:3.11%;text-indent:0%;">
+	Name: CHAD STEELBERG
+</p>
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.78%;text-indent:0%;">
+	Title: CEO
+</p>
+<br />
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.78%;margin-right:3.11%;text-indent:0%;">
+	By: /s/ Jeffrey Coyne
+</p>
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.78%;margin-right:3.11%;text-indent:0%;">
+	Name: JEFFREY COYNE
+</p>
+<p style="margin-bottom:0pt;margin-top:0pt;margin-left:61.78%;text-indent:0%;">
+	Title: SECRETARY
+</p>
+
+</div></div></div>
+
+
+	<footer class="container-fluid">
+
+<div class="row">
+  <div class="col-sm-6"><h4>Business Contracts</h4>
+  <p><a href="//contracts.onecle.com/type/19.shtml">Asset Purchase</a><br>
+<a href="//contracts.onecle.com/type/35.shtml">Business Separation</a><br>
+<a href="//contracts.onecle.com/type/90.shtml">Collaboration</a><br>
+<a href="//contracts.onecle.com/type/56.shtml">Construction</a><br>
+<a href="//contracts.onecle.com/type/64.shtml">Consulting</a><br>
+<a href="//contracts.onecle.com/type/147.shtml">Distribution</a><br>
+<a href="//contracts.onecle.com/type/2.shtml">Employment</a><br>
+<a href="//contracts.onecle.com/type/79.shtml">Franchise</a><br>
+<a href="//contracts.onecle.com/type/11.shtml">Indemnification</a><br>
+<a href="//contracts.onecle.com/type/60.shtml">Joint Venture</a><br>
+<a href="//contracts.onecle.com/type/16.shtml">Lease</a><br>
+<a href="//contracts.onecle.com/type/32.shtml">License</a><br>
+<a href="//contracts.onecle.com/type/76.shtml">LLC</a><br>
+<a href="//contracts.onecle.com/type/30.shtml">Loan</a><br>
+<a href="//contracts.onecle.com/type/86.shtml">Management</a><br>
+<a href="//contracts.onecle.com/type/47.shtml">Manufacturing/Supply</a><br>
+<a href="//contracts.onecle.com/type/41.shtml">Merger</a><br>
+<a href="//contracts.onecle.com/type/21.shtml">Non-Competition</a><br>
+<a href="//contracts.onecle.com/type/189.shtml">Offer Letter</a><br>
+<a href="//contracts.onecle.com/type/36.shtml">Partnership</a><br>
+<a href="//contracts.onecle.com/type/67.shtml">Promissory Note</a><br>
+<a href="//contracts.onecle.com/type/80.shtml">Sales</a><br>
+<a href="//contracts.onecle.com/type/4.shtml">Services</a><br>
+<a href="//contracts.onecle.com/type/38.shtml">Severance</a><br>
+<a href="//contracts.onecle.com/type/68.shtml">Shareholder</a><br>
+<a href="//contracts.onecle.com/type/6.shtml">Stock Purchase</a></p>
+  </div>
+  <div class="col-sm-6"><h4>Consumer Forms</h4>
+  <p><a href="//contracts.onecle.com/consumer/divorce.shtml">Divorce</a><br>
+<a href="//contracts.onecle.com/consumer/dmv.shtml">DMV</a><br>
+<a href="//contracts.onecle.com/consumer/durable-power-of-attorney.shtml">Durable Power of Attorney</a><br>
+<a href="//contracts.onecle.com/consumer/employment.shtml">Employment</a><br>
+<a href="//contracts.onecle.com/consumer/government-forms.shtml">Government</a><br>
+<a href="//contracts.onecle.com/consumer/identity-theft.shtml">Identity Theft</a><br>
+<a href="//contracts.onecle.com/consumer/landlord-tenant.shtml">Landlord-Tenant</a><br>
+<a href="//contracts.onecle.com/consumer/living-will-advance-directive.shtml">Living Will</a><br>
+<a href="//contracts.onecle.com/consumer/mechanics-lien.shtml">Mechanic's Lien</a><br><a href="//contracts.onecle.com/consumer/medical.shtml">Medical</a><br>
+<a href="//contracts.onecle.com/consumer/probate.shtml">Probate</a><br>
+<a href="//contracts.onecle.com/consumer/workers-compensation.shtml">Workers' Compensation</a></p>
+
+
+  <p class="line"><a href="http://www.onecle.com/blog/index.php">Contracts Blog</a></p>
+<p><a href="//contracts.onecle.com/type/">View All Types</a><br>
+<a href="//contracts.onecle.com/industries/">View All Industries</a><br>
+<a href="//contracts.onecle.com/alpha/">View All Companies</a></p>
+
+  
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-sm-12">
+
+
+		<a href="//www.onecle.com/info/copyright.shtml">Copyright &copy; 2026 Onecle Inc.</a> No claim to contracts derived from securities filings.<br><br>
+		
+		
+		<a href="//www.onecle.com/info/terms.shtml">Terms of Service</a> | <a href="//www.onecle.com/info/privacy.shtml">Privacy Policy</a>
+	</div>
+</div>
+
+</footer>
+</body>
+</html>

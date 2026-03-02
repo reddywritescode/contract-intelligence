@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-02-27T23:45:33.424135Z",
+  "api": "http://127.0.0.1:8000/api/v1",
+  "total": 4,
+  "success": 4,
+  "failed": 0,
+  "results": [
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/minson-emp-2019-08-12.shtml",
+      "contract_id": "ctr_b15e70848c",
+      "run_id": "run_e4521bf97c",
+      "chunks": 27,
+      "trace_events": 5,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/st-giles-lease-2013-05-13.shtml",
+      "contract_id": "ctr_4488898980",
+      "run_id": "run_12b4fdc49d",
+      "chunks": 270,
+      "trace_events": 5,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/stearns-ppp-loan-2020-04-16.shtml",
+      "contract_id": "ctr_9025a41e52",
+      "run_id": "run_2cb560b1cd",
+      "chunks": 15,
+      "trace_events": 5,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/sveavagen-lease-2013-12-06.shtml",
+      "contract_id": "ctr_e87a1b070c",
+      "run_id": "run_1dc2e4e52f",
+      "chunks": 155,
+      "trace_events": 5,
+      "ok": true,
+      "error": ""
+    }
+  ]
+}

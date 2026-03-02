@@ -1,0 +1,142 @@
+MASTER SUPPLIER AGREEMENT
+
+Agreement Number: MSA-2023-04172
+Effective Date: April 17, 2023
+
+BETWEEN:
+
+GlobalTech Industries, Inc. ("Buyer")
+One Infinite Loop, Cupertino, CA 95014
+
+AND:
+
+Acme Precision Components Ltd. ("Supplier")
+8200 Semiconductor Drive, Austin, TX 78759
+
+RECITALS
+
+WHEREAS, Buyer desires to procure certain precision-manufactured components, sub-assemblies, and related engineering services from Supplier; and
+
+WHEREAS, Supplier represents that it has the capacity, technical expertise, and quality certifications necessary to manufacture and deliver such components in accordance with Buyer's specifications;
+
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, the parties agree as follows:
+
+1. TERM AND RENEWAL
+
+1.1 Initial Term. This Agreement shall commence on the Effective Date and shall remain in effect for a period of three (3) years (the "Initial Term"), unless earlier terminated in accordance with Section 7.
+
+1.2 Renewal. Upon expiration of the Initial Term, this Agreement shall automatically renew for successive one (1) year periods (each a "Renewal Term") unless either party provides written notice of non-renewal at least ninety (90) days prior to the expiration of the then-current term.
+
+1.3 Notice Deadline. For the current Initial Term expiring April 16, 2026, written notice of non-renewal must be delivered no later than January 16, 2026.
+
+2. SCOPE OF SUPPLY
+
+2.1 Products. Supplier shall manufacture and deliver precision components as specified in each Purchase Order issued by Buyer pursuant to this Agreement, including but not limited to machined housings, thermal interface assemblies, and connector sub-systems.
+
+2.2 Engineering Services. Supplier shall provide design-for-manufacturing consultation, prototype development, and first-article inspection services as reasonably requested by Buyer.
+
+2.3 Specifications. All Products shall conform to Buyer's technical specifications, drawings, and quality requirements as set forth in the applicable Purchase Order and referenced documentation.
+
+3. PAYMENT TERMS
+
+3.1 Pricing. Pricing for Products and Services shall be as set forth in Exhibit A (Pricing Schedule), which may be updated quarterly upon mutual written agreement.
+
+3.2 Invoicing. Supplier shall submit invoices within fifteen (15) days following delivery and acceptance of Products. Buyer shall pay undisputed invoices within ninety (90) days of receipt of a conforming invoice.
+
+3.3 Late Payment. Overdue amounts shall bear interest at the rate of one and one-half percent (1.5%) per month or the maximum rate permitted by applicable law, whichever is less.
+
+3.4 Currency. All payments shall be made in United States Dollars (USD).
+
+4. DELIVERY AND ACCEPTANCE
+
+4.1 Delivery. Supplier shall deliver Products DDP (Delivered Duty Paid, Incoterms 2020) to the delivery location specified in each Purchase Order.
+
+4.2 Lead Times. Standard lead time shall be eight (8) weeks from Purchase Order acceptance. Supplier shall use commercially reasonable efforts to accommodate expedited delivery requests.
+
+4.3 Acceptance. Buyer shall have thirty (30) days following delivery to inspect Products and either accept or reject them. Products not rejected within such period shall be deemed accepted.
+
+5. INTELLECTUAL PROPERTY
+
+5.1 Buyer IP. All specifications, designs, drawings, tooling, and technical data provided by Buyer to Supplier remain the exclusive property of Buyer. Supplier shall not use Buyer's intellectual property for any purpose other than performing its obligations under this Agreement.
+
+5.2 Supplier Background IP. Supplier retains all rights in its pre-existing intellectual property and general manufacturing know-how.
+
+5.3 Jointly Developed IP. Any inventions or improvements developed jointly by the parties in the course of performing this Agreement shall be jointly owned, with each party having the right to exploit such inventions without accounting to the other.
+
+6. CONFIDENTIALITY
+
+6.1 Obligations. Each party agrees to hold in strict confidence all Confidential Information received from the other party and to use such information solely for purposes of performing its obligations under this Agreement.
+
+6.2 Duration. Confidentiality obligations shall survive termination of this Agreement for a period of five (5) years.
+
+6.3 Exclusions. Confidential Information does not include information that: (a) is or becomes publicly available through no fault of the receiving party; (b) was rightfully in the receiving party's possession prior to disclosure; (c) is independently developed without use of the disclosing party's Confidential Information; or (d) is rightfully obtained from a third party without restriction.
+
+7. TERMINATION
+
+7.1 Termination for Cause. Either party may terminate this Agreement immediately upon written notice if the other party: (a) materially breaches this Agreement and fails to cure such breach within thirty (30) days after receiving written notice thereof; or (b) becomes insolvent, files for bankruptcy, or has a receiver appointed for its assets.
+
+7.2 Termination for Convenience. Buyer may terminate this Agreement or any Purchase Order for convenience upon one hundred twenty (120) days' prior written notice to Supplier. In the event of such termination, Buyer shall pay Supplier for: (a) Products completed and delivered prior to the effective date of termination; (b) work-in-progress at direct cost plus a ten percent (10%) margin; and (c) non-cancellable raw material commitments made by Supplier in reasonable reliance on outstanding Purchase Orders.
+
+7.3 Effect of Termination. Upon termination, Supplier shall promptly return or destroy all Buyer Confidential Information and Buyer-owned tooling, and shall provide reasonable transition assistance for a period not to exceed sixty (60) days.
+
+8. LIABILITY AND INDEMNIFICATION
+
+8.1 Supplier Indemnification. Supplier shall indemnify, defend, and hold harmless Buyer and its affiliates, officers, directors, and employees from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or relating to: (a) any defect in Products supplied under this Agreement; (b) Supplier's negligence or willful misconduct; or (c) any claim that the Products infringe any third-party intellectual property rights.
+
+8.2 Limitation of Liability. EXCEPT FOR OBLIGATIONS UNDER SECTION 8.1 AND BREACHES OF SECTION 6 (CONFIDENTIALITY), NEITHER PARTY SHALL BE LIABLE TO THE OTHER FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATING TO THIS AGREEMENT, REGARDLESS OF THE THEORY OF LIABILITY. THE TOTAL AGGREGATE LIABILITY OF EITHER PARTY UNDER THIS AGREEMENT SHALL NOT EXCEED THE TOTAL AMOUNTS PAID OR PAYABLE BY BUYER TO SUPPLIER DURING THE TWELVE (12) MONTH PERIOD IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO LIABILITY.
+
+8.3 Insurance. Supplier shall maintain at all times during the term of this Agreement: (a) commercial general liability insurance with limits of not less than five million dollars ($5,000,000) per occurrence; (b) product liability insurance with limits of not less than ten million dollars ($10,000,000) per occurrence; and (c) workers' compensation insurance as required by applicable law.
+
+9. QUALITY AND COMPLIANCE
+
+9.1 Quality System. Supplier shall maintain a quality management system certified to ISO 9001:2015 (or successor standard) and shall permit Buyer to conduct quality audits of Supplier's manufacturing facilities upon reasonable notice.
+
+9.2 Regulatory Compliance. Supplier shall comply with all applicable federal, state, and local laws, regulations, and industry standards, including but not limited to environmental, health, safety, export control, and anti-corruption laws.
+
+9.3 Conflict Minerals. Supplier shall comply with Buyer's Conflict Minerals Policy and shall provide Conflict Minerals Reporting Template (CMRT) data upon request.
+
+10. FORCE MAJEURE
+
+10.1 Neither party shall be liable for any failure or delay in performing its obligations under this Agreement to the extent such failure or delay results from circumstances beyond the reasonable control of that party, including but not limited to acts of God, fire, flood, earthquake, pandemic, war, terrorism, government action, or labor disputes.
+
+10.2 The affected party shall provide prompt written notice to the other party and shall use commercially reasonable efforts to mitigate the effects of the force majeure event. If the force majeure event continues for more than ninety (90) days, either party may terminate this Agreement upon thirty (30) days' written notice.
+
+11. GOVERNING LAW AND DISPUTE RESOLUTION
+
+11.1 Governing Law. This Agreement shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law principles.
+
+11.2 Dispute Resolution. Any dispute arising out of or relating to this Agreement shall first be submitted to good-faith negotiation between senior executives of the parties. If the dispute is not resolved within thirty (30) days of written notice, either party may submit the dispute to binding arbitration administered by JAMS in San Jose, California, in accordance with its Comprehensive Arbitration Rules.
+
+11.3 Equitable Relief. Notwithstanding the foregoing, either party may seek injunctive or other equitable relief in any court of competent jurisdiction to prevent irreparable harm pending arbitration.
+
+12. GENERAL PROVISIONS
+
+12.1 Entire Agreement. This Agreement, together with all Exhibits and Purchase Orders, constitutes the entire agreement between the parties with respect to the subject matter hereof and supersedes all prior negotiations, representations, and agreements.
+
+12.2 Amendments. No amendment or modification of this Agreement shall be valid unless made in writing and signed by authorized representatives of both parties.
+
+12.3 Assignment. Neither party may assign this Agreement without the prior written consent of the other party, except that either party may assign this Agreement to an affiliate or in connection with a merger, acquisition, or sale of substantially all of its assets.
+
+12.4 Notices. All notices under this Agreement shall be in writing and shall be deemed given when delivered personally, sent by confirmed overnight courier, or sent by certified mail, return receipt requested, to the addresses set forth above.
+
+12.5 Waiver. The failure of either party to enforce any provision of this Agreement shall not constitute a waiver of such provision or the right to enforce it at a later time.
+
+12.6 Severability. If any provision of this Agreement is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+GLOBALTECH INDUSTRIES, INC.                    ACME PRECISION COMPONENTS LTD.
+
+By: _________________________________          By: _________________________________
+Name: Sarah Chen                               Name: Robert Martinez
+Title: VP, Global Procurement                  Title: Chief Commercial Officer
+Date: April 17, 2023                           Date: April 17, 2023
+
+
+EXHIBIT A - PRICING SCHEDULE
+
+Product Category          Unit Price (USD)    Annual Volume Commitment
+Machined Housings         $12.40 - $18.75     500,000 units
+Thermal Assemblies        $8.60 - $14.20      750,000 units
+Connector Sub-Systems     $3.80 - $7.50       1,200,000 units
+Engineering Services      $185/hour           2,000 hours

@@ -1,0 +1,669 @@
+{
+  "timestamp": "2026-02-27T23:55:39.529670Z",
+  "api": "http://127.0.0.1:8000/api/v1",
+  "total_docs": 11,
+  "passed_docs": 0,
+  "failed_docs": 11,
+  "documents": [
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/berrent-emp-2019-08-11.shtml",
+      "contract_id": "ctr_36e04a6fdf",
+      "run_id": "run_472c781ecc",
+      "aggregate_run_id": "run_4469404dfa",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.226,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.169,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.047,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.833,
+          "semantic_match": 0.201,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": true,
+          "keyword_match": 0.2,
+          "semantic_match": 0.144,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/brown-emp-2019-01-07.shtml",
+      "contract_id": "ctr_281f38c18e",
+      "run_id": "run_e9b9f1f78a",
+      "aggregate_run_id": "run_f2f08939f5",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.172,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.166,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.076,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.833,
+          "semantic_match": 0.268,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.258,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/index.shtml",
+      "contract_id": "ctr_0fa644de09",
+      "run_id": "run_6612c17576",
+      "aggregate_run_id": "run_7fc26e7f40",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.294,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.161,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.082,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.833,
+          "semantic_match": 0.298,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": true,
+          "keyword_match": 0.4,
+          "semantic_match": 0.224,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/live-oak-ppp-loan-2020-04-15.shtml",
+      "contract_id": "ctr_0ecb0235d1",
+      "run_id": "run_97d15ab70d",
+      "aggregate_run_id": "run_d9f4bc07fe",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.279,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.149,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.075,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 1.0,
+          "semantic_match": 0.273,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": true,
+          "keyword_match": 0.4,
+          "semantic_match": 0.236,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/minson-emp-2019-08-12.shtml",
+      "contract_id": "ctr_dae3670952",
+      "run_id": "run_d3721252d3",
+      "aggregate_run_id": "run_6f04bf637a",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.237,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.161,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.053,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.833,
+          "semantic_match": 0.255,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": true,
+          "keyword_match": 0.2,
+          "semantic_match": 0.147,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/st-eriksgatan-lease-2013-02-23.shtml",
+      "contract_id": "ctr_64802e982c",
+      "run_id": "run_36956d3ceb",
+      "aggregate_run_id": "run_1f9df1055c",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.261,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.125,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.064,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.667,
+          "semantic_match": 0.152,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": false,
+          "keyword_match": 0.4,
+          "semantic_match": 0.21,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/st-giles-lease-2013-05-13.shtml",
+      "contract_id": "ctr_bc359945d0",
+      "run_id": "run_60f3bf3bb8",
+      "aggregate_run_id": "run_fd938749c1",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.231,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.241,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.082,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.5,
+          "semantic_match": 0.185,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.261,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/stearns-ppp-loan-2020-04-16.shtml",
+      "contract_id": "ctr_624a78ea9b",
+      "run_id": "run_ca561a15ec",
+      "aggregate_run_id": "run_45cce95264",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.219,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.175,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.073,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.5,
+          "semantic_match": 0.167,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": false,
+          "keyword_match": 0.6,
+          "semantic_match": 0.265,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/sunwest-ppp-loan-2020-04-15.shtml",
+      "contract_id": "ctr_d380de7264",
+      "run_id": "run_a8bc1269ef",
+      "aggregate_run_id": "run_e0a2536cc9",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.234,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.231,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.079,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.833,
+          "semantic_match": 0.198,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": true,
+          "keyword_match": 0.4,
+          "semantic_match": 0.207,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/onecle/sveavagen-lease-2013-12-06.shtml",
+      "contract_id": "ctr_f598bb99eb",
+      "run_id": "run_42760753de",
+      "aggregate_run_id": "run_377b9f72ea",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.279,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.183,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.074,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.667,
+          "semantic_match": 0.181,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": false
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.284,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        }
+      ]
+    },
+    {
+      "file": "/Users/sreeja/Documents/GitHub/contract-intelligence/evalaution/data/pdf/onecle-atlassian-terms.pdf",
+      "contract_id": "ctr_d06e33145b",
+      "run_id": "run_f72eec3939",
+      "aggregate_run_id": "run_eca40f9256",
+      "aggregate_keyword_coverage": 0.8,
+      "ok": false,
+      "facet_results": [
+        {
+          "facet": "termination",
+          "question": "What are the termination rights and cure/notice periods in this contract?",
+          "expected_present": true,
+          "keyword_match": 0.75,
+          "semantic_match": 0.257,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "renewal",
+          "question": "Does this contract auto-renew or describe renewal/extension terms?",
+          "expected_present": true,
+          "keyword_match": 0.8,
+          "semantic_match": 0.161,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "liability",
+          "question": "Summarize limitation of liability and indemnification obligations.",
+          "expected_present": true,
+          "keyword_match": 0.6,
+          "semantic_match": 0.078,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "payment",
+          "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+          "expected_present": true,
+          "keyword_match": 0.833,
+          "semantic_match": 0.268,
+          "heuristic_pass": false,
+          "citations": 3,
+          "insufficient_evidence": true
+        },
+        {
+          "facet": "governing_law",
+          "question": "What governing law and dispute venue terms are defined?",
+          "expected_present": false,
+          "keyword_match": 0.4,
+          "semantic_match": 0.227,
+          "heuristic_pass": true,
+          "citations": 3,
+          "insufficient_evidence": true
+        }
+      ]
+    }
+  ]
+}

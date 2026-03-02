@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#f8fafc;overflow-y:auto;font-family:system-ui,-apple-system,sans-serif}
+  #pages{display:flex;flex-direction:column;align-items:center;padding:16px;gap:12px}
+  .pg{position:relative;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.08),0 0 0 1px rgba(0,0,0,0.04);border-radius:2px}
+  .pg canvas{display:block}
+  .pg .ov{position:absolute;top:0;left:0;pointer-events:none}
+  .pg .badge-layer{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:2}
+  .lbl{font-size:10px;color:#94a3b8;margin-top:4px;text-align:center;font-weight:500}
+  #loading{position:fixed;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f8fafc;gap:12px}
+  #loading .spinner{width:28px;height:28px;border:3px solid #e2e8f0;border-top-color:#3b82f6;border-radius:50%;animation:spin .7s linear infinite}
+  #loading .text{font-size:13px;color:#64748b;font-weight:500}
+  #loading.hidden{display:none}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .risk-badge{
+    position:absolute;pointer-events:auto;cursor:pointer;
+    display:inline-flex;align-items:center;gap:4px;
+    padding:3px 8px 3px 6px;border-radius:6px;
+    font-family:system-ui,-apple-system,sans-serif;
+    font-size:10px;font-weight:700;line-height:1.3;
+    color:#fff;white-space:nowrap;
+    box-shadow:0 1px 4px rgba(0,0,0,0.15);
+    z-index:3;transition:transform 0.1s;
+  }
+  .risk-badge:hover{transform:scale(1.05)}
+  .risk-badge__score{font-weight:800;font-size:11px}
+  .risk-badge__reason{
+    font-weight:500;font-size:9px;opacity:0.92;
+    max-width:200px;overflow:hidden;text-overflow:ellipsis;
+    border-left:1px solid rgba(255,255,255,0.35);padding-left:5px;margin-left:1px;
+  }
+  .risk-badge--high{background:#dc2626}
+  .risk-badge--medium{background:#d97706}
+  .risk-badge--low{background:#15803d}
+</style>
+</head>
+<body>
+<div id="loading"><div class="spinner"></div><div class="text">Loading document…</div></div>
+<div id="pages"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+var container=document.getElementById('pages');
+var loadingEl=document.getElementById('loading');
+var SCALE=1.5;
+var store=[];
+
+function compose(m1,m2){
+  return[
+    m1[0]*m2[0]+m1[2]*m2[1],
+    m1[1]*m2[0]+m1[3]*m2[1],
+    m1[0]*m2[2]+m1[2]*m2[3],
+    m1[1]*m2[2]+m1[3]*m2[3],
+    m1[0]*m2[4]+m1[2]*m2[5]+m1[4],
+    m1[1]*m2[4]+m1[3]*m2[5]+m1[5]
+  ];
+}
+
+function load(url){
+  container.innerHTML='';
+  store=[];
+  loadingEl.className='';
+
+  pdfjsLib.getDocument(url).promise.then(function(pdf){
+    var chain=Promise.resolve();
+    for(var i=1;i<=pdf.numPages;i++){
+      (function(num){
+        chain=chain.then(function(){return renderPage(pdf,num);});
+      })(i);
+    }
+    return chain.then(function(){
+      loadingEl.className='hidden';
+      window.parent.postMessage({type:'ready',pages:pdf.numPages},'*');
+    });
+  }).catch(function(err){
+    loadingEl.innerHTML='<div class="text" style="color:#ef4444">Failed to load: '+err.message+'</div>';
+  });
+}
+
+function renderPage(pdf,num){
+  return pdf.getPage(num).then(function(page){
+    var vp=page.getViewport({scale:SCALE});
+    var el=document.createElement('div');
+    el.className='pg';
+    el.id='p'+num;
+    el.style.width=vp.width+'px';
+    el.style.height=vp.height+'px';
+
+    var c=document.createElement('canvas');
+    c.width=vp.width;c.height=vp.height;
+    el.appendChild(c);
+
+    var ov=document.createElement('canvas');
+    ov.className='ov';
+    ov.width=vp.width;ov.height=vp.height;
+    el.appendChild(ov);
+
+    var badgeLayer=document.createElement('div');
+    badgeLayer.className='badge-layer';
+    el.appendChild(badgeLayer);
+
+    var lbl=document.createElement('div');
+    lbl.className='lbl';
+    lbl.textContent='Page '+num;
+
+    container.appendChild(el);
+    container.appendChild(lbl);
+
+    return page.render({canvasContext:c.getContext('2d'),viewport:vp}).promise
+      .then(function(){return page.getTextContent();})
+      .then(function(tc){
+        var fullText='';
+        var posMap=[];
+        for(var i=0;i<tc.items.length;i++){
+          var item=tc.items[i];
+          if(!item.str) continue;
+          var start=fullText.length;
+          fullText+=item.str;
+          posMap.push({item:item, start:start, end:fullText.length});
+          if(item.hasEOL) fullText+=' ';
+        }
+        store.push({el:el,ctx:ov.getContext('2d'),ov:ov,badgeLayer:badgeLayer,vp:vp,items:tc.items,num:num,fullText:fullText.toLowerCase(),posMap:posMap});
+      });
+  });
+}
+
+function clearHL(){
+  for(var i=0;i<store.length;i++){
+    store[i].ctx.clearRect(0,0,store[i].ov.width,store[i].ov.height);
+    store[i].badgeLayer.innerHTML='';
+  }
+}
+
+var COLORS={
+  clauses:{bg:'rgba(251,191,36,0.25)',focus:'rgba(245,158,11,0.45)',focusBorder:'#d97706'},
+  risks:{bg:'rgba(239,68,68,0.20)',focus:'rgba(239,68,68,0.40)',focusBorder:'#dc2626'},
+  parties:{bg:'rgba(59,130,246,0.20)',focus:'rgba(59,130,246,0.35)',focusBorder:'#2563eb'},
+  dates:{bg:'rgba(34,197,94,0.20)',focus:'rgba(34,197,94,0.35)',focusBorder:'#16a34a'}
+};
+
+var RISK_COLORS={
+  high:{bg:'rgba(239,68,68,0.18)',focus:'rgba(239,68,68,0.40)',focusBorder:'#dc2626'},
+  medium:{bg:'rgba(245,158,11,0.18)',focus:'rgba(245,158,11,0.40)',focusBorder:'#d97706'},
+  low:{bg:'rgba(34,197,94,0.15)',focus:'rgba(34,197,94,0.35)',focusBorder:'#16a34a'}
+};
+
+function hexToScheme(hex){
+  var r=parseInt(hex.slice(1,3),16);
+  var g=parseInt(hex.slice(3,5),16);
+  var b=parseInt(hex.slice(5,7),16);
+  return{
+    bg:'rgba('+r+','+g+','+b+',0.18)',
+    focus:'rgba('+r+','+g+','+b+',0.40)',
+    focusBorder:hex
+  };
+}
+
+function extractPhrases(text){
+  var clean=text.toLowerCase().replace(/[^\w\s]/g,' ').replace(/\s+/g,' ').trim();
+  var words=clean.split(' ').filter(function(w){return w.length>2;});
+  var phrases=[];
+  for(var size=7;size>=5;size--){
+    for(var i=0;i<=words.length-size;i++){
+      phrases.push(words.slice(i,i+size).join(' '));
+    }
+  }
+  return phrases;
+}
+
+function getItemRect(p,item){
+  var tx=compose(p.vp.transform,item.transform);
+  var fs=Math.sqrt(tx[0]*tx[0]+tx[1]*tx[1]);
+  return{
+    x:tx[4],
+    y:tx[5]-fs,
+    w:item.width?item.width*SCALE:fs*item.str.length*0.55,
+    h:fs*1.3
+  };
+}
+
+function doHighlight(allTexts,focusText,mode,targetPage,riskMap,categoryColor,badgeData,textEntries,focusPage){
+  if(!allTexts||!allTexts.length)return;
+
+  var scheme;
+  if(categoryColor){
+    scheme=hexToScheme(categoryColor);
+  } else {
+    scheme=COLORS[mode]||COLORS.clauses;
+  }
+
+  var hasRiskMap=riskMap&&Object.keys(riskMap).length>0;
+
+  var textRiskLevels={};
+  if(hasRiskMap){
+    for(var rk in riskMap){
+      textRiskLevels[rk.toLowerCase().replace(/[^\w\s]/g,' ').replace(/\s+/g,' ').trim()]=riskMap[rk];
+    }
+  }
+
+  /* Build phrase list with page scope: each phrase knows which page(s) it can match on */
+  var allPhrases=[];
+  var phrasePages={};   /* phrase -> page number (null = any page) */
+  var phraseRiskLevel={};
+  for(var t=0;t<allTexts.length;t++){
+    var p=extractPhrases(allTexts[t]);
+    var entryPage=(textEntries&&textEntries[t])?textEntries[t].page:null;
+    var txtKey=allTexts[t].toLowerCase().replace(/[^\w\s]/g,' ').replace(/\s+/g,' ').trim();
+    var riskInfo=null;
+    if(hasRiskMap && !categoryColor){
+      for(var rmk in textRiskLevels){
+        if(txtKey.substring(0,200)===rmk.substring(0,200)||rmk.indexOf(txtKey.substring(0,100))>=0||txtKey.indexOf(rmk.substring(0,100))>=0){
+          riskInfo=textRiskLevels[rmk];
+          break;
+        }
+      }
+    }
+    for(var pi=0;pi<p.length;pi++){
+      allPhrases.push(p[pi]);
+      if(entryPage) phrasePages[p[pi]]=entryPage;
+      if(riskInfo) phraseRiskLevel[p[pi]]=riskInfo;
+    }
+  }
+
+  var focusPhrases=[];
+  if(focusText){
+    focusPhrases=extractPhrases(focusText);
+  }
+
+  var firstMatchPage=null;
+  var badgePlaced=false;
+
+  for(var si=0;si<store.length;si++){
+    var pg=store[si];
+    var ctx=pg.ctx;
+    var pageText=pg.fullText;
+    var matchedItems=new Set();
+    var focusMatchedItems=new Set();
+    var itemRisk={};
+
+    for(var phi=0;phi<allPhrases.length;phi++){
+      var phrase=allPhrases[phi];
+      /* Page scoping: skip if phrase belongs to a different page */
+      var phPage=phrasePages[phrase];
+      if(phPage && Math.abs(phPage-pg.num)>1) continue;
+
+      var idx=pageText.indexOf(phrase);
+      while(idx>=0){
+        var end=idx+phrase.length;
+        for(var mi=0;mi<pg.posMap.length;mi++){
+          var pm=pg.posMap[mi];
+          if(pm.start<end&&pm.end>idx){
+            matchedItems.add(mi);
+            if(phraseRiskLevel[phrase]) itemRisk[mi]=phraseRiskLevel[phrase];
+          }
+        }
+        idx=pageText.indexOf(phrase,idx+1);
+      }
+    }
+
+    /* Focus phrases: also page-scoped to focusPage */
+    for(var fpi=0;fpi<focusPhrases.length;fpi++){
+      var fp=focusPhrases[fpi];
+      if(focusPage && Math.abs(focusPage-pg.num)>1) continue;
+      var fidx=pageText.indexOf(fp);
+      while(fidx>=0){
+        var fend=fidx+fp.length;
+        for(var fmi=0;fmi<pg.posMap.length;fmi++){
+          var fpm=pg.posMap[fmi];
+          if(fpm.start<fend&&fpm.end>fidx){
+            focusMatchedItems.add(fmi);
+          }
+        }
+        fidx=pageText.indexOf(fp,fidx+1);
+      }
+    }
+
+    if(matchedItems.size===0) continue;
+    if(firstMatchPage===null) firstMatchPage=pg.num;
+
+    var firstRect=null;
+    matchedItems.forEach(function(mi){
+      var pm=pg.posMap[mi];
+      var r=getItemRect(pg,pm.item);
+      var isFocus=focusMatchedItems.has(mi);
+
+      var useScheme=scheme;
+      if(!categoryColor && itemRisk[mi]){
+        var rl=itemRisk[mi].risk_level;
+        useScheme=RISK_COLORS[rl]||scheme;
+      }
+
+      ctx.fillStyle=isFocus?useScheme.focus:useScheme.bg;
+      ctx.beginPath();
+      if(ctx.roundRect) ctx.roundRect(r.x-1,r.y-1,r.w+2,r.h+2,3);
+      else ctx.rect(r.x-1,r.y-1,r.w+2,r.h+2);
+      ctx.fill();
+
+      if(isFocus){
+        ctx.fillStyle=useScheme.focusBorder;
+        ctx.fillRect(r.x-3,r.y-1,3,r.h+2);
+      }
+
+      if(!firstRect || r.y < firstRect.y || (r.y === firstRect.y && r.x < firstRect.x)){
+        firstRect=r;
+      }
+    });
+
+    /* Place badge only on the focus page (or first match page) */
+    if(badgeData && firstRect && !badgePlaced && (!focusPage || pg.num===focusPage)){
+      var badge=document.createElement('div');
+      var lvl=badgeData.risk_level||'low';
+      badge.className='risk-badge risk-badge--'+lvl;
+      var scoreLabel=lvl==='high'?'H':lvl==='medium'?'M':'L';
+      var reasonText=badgeData.reason||'';
+      if(reasonText.length>50) reasonText=reasonText.substring(0,48)+'\u2026';
+      badge.innerHTML='<span class="risk-badge__score">'+scoreLabel+' '+badgeData.risk_score+'</span>'+(reasonText?'<span class="risk-badge__reason">'+reasonText+'</span>':'');
+      badge.style.top=(firstRect.y-24)+'px';
+      badge.style.left=(firstRect.x)+'px';
+      badge.onclick=function(){
+        window.parent.postMessage({type:'badgeClick',clauseType:badgeData.clause_type},'*');
+      };
+      pg.badgeLayer.appendChild(badge);
+      badgePlaced=true;
+    }
+  }
+
+  if(targetPage) goTo(targetPage);
+  else if(firstMatchPage) goTo(firstMatchPage);
+}
+
+function goTo(num){
+  var el=document.getElementById('p'+num);
+  if(el)el.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+window.addEventListener('message',function(e){
+  var d=e.data||{};
+  if(d.type==='load')load(d.payload.url);
+  if(d.type==='highlight'){
+    clearHL();
+    doHighlight(
+      d.payload.texts,
+      d.payload.focusText||null,
+      d.payload.mode,
+      d.payload.page,
+      d.payload.riskMap||null,
+      d.payload.categoryColor||null,
+      d.payload.badgeData||null,
+      d.payload.textEntries||null,
+      d.payload.focusPage||null
+    );
+  }
+  if(d.type==='navigate')goTo(d.payload.page);
+  if(d.type==='clear')clearHL();
+});
+
+var startUrl=new URLSearchParams(location.search).get('url');
+if(startUrl)load(startUrl);
+</script>
+</body>
+</html>

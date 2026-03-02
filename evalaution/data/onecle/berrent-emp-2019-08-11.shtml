@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employment Agreement - We Work Management LLC and Jennifer Berrent - Sample Contracts and Business Forms </title>
+
+<META NAME="description" CONTENT="Employment Agreement dated August 11, 2019 between We Work Management LLC and Co-President, Chief Legal Officer, and Chief Operating Officer">
+
+<META NAME="keywords" CONTENT="competitive intelligence, business contract, business forms, SEC filings, SEC EDGAR, material contracts">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="fb:admins" content="609876513" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+
+    }
+/* 
+	div.index li {
+	margin:1em 0;
+	   }
+ */
+	.breadcrumb {
+	margin-bottom:0px;
+	}
+	pre {
+	background-color:#FFFFFF;
+	border:none;
+	}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #EEE;
+      color: #333;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BXPCTK7BY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4BXPCTK7BY');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5933846261594825",
+    enable_page_level_ads: true
+  });
+</script></head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://www.onecle.com/"><strong><font color="#EEEEEE">one</font><font color="#EE3333">cle</font></strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.onecle.com/">Home</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="http://contracts.onecle.com/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Business Contracts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://contracts.onecle.com/type/">By Contract Type</a>
+          <a class="dropdown-item" href="http://contracts.onecle.com/industries/">By Industry</a>
+          <a class="dropdown-item" href="http://contracts.onecle.com/alpha/">By Company Name</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://law.onecle.com/">Laws</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://contracts.onecle.com/consumer/incorporation.shtml">Incorporation</a>
+      </li>
+      	<li class="nav-item">
+        <a class="nav-link" href="http://lawyers.onecle.com/">Lawyer Directory</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+	<li class="breadcrumb-item"><a href="//www.onecle.com/">Home</a></li>
+	<li class="breadcrumb-item"><a href="/index.shtml">Sample Business Contracts</a></li>
+	<li class="breadcrumb-item active" aria-current="page">
+			
+
+	</li>
+</ol>
+</nav>
+<div>
+<script>
+  (function() {
+    var cx = '016782931958625056904:77mdzlxjmx4';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+<div class="container" style="padding-bottom:40pt;">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+
+<p style="text-align:right;font-size:0.8em;"><a href="//print.onecle.com/contracts/wework/berrent-emp-2019-08-11.shtml" target="_blank" rel="noopener">printer-friendly</a></p>
+
+<h1>Sample Business Contracts</h1>
+<p>Employment Agreement - We Work Management LLC and Jennifer Berrent</p>
+<div class="container">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+
+<h2 class="index">Employment Forms</h2>
+<div class="index">
+<ul class="list-group">
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Femployers-and-hr%2Frecruiting-and-hiring%2Fdocument%2Femployment-contract" rel="nofollow">Employment Contract</a>. Employers can customize an employment agreement that states the salary, benefits, working hours and other important provisions for their new or existing employee.</li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Fbusiness-operations%2Fproduct-or-service-sales%2Fdocument%2Fconsulting-agreement" rel="nofollow">Consulting Agreement</a>. Answer simple questions to build a contract with a consultant. Specify the services rendered, when payment is due, as well as IP rights.</li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Femployers-and-hr%2Fcompensation-and-time-off%2Fdocument%2Fcommission-agreement" rel="nofollow">Commission Agreement</a>. Employers who compensate their sales employees based on commissions can prepare an agreement to reduce misunderstandings by specifying the base salary and how commissions are calculated.</li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Femployers-and-hr%2Frecruiting-and-hiring%2Fdocument%2Fexecutive-employment-agreement" rel="nofollow">Executive Employment Agreement</a>. Companies may offer their business executives a contract that is different from the one provided to their regular employees. Executive employment agreements may be more complex because the compensation structure may include a combination of salary and commissions, provide for bonuses based on sales, stock or other financial targets, and include non-compete, confidentiality and severance provisions.</li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Fservice-contracts%2Fbusiness-service-contracts%2Fdocument%2Fsales-representative-contract" rel="nofollow">Sales Representative Contract</a>. Independent sales representatives offer companies the potential to increase the sale of products or services without the burden of increasing headcount. Both parties should understand how commissions are calculated, when commissions will be paid, as well as how the representative will treat confidential information from the company and whether the representative may also sell a competing line of products or services.</li>
+	<li class="list-group-item"><a href="https://contracts.onecle.com/type/2.shtml">More Employment Agreements</a>	
+</ul>
+</div>
+
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+<h4>Sponsored Links</h4>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Contracts Responsive Top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5933846261594825"
+     data-ad-slot="7098014696"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div></div>
+
+
+
+
+<p style="margin-top:24pt; margin-bottom:0pt; " align="center">
+AMENDED AND RESTATED EMPLOYMENT AGREEMENT 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+This Amended and Restated Employment Agreement (the "Agreement") is entered into effective as of August&nbsp;11, 2019 (the "Effective Date"), by and between We Work Management LLC (the "Company"), and Jennifer Berrent (the "Executive") (together, the "Parties"). 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+WHEREAS, Executive and the Company are parties to an Employment Agreement dated as of September&nbsp;19, 2014, as previously amended and restated from time to time (the "Original Employment Agreement") setting forth the terms and conditions of Executive's employment with the Company; and 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+WHEREAS, the Company and Executive desire to replace the Original Employment Agreement with the Agreement. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+NOW THEREFORE, in consideration of the foregoing and in consideration of the mutual promises and agreements contained herein, the parties hereto agree as follows: 
+</p>
+<p style="margin-top:18pt; margin-bottom:0pt; text-indent:4%; ">
+1.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Position</u></b>. 
+</p>
+<p style="margin-top:6pt; margin-bottom:0pt; text-indent:9%; ">
+(a)&nbsp;&nbsp;&nbsp;&nbsp;As of the Effective Date, Executive shall continue to be employed as Co-President, Chief Legal Officer, and Chief Operating Officer of the Company, and be based in New York City. Executive shall report to the Company's Chief Executive Officer, and will be a member of the Company's senior executive team. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:9%; ">
+(b)&nbsp;&nbsp;&nbsp;&nbsp;Executive shall use her best efforts to perform all services diligently and to the best of her ability, and shall at all times carry out her duties in a competent and professional manner and seek to enhance and promote the business of the Company. Executive shall devote all business time and efforts to the affairs of the Company. With prior written approval by the Company's Chief Executive Officer, Executive may serve as a member of the board of for profit and nonprofit organizations, provided that such activities do not interfere with Executive's performance of her responsibilities to the Company. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+2.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>At-Will Employment</u></b>. Executive shall be an at-will employee of the Company. This means that Executive's employment relationship with the Company, and this Agreement, may be terminated by either party, for any reason, at any time, with or without notice and with or without Cause (as defined below). 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+3.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Salary</u></b>. The Company shall pay Executive the minimum annual base salary required pursuant to applicable law. Executive's annual base salary shall be paid in installments in accordance with the Company's regular payroll practices. It is the expectation of the Parties that Executive shall retain $1 of the annual base salary and donate the remaining, after-tax amount to a charity of Executive's choice. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+4.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Bonus</u></b>. Executive may be eligible for an annual bonus. Any bonus, and the amount thereof, shall be within the sole discretion of the Company based on Executive's performance and the performance of the Company. In order to receive any bonus, Executive must be employed by, and in good standing with, the Company at the time of payment of the bonus. 
+</p>
+<br />
+<p style="margin-top:0pt; margin-bottom:0pt; " align="center">
+1 
+</p>
+
+
+<p style='page-break-before:always'>
+<hr size="3" style="COLOR:#999999" width="100%" align="CENTER">
+
+<p style="margin-top:0pt; margin-bottom:0pt; text-indent:4%; ">
+5.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Equity Awards</u></b><b>.</b> For the avoidance of doubt, with respect to any equity incentive awards previously granted to Executive (the "Existing Equity Awards"), the award agreements and the equity incentive plans pursuant to which such awards were granted will continue to govern and, except as specifically provided in Section&nbsp;8, this Agreement does not amend or replace any of the terms and conditions of such awards. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+6.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Benefits</u></b>. Executive shall be eligible to participate in the employee benefit plans maintained by the Company for its employees from time-to-time, at a level consistent with the benefits provided to other senior executives, subject to the provisions of the respective plans. Notwithstanding the foregoing, Executive shall be entitled to vacation at a rate of at least twenty-two (22)&nbsp;days' paid vacation per year. If vacation time is not used in the calendar year in which it is accrued, the vacation time will rollover at least one calendar year or be treated in accordance with the Company's vacation policy, whichever is more favorable to Executive. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+7.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Company Policies</u></b><u>.</u> Executive has previously executed the Company's Invention, Non-Disclosure, Non-Competition and Non-Solicitation Agreement, which is annexed hereto as <u>Exhibit A</u>, and the Company's Employee Dispute Resolution Program, which is annexed hereto as <u>Exhibit B</u>. Executive agrees to comply with all Company policies. 
+</p>
+<p style="margin-top:18pt; margin-bottom:0pt; text-indent:4%; ">
+8.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Termination of Employment</u></b>. 
+</p>
+<p style="margin-top:6pt; margin-bottom:0pt; text-indent:9%; ">
+(a)&nbsp;&nbsp;&nbsp;&nbsp;Any Termination. Upon any termination of employment, Executive shall be entitled to the following: (i)&nbsp;any accrued and unpaid salary; (ii)&nbsp;payment for accrued vacation time; (iii)&nbsp;any rights surviving termination of employment under any employee benefit plan or compensation arrangement in which Executive participates, pursuant to their respective terms; and (iv)&nbsp;for any termination other than for Cause, continued exercisability of non-qualified stock options for a period of one (1)&nbsp;year following the Company's initial public offering under the Securities Act or ten (10)&nbsp;years following the grant of the award, whichever occurs first. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:9%; ">
+(b)&nbsp;&nbsp;&nbsp;&nbsp;Involuntary Termination. Subject to Section&nbsp;8(d)&nbsp;below, in the event the Company terminates Executive's employment without Cause or Executive terminates employment for Good Reason (an "<b>Involuntary Termination</b>") except following a Change in Control as provided in Section&nbsp;8(c) below, Executive shall be entitled to the following, in addition to the payments and benefits provided in Section&nbsp;8(a): (i)&nbsp;a lump-sum payment equal to twelve (12)&nbsp;months of Executive's base salary in effect as of the date of Separation; and (ii)&nbsp;payment for continuation of Executive's health insurance, at the same coverage and premium level in effect as of the date of Separation, provided that Executive is eligible for and timely elects continuation coverage under COBRA, until the earlier of: (1)&nbsp;twelve (12)&nbsp;months after the date of Separation; (2)&nbsp;the date Executive becomes eligible for group health insurance coverage through a new employer; or (3)&nbsp;the date Executive ceases to be eligible for COBRA coverage for any reason, including plan termination. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:9%; ">
+(c)&nbsp;&nbsp;&nbsp;&nbsp;Change in Control Termination. In the event a Change in Control occurs and the Company or its successor terminates Executive's employment without Cause or 
+</p>
+<br />
+<p style="margin-top:0pt; margin-bottom:0pt; " align="center">
+2 
+</p>
+
+
+<p style='page-break-before:always'>
+<hr size="3" style="COLOR:#999999" width="100%" align="CENTER">
+
+<p style="margin-top:0pt; margin-bottom:0pt; ">
+Executive terminates employment for Good Reason within the twelve (12)&nbsp;month period immediately following the Change in Control, Executive shall be entitled to the following, in addition to the payments and benefits described in Section&nbsp;8(a): (i) a lump-sum payment equal to twelve (12)&nbsp;months of Executive's base salary in effect as of the date of Separation; (ii)&nbsp;payment for continuation of Executive's health insurance, at the same coverage and premium level in effect as of the date of Separation, provided that Executive is eligible for and timely elects continuation coverage under COBRA, until the earlier of: (1)&nbsp;twelve (12) months after the date of Separation; (2)&nbsp;the date Executive becomes eligible for group health insurance coverage through a new employer; or (3)&nbsp;the date Executive ceases to be eligible for COBRA coverage for any reason, including plan termination; and (iii)&nbsp;immediate vesting, and, if applicable, exercisability of the Existing Equity Awards. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:9%; ">
+(d)&nbsp;&nbsp;&nbsp;&nbsp;Form and Timing of Payment<u>.</u> None of the payments in either Section&nbsp;8(b) or Section&nbsp;8(c) above shall apply unless Executive (or her estate, if applicable)&nbsp;(i)&nbsp;has returned all Company property in Executive's possession, (ii)&nbsp;has resigned as a member of the Board of Directors of the Company and/or its subsidiaries and affiliates (as applicable), and (iii)&nbsp;has executed a separation agreement and general release of the Company and its affiliates, and each of their respective employees, officers, directors, owners, members, and other persons affiliated with the Company or its affiliates (the "<b>Separation Agreement</b>"), in a form reasonably prescribed by the Company. Executive (or Executive's estate, if applicable)&nbsp;must execute and return the Separation Agreement on or before the date specified by the Company, which will in no event be later than 52 days after the date of Separation (the "<b>Release Deadline</b>"). Any cash payments will be made or commence within 60 days following the date of the Separation (subject to Section&nbsp;9 hereof). 
+</p>
+<p style="margin-top:18pt; margin-bottom:0pt; text-indent:9%; ">
+(e)&nbsp;&nbsp;&nbsp;&nbsp;Definitions. 
+</p>
+<p style="margin-top:6pt; margin-bottom:0pt; text-indent:13%; ">
+(i)&nbsp;&nbsp;&nbsp;&nbsp;"<b>Cause</b>" shall mean: (1)&nbsp;Executive's repeated failure, after written notice and a reasonable opportunity to cure to perform the duties reasonably assigned to Executive by the Chief Executive Officer, (2)&nbsp;Executive's engagement in dishonesty, gross negligence or willful misconduct (provided that de minimis activities shall be ignored for this purpose; and provided, further, that dishonesty shall be ignored for this purpose unless it has an adverse effect on the business or affairs of the Company); (3) Executive's conviction of, or Executive's entry of a plea of no contest to, any crime involving moral turpitude or a felony, or (4)&nbsp;Executive's material breach of this Agreement or any invention and non-disclosure agreement or non-competition and non-solicitation agreement with the Company. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:13%; ">
+<b>(ii)</b>&nbsp;&nbsp;&nbsp;&nbsp;"<b>Change in Control</b>"<b> </b>shall have the meaning set forth in The We Company 2019 Omnibus Incentive Plan. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:13%; ">
+(iii)&nbsp;&nbsp;&nbsp;&nbsp;"<b>Good Reason</b>" shall mean: (1)&nbsp;a material diminution in Executive's overall duties and responsibilities or the assignment of duties or responsibilities that are materially inconsistent with those in effect at the Effective Date; (2)&nbsp;the requirement by the Company that Executive's principal place of employment be relocated more than thirty (30)&nbsp;miles from New York City; (3)&nbsp;a reduction in Executive's base salary; or (4)&nbsp;a material breach by the Company of this Agreement. Good Reason shall not exist unless (a)&nbsp;the Company has received written notice of such Good Reason from Executive within 30 days of the first 
+</p>
+<br />
+<p style="margin-top:0pt; margin-bottom:0pt; " align="center">
+3 
+</p>
+
+
+<p style='page-break-before:always'>
+<hr size="3" style="COLOR:#999999" width="100%" align="CENTER">
+
+<p style="margin-top:0pt; margin-bottom:0pt; ">
+occurrence of the alleged event of Good Reason, (b)&nbsp;the Company does not cure within 30 days after receipt of such notice, and (c)&nbsp;Executive terminates employment for Good Reason within four months following the first occurrence of such event. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+9.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Section 280G</u></b>. To the extent that any payments to be made to Executive under this Agreement or the acceleration of the vesting of any of the option and equity awards contemplated by this Agreement that may occur as a result of a Change in Control could subject such amounts to the provisions of Section&nbsp;280G of the Code, then, to the extent the Company is not publicly-traded for purposes of the applicable regulations at such time, the Company and Executive shall attempt in good faith to obtain, if requested by Executive, a shareholder vote under circumstances that satisfy the shareholder approval requirements of Section&nbsp;280G(b)(5)&nbsp;of the Code in order to avoid adverse tax consequences for the Company and Executive under Sections 280G and 4999 of the Code, provided Executive waives Executive's right to retain any parachute payments submitted to a vote in the event that the stockholders do not approve such payments. If such shareholder approval is not obtained or available, the options and equity awards (or portions thereof)&nbsp;that accelerate and other payments shall be reduced in a manner consistent with the requirements of Section&nbsp;409A if, and solely to the extent that, such reduction will cause Executive to retain, on an after-tax basis and after taking into account any excise tax imposed by Section&nbsp;4999 of the Code, a greater amount of the shares subject to such option and equity awards and other payments than would be the case if there were no such reduction. Any determination of such reduction shall be made by an accounting firm selected by the Company and agreed to by Executive, which agreement shall not be unreasonably withheld; such determination shall be binding upon the Company and Executive; and the fees of such firm shall be paid by the Company. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+10.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>No Conflict</u></b>. Executive represents and warrants that she is free to enter into this Agreement and the agreements referenced herein, and that she has no contractual commitments, restrictions, or obligations that will in any way preclude or interfere with her continued employment by the Company, her conduct of Company business, or performance of her duties. Executive further represents and warrants that she will not bring or disclose, and that she has not brought or disclosed to the Company any confidential or proprietary information of any former employer. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+11.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Indemnification</u></b>. The Company shall use commercially reasonable efforts to, at all times, ensure that Executive and Executive's services to the Company and its affiliates are covered pursuant to a customary director's and officer's insurance policy. In addition to any other rights to indemnification Executive may have, the Company hereby agrees to defend, indemnify and hold Executive harmless, to the maximum extent allowed by law, from any and all liability for acts or omissions by Executive performed in any capacity in the course of Executive's employment (or reasonably believed by Executive to be within the scope of employment), or at the request of Executive or the Company; provided that such acts or omissions do not constitute (a)&nbsp;criminal conduct, (b)&nbsp;willful misconduct, or (c)&nbsp;fraud. Such indemnity shall include any and all cost, expense, and damages incurred by reason of Executive being made a party to or being a witness or otherwise involved in any action, suit or proceeding, whether civil, criminal, administrative or investigative. The Company shall promptly pay as incurred all Executive's expenses (including the reasonable fees and expenses of counsel of Executive's choosing) incurred in any matter as to which Executive is entitled to be indemnified 
+</p>
+<br />
+<p style="margin-top:0pt; margin-bottom:0pt; " align="center">
+4 
+</p>
+
+
+<p style='page-break-before:always'>
+<hr size="3" style="COLOR:#999999" width="100%" align="CENTER">
+
+<p style="margin-top:0pt; margin-bottom:0pt; ">
+under this Agreement or otherwise and neither Executive nor the Company shall amend, alter, or rescind the indemnification provisions of the Company's articles of incorporation or bylaws that would have the direct or indirect effect of diminishing or reducing the potential or actual protection or benefits under this Section&nbsp;11. So long as the Company maintains any policy of directors' and officers' liability insurance (or any similar or successor policy), and for a period of three (3)&nbsp;years after the termination of Executive's employment, the Company shall include Executive as a named insured on each such policy with coverage and benefits no less favorable than those provided to then current senior officers and directors. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+12.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Notices</u></b>. All notices, consents, waivers, and other communications under this Agreement must be in writing and shall be deemed to have been given (i)&nbsp;on the day sent, if delivered by hand or email (with confirmation), or (ii)&nbsp;on the business day after the day sent if delivered by a recognized overnight courier, to the following addresses (or such other addresses as a party may designate by notice to the other party): 
+</p>
+<p style="margin-top:6pt; margin-bottom:0pt; margin-left:9%; ">
+To the Executive: 
+</p>
+<p style="margin-top:0pt; margin-bottom:0pt; margin-left:9%; ">
+At the address on file in the Company's personnel records 
+</p>
+<p style="margin-top:6pt; margin-bottom:0pt; margin-left:9%; ">
+To the Company: 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+13.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Successors and Assigns</u></b>. This Agreement shall be binding on, and inure to the benefit of, the parties and their respective legal representatives, successors, and permitted assigns, and nothing herein is intended to confer any right, remedy, or benefit upon any other person. Executive may not assign or transfer any of her rights and obligations under this Agreement without the prior written consent of the Company. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+14.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Entire Agreement</u></b>. This Agreement, together with the Invention, Non-Disclosure and Non-Solicitation Agreement, Employee Dispute Resolution Program (attached hereto as Exhibit A and Exhibit B respectively) and the Existing Equity Awards, constitutes the entire understanding and agreement between Executive and the Company with respect to the subject matter hereof and supersedes all prior negotiations and understandings, whether written or oral, relating to such subject matter. Executive acknowledges that neither the Company nor its agents have made any promise, representation, or warranty whatsoever, either express or implied, written or oral, which is not contained in this Agreement. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+15.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Amendment and Waiver</u></b>. The terms of this Agreement may not be modified, waived, changed, discharged, or terminated, except by an agreement in writing signed by the parties. No term or condition of this Agreement shall be waived, nor shall there be any estoppel against enforcement of any provision of this Agreement, except by written instrument of the party charged with such waiver or estoppel. No such written waiver shall be a continuing waiver unless specifically stated therein, and each such waiver shall operate only as to the specific term or condition waived and shall not constitute a waiver of such term or condition for the future or as to any act other than that specifically waived. 
+</p>
+<br />
+<p style="margin-top:0pt; margin-bottom:0pt; " align="center">
+5 
+</p>
+
+
+<p style='page-break-before:always'>
+<hr size="3" style="COLOR:#999999" width="100%" align="CENTER">
+
+<p style="margin-top:0pt; margin-bottom:0pt; text-indent:4%; ">
+16.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Severability</u></b>. Each provision and term of this Agreement should be interpreted in a manner to be enforceable and valid, but if any provision or term is held, in whole or in part, to be invalid or unenforceable, then such invalidity or unenforceability shall not affect the validity or enforceability of the other provisions and terms, and such other provisions and terms shall remain in full force and effect. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+17.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Governing Law</u></b>. This Agreement shall be governed by the laws of the State of New York without reference to the conflict or choice of laws provisions thereof. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+18.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Dispute Resolution</u></b>. In the event of any dispute arising under or relating to this Agreement, Executive and the Company agree that any such dispute shall be resolved pursuant to the Employee Dispute Resolution Program. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+19.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Counterparts</u></b>. This Agreement may be executed in counterparts, each of which shall be deemed an original but all of which together shall constitute one and the same instrument. 
+</p>
+<p style="margin-top:18pt; margin-bottom:0pt; text-indent:4%; ">
+20.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Tax Matters</u></b>. 
+</p>
+<p style="margin-top:6pt; margin-bottom:0pt; text-indent:9%; ">
+(a)&nbsp;&nbsp;&nbsp;&nbsp;Withholding. All forms of compensation referred to in this Agreement are subject to reduction to reflect applicable withholding and payroll taxes and other deductions required by law. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:9%; ">
+(b)&nbsp;&nbsp;&nbsp;&nbsp;Tax Advice. Executive is encouraged to obtain her own tax advice regarding her compensation from the Company. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; text-indent:4%; ">
+21.&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Section 409A</u></b>. The Parties intend for the payments and benefits under this Agreement to be exempt from Section&nbsp;409A of the Internal Revenue Code of 1986, as amended ("<b>Section</b><b></b><b>&nbsp;409A</b>") or, if not so exempt, to be paid or provided in a manner which complies with the requirements of such section, and intend that this Agreement shall be construed and administered in accordance with such intention. Notwithstanding anything contained herein to the contrary, Executive shall not be considered to have terminated employment with the Company for purposes of any payments under this Agreement which are subject to Section&nbsp;409A until Executive would be considered to have incurred a separation from service from the Company within the meaning of Section&nbsp;409A (a "<b>Separation</b>"). Each amount to be paid or benefit to be provided under this Agreement shall be construed as a separate identified payment for purposes of Section&nbsp;409A. Without limiting the foregoing and notwithstanding anything contained herein to the contrary, to the extent required in order to avoid accelerated taxation and/or tax penalties under Section&nbsp;409A, amounts that would otherwise be payable and benefits that would otherwise be provided pursuant to this Agreement or any other arrangement between Executive and Company during the six-month period immediately following Executive's Separation shall instead be paid on the first business day after the date that is six months following Executive's Separation (or, if earlier, Executive's date of death). To the extent required to avoid an accelerated or additional tax under Section&nbsp;409A, amounts reimbursable to Executive under this Agreement or any other arrangement between Executive and Company 
+</p>
+<br />
+<p style="margin-top:0pt; margin-bottom:0pt; " align="center">
+6 
+</p>
+
+
+<p style='page-break-before:always'>
+<hr size="3" style="COLOR:#999999" width="100%" align="CENTER">
+
+<p style="margin-top:0pt; margin-bottom:0pt; ">
+shall be paid to Executive on or before the last day of the year following the year in which the expense was incurred and the amount of expenses eligible for reimbursement (and in kind benefits provided to Executive) during one year may not affect amounts reimbursable or provided in any subsequent year. Notwithstanding anything set forth herein to the contrary, to the extent that any severance amount payable under a plan or agreement that Executive may have a right or entitlement to as of the date of this Agreement constitutes deferred compensation under Section&nbsp;409A, then to the extent required to avoid accelerated taxation and/or tax penalties under Section&nbsp;409A, the portion of the benefits payable hereunder equal to such other amount shall instead be provided in the form set forth in such other plan or agreement. The Company makes no representation that any or all of the payments described in this Agreement will be exempt from or comply with Section&nbsp;409A and makes no undertaking to preclude Section&nbsp;409A from applying to any such payment. Executive shall be solely responsible for the payment of any taxes and penalties incurred under Section&nbsp;409A of the Code. 
+</p>
+<p style="margin-top:12pt; margin-bottom:0pt; " align="center">
+[REMAINDER OF PAGE INTENTIONALLY LEFT BLANK] 
+</p>
+<br />
+<p style="margin-top:0pt; margin-bottom:0pt; " align="center">
+7 
+</p>
+
+
+<p style='page-break-before:always'>
+<hr size="3" style="COLOR:#999999" width="100%" align="CENTER">
+
+<p style="margin-top:0pt; margin-bottom:0pt; text-indent:4%; ">
+IN WITNESS WHEREOF, the parties hereto have caused this Agreement to be executed on the date first written above. 
+</p>
+<br />
+<table cellspacing="0" cellpadding="0" width="100%" border="0" style="BORDER-COLLAPSE:COLLAPSE; font-family:Times New Roman; font-size:10pt">
+<tr>
+	<td width="3%"></td>
+	<td valign="bottom" width="1%"></td>
+	<td width="44%"></td>
+	<td valign="bottom" width="1%"></td>
+	<td width="4%"></td>
+	<td valign="bottom"></td>
+	<td></td>
+	<td valign="bottom" width="1%"></td>
+	<td width="45%"></td>
+</tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+	<td valign="top" colspan="3">WE WORK MANAGEMENT LLC</td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"></td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"></td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"></td>
+</tr>
+<tr>
+	<td height="16" colspan="3"></td>
+	<td height="16" colspan="2"></td>
+	<td height="16" colspan="2"></td>
+	<td height="16" colspan="2"></td>
+</tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+	<td valign="top" colspan="3"> 
+	<p style="margin-top:0pt; margin-bottom:1pt; border-bottom:1px solid #000000; ">
+		/s/ Adam Neumann
+	</p>
+	</td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"></td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"></td>
+	<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+	<td valign="top" style="BORDER-BOTTOM:1px solid #000000">/s/ Jennifer Berrent</td>
+</tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+	<td valign="top"> 
+	<p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; ">
+		By:
+	</p>
+	</td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"> 
+	<p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; ">
+		Adam Neumann
+	</p>
+	</td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"></td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"></td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="bottom"> 
+	<p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; ">
+		Jennifer Berrent
+	</p>
+	</td>
+</tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:8pt">
+	<td valign="top"></td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"> 
+	<p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; ">
+		Chief Executive Officer
+	</p>
+	</td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"></td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="top"></td>
+	<td valign="bottom">&nbsp;</td>
+	<td valign="bottom"></td>
+</tr>
+</table>
+<br />
+<p style="margin-top:0pt; margin-bottom:0pt; " align="center">
+8 
+</p>
+
+
+
+</div></div></div>
+
+
+	<footer class="container-fluid">
+
+<div class="row">
+  <div class="col-sm-6"><h4>Business Contracts</h4>
+  <p><a href="//contracts.onecle.com/type/19.shtml">Asset Purchase</a><br>
+<a href="//contracts.onecle.com/type/35.shtml">Business Separation</a><br>
+<a href="//contracts.onecle.com/type/90.shtml">Collaboration</a><br>
+<a href="//contracts.onecle.com/type/56.shtml">Construction</a><br>
+<a href="//contracts.onecle.com/type/64.shtml">Consulting</a><br>
+<a href="//contracts.onecle.com/type/147.shtml">Distribution</a><br>
+<a href="//contracts.onecle.com/type/2.shtml">Employment</a><br>
+<a href="//contracts.onecle.com/type/79.shtml">Franchise</a><br>
+<a href="//contracts.onecle.com/type/11.shtml">Indemnification</a><br>
+<a href="//contracts.onecle.com/type/60.shtml">Joint Venture</a><br>
+<a href="//contracts.onecle.com/type/16.shtml">Lease</a><br>
+<a href="//contracts.onecle.com/type/32.shtml">License</a><br>
+<a href="//contracts.onecle.com/type/76.shtml">LLC</a><br>
+<a href="//contracts.onecle.com/type/30.shtml">Loan</a><br>
+<a href="//contracts.onecle.com/type/86.shtml">Management</a><br>
+<a href="//contracts.onecle.com/type/47.shtml">Manufacturing/Supply</a><br>
+<a href="//contracts.onecle.com/type/41.shtml">Merger</a><br>
+<a href="//contracts.onecle.com/type/21.shtml">Non-Competition</a><br>
+<a href="//contracts.onecle.com/type/189.shtml">Offer Letter</a><br>
+<a href="//contracts.onecle.com/type/36.shtml">Partnership</a><br>
+<a href="//contracts.onecle.com/type/67.shtml">Promissory Note</a><br>
+<a href="//contracts.onecle.com/type/80.shtml">Sales</a><br>
+<a href="//contracts.onecle.com/type/4.shtml">Services</a><br>
+<a href="//contracts.onecle.com/type/38.shtml">Severance</a><br>
+<a href="//contracts.onecle.com/type/68.shtml">Shareholder</a><br>
+<a href="//contracts.onecle.com/type/6.shtml">Stock Purchase</a></p>
+  </div>
+  <div class="col-sm-6"><h4>Consumer Forms</h4>
+  <p><a href="//contracts.onecle.com/consumer/divorce.shtml">Divorce</a><br>
+<a href="//contracts.onecle.com/consumer/dmv.shtml">DMV</a><br>
+<a href="//contracts.onecle.com/consumer/durable-power-of-attorney.shtml">Durable Power of Attorney</a><br>
+<a href="//contracts.onecle.com/consumer/employment.shtml">Employment</a><br>
+<a href="//contracts.onecle.com/consumer/government-forms.shtml">Government</a><br>
+<a href="//contracts.onecle.com/consumer/identity-theft.shtml">Identity Theft</a><br>
+<a href="//contracts.onecle.com/consumer/landlord-tenant.shtml">Landlord-Tenant</a><br>
+<a href="//contracts.onecle.com/consumer/living-will-advance-directive.shtml">Living Will</a><br>
+<a href="//contracts.onecle.com/consumer/mechanics-lien.shtml">Mechanic's Lien</a><br><a href="//contracts.onecle.com/consumer/medical.shtml">Medical</a><br>
+<a href="//contracts.onecle.com/consumer/probate.shtml">Probate</a><br>
+<a href="//contracts.onecle.com/consumer/workers-compensation.shtml">Workers' Compensation</a></p>
+
+
+  <p class="line"><a href="http://www.onecle.com/blog/index.php">Contracts Blog</a></p>
+<p><a href="//contracts.onecle.com/type/">View All Types</a><br>
+<a href="//contracts.onecle.com/industries/">View All Industries</a><br>
+<a href="//contracts.onecle.com/alpha/">View All Companies</a></p>
+
+  
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-sm-12">
+
+
+		<a href="//www.onecle.com/info/copyright.shtml">Copyright &copy; 2026 Onecle Inc.</a> No claim to contracts derived from securities filings.<br><br>
+		
+		
+		<a href="//www.onecle.com/info/terms.shtml">Terms of Service</a> | <a href="//www.onecle.com/info/privacy.shtml">Privacy Policy</a>
+	</div>
+</div>
+
+</footer>
+</body>
+</html>

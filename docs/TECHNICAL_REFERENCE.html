@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contract Intelligence Platform — Technical Reference</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f8fafc;
+    --text: #1e293b;
+    --text-muted: #64748b;
+    --accent: #4f46e5;
+    --accent-light: #eef2ff;
+    --border: #e2e8f0;
+    --code-bg: #f1f5f9;
+    --green: #16a34a;
+    --amber: #d97706;
+    --red: #dc2626;
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', Menlo, monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 32px 80px;
+  }
+
+  /* Header */
+  .doc-header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 24px;
+    margin-bottom: 32px;
+  }
+  .doc-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+  .doc-header .meta {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+  .doc-header .meta strong { color: var(--text); }
+  .doc-header .subtitle {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  /* TOC */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 40px;
+  }
+  .toc h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .toc ol { padding-left: 20px; }
+  .toc li { margin-bottom: 4px; font-size: 14px; }
+  .toc a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s;
+  }
+  .toc a:hover { color: var(--accent); }
+
+  /* Sections */
+  h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 56px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+    letter-spacing: -0.3px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    color: var(--accent);
+  }
+  h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  p { margin-bottom: 14px; }
+  strong { font-weight: 650; }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  /* Lists */
+  ul, ol { padding-left: 24px; margin-bottom: 14px; }
+  li { margin-bottom: 4px; }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 13.5px;
+  }
+  thead th {
+    background: var(--surface);
+    text-align: left;
+    padding: 10px 14px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    border-bottom: 2px solid var(--border);
+  }
+  tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  tbody tr:hover { background: #fafbfd; }
+  .status-done {
+    display: inline-block;
+    background: #dcfce7;
+    color: var(--green);
+    font-weight: 700;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.3px;
+  }
+
+  /* Code */
+  code {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #be185d;
+  }
+  pre {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 20px 24px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 16px 0 24px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+  }
+
+  /* Syntax highlighting (basic) */
+  .kw { color: #c084fc; }
+  .str { color: #86efac; }
+  .cm { color: #94a3b8; font-style: italic; }
+  .fn { color: #60a5fa; }
+  .typ { color: #fbbf24; }
+
+  /* Mermaid */
+  .mermaid-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    margin: 16px 0 24px;
+    text-align: center;
+    overflow-x: auto;
+  }
+  .mermaid { display: inline-block; }
+
+  /* ASCII diagrams */
+  .ascii-diagram {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 16px 0 24px;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    line-height: 1.5;
+    white-space: pre;
+    color: var(--text);
+  }
+
+  /* Blockquote */
+  blockquote {
+    border-left: 4px solid var(--accent);
+    padding: 12px 16px;
+    background: var(--accent-light);
+    border-radius: 0 6px 6px 0;
+    margin: 16px 0;
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  /* Links */
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Section numbers */
+  .section-num {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 800;
+    font-size: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  /* Print styles */
+  @media print {
+    .wrapper { max-width: 100%; padding: 20px; }
+    pre { background: #f1f5f9 !important; color: #1e293b !important; border: 1px solid #ccc; }
+    h2 { page-break-before: always; }
+    h2:first-of-type { page-break-before: auto; }
+    table { font-size: 11px; }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .wrapper { padding: 20px 16px 60px; }
+    .doc-header h1 { font-size: 24px; }
+    .doc-header .meta { flex-direction: column; gap: 4px; }
+    h2 { font-size: 20px; }
+    table { font-size: 12px; }
+    thead th, tbody td { padding: 6px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+<!-- ═══ HEADER ═══ -->
+<div class="doc-header">
+  <h1>Contract Intelligence Platform<br><span style="font-weight:400;font-size:20px;color:var(--text-muted)">Technical Reference</span></h1>
+  <div class="meta">
+    <span><strong>Prepared by:</strong> Kartik Reddy K</span>
+    <span><strong>Date:</strong> March 2026</span>
+    <span><strong>Version:</strong> 1.0</span>
+  </div>
+  <div class="subtitle">
+    This document is the technical companion to the panel presentation. It covers scope, architecture decisions, design diagrams, and implementation details. Intended for technical reviewers who want to go deeper.
+  </div>
+</div>
+
+<!-- ═══ TOC ═══ -->
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#s1">Scope of the Assignment</a></li>
+    <li><a href="#s2">What We Built Beyond Scope</a></li>
+    <li><a href="#s3">High-Level Design</a></li>
+    <li><a href="#s4">Low-Level Design</a></li>
+    <li><a href="#s5">Data Model</a></li>
+    <li><a href="#s6">Risk Assessment Pipeline</a></li>
+    <li><a href="#s7">Retrieval Strategy</a></li>
+    <li><a href="#s8">Model Strategy</a></li>
+    <li><a href="#s9">Prompting Strategy</a></li>
+    <li><a href="#s10">Frontend Architecture</a></li>
+    <li><a href="#s11">Production Readiness</a></li>
+    <li><a href="#s12">FAQs</a></li>
+    <li><a href="#s13">Appendix</a></li>
+  </ol>
+</div>
+
+<!-- ═══ SECTION 1 ═══ -->
+<h2 id="s1"><span class="section-num">1</span> Scope of the Assignment</h2>
+
+<p>The case study asked for a <strong>prototype agentic GenAI contract assistant</strong> that can:</p>
+
+<table>
+  <thead><tr><th>#</th><th>Requirement</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Summarize key clauses in contracts</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>2</td><td>Answer natural language questions about contract terms</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>3</td><td>Automatically flag risky, expiring, or non-compliant clauses</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>4</td><td>Orchestrator agent to interpret user intent and route tasks</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>5</td><td>Specialized agents: Document ingestion (PDF, DOCX, OCR)</td><td><span class="status-done">DONE</span> (OCR deferred)</td></tr>
+    <tr><td>6</td><td>Specialized agents: Clause extraction and normalization</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>7</td><td>Specialized agents: Summarization</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>8</td><td>Specialized agents: Q&amp;A</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>9</td><td>Specialized agents: Risk and compliance analysis</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>10</td><td>Agents share structured contract state (JSON) with traceable outputs</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>11</td><td>LLM with strong reasoning and long-context support</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>12</td><td>Embedding model for semantic retrieval over contract text</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>13</td><td>Role-specific prompts per agent</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>14</td><td>Strict output schemas</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>15</td><td>Citation-required responses to reduce hallucinations</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>16</td><td>Parse and chunk contracts by semantic sections</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>17</td><td>Store chunks and metadata in a vector database</td><td><span class="status-done">DONE</span></td></tr>
+    <tr><td>18</td><td>(Bonus) UI: upload contracts, view highlighted clauses, ask questions, review flagged risks with source citations</td><td><span class="status-done">DONE</span></td></tr>
+  </tbody>
+</table>
+
+<p><strong>All 17 core requirements + the bonus UI are implemented.</strong></p>
+
+<hr>
+
+<!-- ═══ SECTION 2 ═══ -->
+<h2 id="s2"><span class="section-num">2</span> What We Built Beyond Scope</h2>
+
+<p>These features were not in the case study but were informed by competitive research into CLM platforms (Evisort, Ironclad, SpotDraft) and best practices in enterprise procurement workflows.</p>
+
+<table>
+  <thead><tr><th>Feature</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><strong>PDF-first risk highlights</strong></td><td>Enterprise reviewers work inside the document — intelligence should be layered on the PDF, not in a separate view.</td></tr>
+    <tr><td><strong>Per-clause risk scoring (0-100)</strong></td><td>Granular, per-clause scores enable prioritized review and comparison across contracts.</td></tr>
+    <tr><td><strong>Clause Library + playbook comparison</strong></td><td>Enables compliance gap analysis — does the vendor language match our approved standard?</td></tr>
+    <tr><td><strong>Two-layer risk assessment</strong> (keyword + LLM)</td><td>Defense in depth. Keywords are fast and reliable. LLM catches nuance.</td></tr>
+    <tr><td><strong>Clause Intelligence deep-dive panel</strong></td><td>Per-clause risk breakdown: score, reason, deviation, recommendation.</td></tr>
+    <tr><td><strong>Contract lifecycle timeline</strong></td><td>Visual timeline of effective date, renewal window, and expiration for at-a-glance lifecycle awareness.</td></tr>
+    <tr><td><strong>Portfolio dashboard</strong></td><td>Cross-contract analytics for procurement leadership.</td></tr>
+    <tr><td><strong>Sentinel AI</strong> (8 configurable review templates)</td><td>Structured deep-dive reviews using curated prompts.</td></tr>
+    <tr><td><strong>Autopilot</strong> (autonomous portfolio tasks)</td><td>Batch operations across multiple contracts.</td></tr>
+    <tr><td><strong>Document generation</strong> (NLQ → contract)</td><td>Template-based contract drafting with natural language instructions.</td></tr>
+    <tr><td><strong>Workflow management</strong> (Kanban)</td><td>Multi-step approval processes for contract lifecycle.</td></tr>
+    <tr><td><strong>Debug / Trace mode</strong></td><td>Full transparency into the AI pipeline for trust and auditability.</td></tr>
+    <tr><td><strong>Keyboard shortcuts</strong></td><td>Arrow keys, <code>R</code> for next risk, <code>Escape</code> to clear — enterprise-grade navigation.</td></tr>
+    <tr><td><strong>Evaluation framework</strong></td><td>Golden test set with LLM-as-judge scoring on real contract data.</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- ═══ SECTION 3 ═══ -->
+<h2 id="s3"><span class="section-num">3</span> High-Level Design</h2>
+
+<h3>3.1 System Architecture</h3>
+
+<div class="mermaid-wrap">
+<pre class="mermaid">
+flowchart TB
+    subgraph UserLayer["User Layer"]
+        Upload["Upload Contract\n(PDF / DOCX / TXT)"]
+        UI["Next.js 14 Frontend\n(React SPA, TypeScript)"]
+    end
+
+    subgraph APILayer["API Layer"]
+        FastAPI["FastAPI Server\n30+ endpoints\nacross 8 domains"]
+    end
+
+    subgraph ProcessingLayer["Processing Pipeline"]
+        Ingest["Ingestion Service\nParse + Semantic Chunk\n(section-header regex,\n1200 char max)"]
+        Embed["Embedding Service\ntext-embedding-3-small\n1536 dimensions"]
+        Classify["Clause Classifier\n8 categories"]
+        Workflow["LangGraph Orchestrator\nConditional Routing"]
+    end
+
+    subgraph LLMLayer["LLM Layer"]
+        Gateway["Model Gateway\nLiteLLM + OpenRouter"]
+        Primary["Primary:\nClaude 3.5 Sonnet\n200K context"]
+        Fallback["Fallback:\nGPT-4o Mini\n128K context"]
+    end
+
+    subgraph StorageLayer["Storage Layer"]
+        PG["PostgreSQL\nContracts, Runs,\nAssessments, Activity"]
+        PGV["pgvector\nEmbeddings +\nCosine Similarity"]
+        Files["File Storage\nuploads/{contract_id}/"]
+    end
+
+    Upload --> FastAPI
+    FastAPI --> Ingest
+    Ingest --> Embed
+    Ingest --> Files
+    Embed --> PGV
+    Ingest --> PG
+    FastAPI --> Workflow
+    Workflow --> Gateway
+    Gateway --> Primary
+    Gateway --> Fallback
+    Workflow --> PG
+    Classify --> PG
+    FastAPI --> UI
+    PG --> UI
+    PGV --> Workflow
+
+    style UserLayer fill:#eff6ff,stroke:#3b82f6,color:#1e3a5f
+    style ProcessingLayer fill:#fefce8,stroke:#eab308,color:#713f12
+    style LLMLayer fill:#f5f3ff,stroke:#8b5cf6,color:#3b0764
+    style StorageLayer fill:#fdf2f8,stroke:#ec4899,color:#831843
+</pre>
+</div>
+
+<h3>3.2 Request Flow (Upload → Analysis → Display)</h3>
+
+<div class="ascii-diagram">User uploads PDF
+    │
+    ▼
+POST /api/v1/contracts/ingest
+    ├── Save file to disk
+    ├── Parse text (pdfplumber / python-docx)
+    ├── Semantic chunking (section-header regex, 1200 char max, 100 min)
+    ├── Generate embeddings (text-embedding-3-small → 1536-dim vectors)
+    ├── Store chunks + embeddings in PostgreSQL + pgvector
+    ├── Classify chunks into 8 clause categories
+    └── Return contract_id
+    │
+    ▼
+POST /api/v1/contracts/{id}/analyze (tasks: [summary, risk])
+    │
+    ▼
+LangGraph StateGraph
+    ├── initialize: Load chunks, set run_id, record trace
+    ├── route_after_init: Conditional — check which tasks are requested
+    ├── summarize: Top 10 chunks → Claude → Strict JSON → Extract parties, dates, terms
+    ├── risk_scan:
+    │   ├── Layer 1: Keyword scan (5 regex patterns, &lt;10ms)
+    │   └── Layer 2: LLM clause assessment (per-clause vs Clause Library, 5-15s)
+    └── finalize: Set approval status, record trace, save run
+    │
+    ▼
+Frontend renders:
+    ├── Overview tab: Metrics, key terms, risk score
+    ├── Contents tab: PDF with risk-colored highlights + Findings panel
+    ├── Lifecycle tab: Timeline visualization
+    └── AI Chat: Suggested questions, citation-linked answers</div>
+
+<hr>
+
+<!-- ═══ SECTION 4 ═══ -->
+<h2 id="s4"><span class="section-num">4</span> Low-Level Design</h2>
+
+<h3>4.1 Agentic Architecture — How Agents Communicate</h3>
+
+<p>This system implements a <strong>multi-agent orchestration pattern</strong> using LangGraph. The architecture has five core concepts: <strong>agent identity</strong>, <strong>shared state (blackboard)</strong>, <strong>orchestrator routing</strong>, <strong>inter-agent data flow</strong>, and <strong>traceable execution</strong>.</p>
+
+<h4>Agent Identity</h4>
+
+<p>Every agent inherits from <code>BaseAgent</code> and declares its identity:</p>
+
+<pre><code><span class="kw">class</span> <span class="typ">BaseAgent</span>(ABC):
+    name: <span class="typ">str</span>          <span class="cm"># e.g., "SummarizationAgent"</span>
+    role: <span class="typ">str</span>          <span class="cm"># e.g., "Extract key commercial terms..."</span>
+    system_prompt: <span class="typ">str</span> <span class="cm"># Role-specific LLM instructions</span>
+    tools: <span class="typ">list</span>[<span class="typ">str</span>]   <span class="cm"># Capabilities: ["llm_generate", "vector_search", ...]</span>
+
+    <span class="kw">@abstractmethod</span>
+    <span class="kw">def</span> <span class="fn">execute</span>(self, state: <span class="typ">ContractState</span>) -> <span class="typ">ContractState</span>:
+        <span class="str">"""Read from shared state, perform work, write results back."""</span></code></pre>
+
+<table>
+  <thead><tr><th>Agent</th><th>Role</th><th>Tools</th><th>Reads From State</th><th>Writes To State</th></tr></thead>
+  <tbody>
+    <tr><td><strong>OrchestratorAgent</strong></td><td>Interpret user intent, route to specialists</td><td><code>llm_classify</code>, delegates to all others</td><td><code>question</code></td><td><code>tasks</code> (routed)</td></tr>
+    <tr><td><strong>SummarizationAgent</strong></td><td>Extract key commercial terms into structured JSON</td><td><code>llm_generate</code></td><td><code>chunks</code></td><td><code>summary</code> (parties, dates, terms, obligations)</td></tr>
+    <tr><td><strong>QAAgent</strong></td><td>Answer questions with cited evidence</td><td><code>llm_generate</code>, <code>vector_search</code>, <code>keyword_search</code></td><td><code>chunks</code>, <code>question</code></td><td><code>qa</code> (answer, citations, retrieved_chunk_ids)</td></tr>
+    <tr><td><strong>ClauseExtractionAgent</strong></td><td>Classify chunks into 8 clause categories</td><td><code>regex_classify</code> / <code>llm_classify</code></td><td><code>chunks</code></td><td><code>clause_classifications</code>, <code>clause_highlights</code></td></tr>
+    <tr><td><strong>RiskComplianceAgent</strong></td><td>Detect risks via keyword rules + LLM assessment</td><td><code>keyword_scan</code>, <code>llm_assess</code>, <code>clause_library_lookup</code></td><td><code>chunks</code>, <code>clause_highlights</code></td><td><code>risk_flags</code>, <code>clause_assessments</code></td></tr>
+  </tbody>
+</table>
+
+<h4>Shared State — The Blackboard Pattern</h4>
+
+<p>Agents communicate through a <strong>shared <code>ContractState</code></strong> — a structured Pydantic model that acts as a blackboard. Each agent reads the fields it needs and writes its outputs. No agent calls another agent directly; they communicate exclusively through state.</p>
+
+<pre><code><span class="kw">class</span> <span class="typ">ContractState</span>(BaseModel):
+    <span class="cm"># ── Identity ──</span>
+    run_id: <span class="typ">str</span>
+    contract_id: <span class="typ">str</span>
+    mode: <span class="typ">str</span>                                    <span class="cm"># "agent"</span>
+    tasks: <span class="typ">list</span>[<span class="typ">str</span>]                             <span class="cm"># ["summary", "qa", "risk"]</span>
+
+    <span class="cm"># ── Ingestion Agent outputs ──</span>
+    chunks: <span class="typ">list</span>[<span class="typ">ChunkState</span>]                     <span class="cm"># Parsed text chunks</span>
+    metadata: <span class="typ">dict</span>                               <span class="cm"># Document metadata</span>
+
+    <span class="cm"># ── Clause Extraction Agent outputs ──</span>
+    clause_classifications: <span class="typ">list</span>[<span class="typ">ClauseClassification</span>]
+    clause_highlights: <span class="typ">dict</span>[<span class="typ">str</span>, <span class="typ">list</span>[<span class="typ">dict</span>]]
+
+    <span class="cm"># ── Summarization Agent outputs ──</span>
+    summary: <span class="typ">SummaryState</span>
+
+    <span class="cm"># ── Q&amp;A Agent outputs ──</span>
+    qa: <span class="typ">QAState</span>                                  <span class="cm"># Answer + citations + retrieved chunks</span>
+
+    <span class="cm"># ── Risk Agent outputs ──</span>
+    risk_flags: <span class="typ">list</span>[<span class="typ">RiskFlagState</span>]
+    clause_assessments: <span class="typ">list</span>[<span class="typ">ClauseAssessmentState</span>]
+
+    <span class="cm"># ── Trace — append-only audit log ──</span>
+    trace: <span class="typ">list</span>[<span class="typ">AgentTrace</span>]                      <span class="cm"># Every agent appends here</span></code></pre>
+
+<p><strong>Why a blackboard?</strong></p>
+<ul>
+  <li>Agents are decoupled — the Summarization Agent doesn't know the Risk Agent exists</li>
+  <li>Adding a new agent means adding a new output field, not changing existing agents</li>
+  <li>The full state is serializable (JSON) and persistable alongside each run</li>
+  <li>Any agent can read any other agent's prior outputs (e.g., Risk reads Clause Extraction's classifications)</li>
+</ul>
+
+<h4>Inter-Agent Data Flow</h4>
+
+<p>This diagram shows how data flows between agents through the shared state — each agent enriches the state for downstream agents:</p>
+
+<div class="ascii-diagram">                    ContractState (shared blackboard)
+                    ┌─────────────────────────────────────┐
+                    │  chunks[]        ← Ingestion writes  │
+User ──▶ Orchestrator │  tasks[]         ← Orchestrator sets │
+         (intent    │  question?       ← User provides     │
+          routing)  │                                      │
+                    │  clause_classifications[]             │
+            ┌───────│    ← ClauseExtraction writes         │
+            │       │  clause_highlights{}                  │
+            │       │    ← ClauseExtraction writes         │
+            │       │                                      │
+            ▼       │  summary{}                           │
+    Summarization ──│    ← Summarization writes            │
+            │       │                                      │
+            ▼       │  qa.answer, qa.citations[]           │
+         Q&amp;A    ────│    ← QA writes                       │
+            │       │  qa.retrieved_chunk_ids[]             │
+            │       │    ← QA writes (retrieval lineage)   │
+            ▼       │                                      │
+        Risk    ────│  risk_flags[]                        │
+     (reads clause_ │    ← Risk writes (keyword layer)    │
+      highlights    │  clause_assessments[]                 │
+      from state)   │    ← Risk writes (LLM layer)        │
+            │       │                                      │
+            ▼       │  trace[]                             │
+        Finalize ───│    ← EVERY agent appends here        │
+                    └─────────────────────────────────────┘
+                                    │
+                                    ▼
+                            Persisted as JSON
+                          alongside the run record</div>
+
+<p><strong>Key inter-agent dependency</strong>: The Risk Agent reads <code>clause_highlights</code> that the Clause Extraction Agent wrote. If clause extraction hasn't run yet, the Risk Agent automatically triggers it first:</p>
+
+<pre><code><span class="kw">def</span> <span class="fn">risk_scan</span>(state: <span class="typ">WorkflowState</span>) -> <span class="typ">WorkflowState</span>:
+    cs = _get_cs(state)
+    <span class="kw">if not</span> cs.clause_highlights:           <span class="cm"># ← check if upstream agent has run</span>
+        cs = ClauseExtractionAgent().execute(cs)  <span class="cm"># ← trigger dependency</span>
+    cs = RiskComplianceAgent().execute(cs)
+    <span class="kw">return</span> _sync_back(state, cs)</code></pre>
+
+<h4>Orchestrator — LLM-Powered Intent Routing</h4>
+
+<p>The Orchestrator Agent uses an LLM to interpret user intent and decide which specialists to invoke. This is what makes the system truly agentic — the routing decision is made by AI, not hardcoded.</p>
+
+<div class="ascii-diagram">User: "Are there any red flags in the liability section?"
+                    │
+                    ▼
+        ┌─────────────────────────┐
+        │   OrchestratorAgent      │
+        │   (INTENT_ROUTER_SYSTEM) │
+        │                         │
+        │   LLM classifies:       │
+        │   tasks: ["risk"]       │
+        │   reasoning: "User asks │
+        │    about risk flags in  │
+        │    a specific clause"   │
+        └────────────┬────────────┘
+                     │
+                     ▼
+        Route to RiskComplianceAgent only
+        (skip Summarization, skip Q&amp;A)</div>
+
+<p>The Orchestrator's system prompt defines 6 available task types and routing rules:</p>
+
+<table>
+  <thead><tr><th>User Says</th><th>Orchestrator Routes To</th></tr></thead>
+  <tbody>
+    <tr><td>"Summarize this contract"</td><td><code>["summary"]</code></td></tr>
+    <tr><td>"What are the payment terms?"</td><td><code>["qa"]</code></td></tr>
+    <tr><td>"Any red flags?"</td><td><code>["risk"]</code></td></tr>
+    <tr><td>"Compare liability to our playbook"</td><td><code>["qa", "compare"]</code></td></tr>
+    <tr><td>"Review this contract"</td><td><code>["summary", "risk"]</code></td></tr>
+    <tr><td>"Explain Section 3.2"</td><td><code>["qa", "explain"]</code></td></tr>
+  </tbody>
+</table>
+
+<p>If the LLM fails to classify (JSON parse error, timeout), the system falls back to <code>["qa"]</code> — safe default.</p>
+
+<h4>Traceable Execution — AgentTrace</h4>
+
+<p>Every agent invocation creates an <code>AgentTrace</code> record:</p>
+
+<pre><code><span class="kw">class</span> <span class="typ">AgentTrace</span>(BaseModel):
+    trace_id: <span class="typ">str</span>              <span class="cm"># Unique ID (tr_a1b2c3d4)</span>
+    agent_name: <span class="typ">str</span>            <span class="cm"># "RiskComplianceAgent"</span>
+    agent_role: <span class="typ">str</span>            <span class="cm"># "Detect risks via keyword rules + LLM..."</span>
+    started_at: <span class="typ">datetime</span>
+    completed_at: <span class="typ">datetime</span>
+    duration_ms: <span class="typ">int</span>           <span class="cm"># 12450</span>
+    status: <span class="typ">str</span>                <span class="cm"># "completed" | "failed"</span>
+    model_used: <span class="typ">str</span>            <span class="cm"># "claude-3.5-sonnet"</span>
+    input_keys: <span class="typ">list</span>[<span class="typ">str</span>]      <span class="cm"># ["chunks", "clause_highlights"]</span>
+    output_keys: <span class="typ">list</span>[<span class="typ">str</span>]     <span class="cm"># ["risk_flags", "clause_assessments"]</span>
+    details: <span class="typ">dict</span>              <span class="cm"># Agent-specific metrics</span>
+    error: <span class="typ">str</span> | <span class="typ">None</span>          <span class="cm"># Null on success</span></code></pre>
+
+<p>The trace creates a <strong>complete audit trail</strong> of which agent ran, what it read, what it wrote, which model it used, how long it took, and whether it succeeded. The Debug panel in the UI renders this as a timeline.</p>
+
+<div class="ascii-diagram">Trace for run_abc123:
+┌─ tr_001  WorkflowInit      0ms     ✓  Loaded 42 chunks, tasks=[summary,risk]
+├─ tr_002  SummarizationAgent 4200ms  ✓  model=claude-3.5-sonnet, parsed_ok=true
+├─ tr_003  ClauseExtraction   85ms    ✓  8 categories, 38 chunks classified
+├─ tr_004  RiskCompliance     12450ms ✓  keyword: 2 flags, LLM: 8 assessments
+└─ tr_005  WorkflowFinalize   1ms     ✓  Total trace entries: 5</div>
+
+<h3>4.2 LangGraph State Machine</h3>
+
+<p>The LangGraph <code>StateGraph</code> defines the execution topology — which agents run in what order, with conditional routing at each step:</p>
+
+<div class="mermaid-wrap">
+<pre class="mermaid">
+flowchart LR
+    Init["initialize\n─────────\nLoad chunks\nSet run_id\nRecord trace"]
+    RouteInit{Route}
+    Summarize["summarize\n─────────\nTop 10 chunks\nJSON extraction\nModel + fallback"]
+    QA["answer_question\n─────────\nHybrid retrieval\ntop_k = 10\nCited answer"]
+    Risk["risk_scan\n─────────\n5 keyword rules\nLLM clause assess\nvs Clause Library"]
+    Finalize["finalize\n─────────\nSet approval\nRecord trace\nSave run"]
+    Done["END"]
+
+    Init --> RouteInit
+    RouteInit -->|"summary in tasks"| Summarize
+    RouteInit -->|"qa in tasks"| QA
+    RouteInit -->|"risk in tasks"| Risk
+    RouteInit -->|"none"| Finalize
+
+    Summarize --> RouteSumm{Route}
+    RouteSumm -->|"qa in tasks"| QA
+    RouteSumm -->|"risk in tasks"| Risk
+    RouteSumm -->|"none"| Finalize
+
+    QA --> RouteQA{Route}
+    RouteQA -->|"risk in tasks"| Risk
+    RouteQA -->|"none"| Finalize
+
+    Risk --> Finalize --> Done
+</pre>
+</div>
+
+<p><strong>Why LangGraph over a simple function chain?</strong></p>
+
+<table>
+  <thead><tr><th>Aspect</th><th>Function Chain <code>f(g(h(x)))</code></th><th>LangGraph StateGraph</th></tr></thead>
+  <tbody>
+    <tr><td>Routing</td><td>Linear — every function runs</td><td>Conditional — agents are skipped based on intent</td></tr>
+    <tr><td>State</td><td>Passed as arguments, no persistence</td><td>Typed shared state, checkpointable</td></tr>
+    <tr><td>Tracing</td><td>Manual logging</td><td>Built-in trace at every node transition</td></tr>
+    <tr><td>Error handling</td><td>Exception propagates, kills everything</td><td>Per-node failure, graph can route around failures</td></tr>
+    <tr><td>Extensibility</td><td>Add function to chain, change all callers</td><td>Add node + edge, existing agents untouched</td></tr>
+    <tr><td>Parallelism</td><td>Sequential only</td><td>Supports concurrent branches (future)</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Why not a fully autonomous ReAct agent?</strong> For contract analysis, <strong>determinism matters</strong>. If you upload a contract for risk review, it must always run through risk analysis — not have the LLM decide "I think I'll skip risk today." The graph enforces that every requested task executes. The Orchestrator uses LLM intelligence for intent classification, but the graph controls execution order.</p>
+
+<h3>4.3 Ingestion Pipeline (Detail)</h3>
+
+<div class="mermaid-wrap">
+<pre class="mermaid">
+flowchart TB
+    subgraph Parse["Document Parsing"]
+        PDF["PDF\n(pdfplumber)"] --> Text["(text, page_number)\ntuples"]
+        DOCX["DOCX\n(python-docx)"] --> Text
+        TXT["TXT / HTML\n(direct parse)"] --> Text
+    end
+
+    subgraph Chunk["Semantic Chunking"]
+        Text --> HeaderDetect["Section Header\nRegex Detection"]
+        HeaderDetect --> Split["Split at Boundaries\nmax: 1200 chars\nmin: 100 chars\nlong sections: split\nat sentence boundaries"]
+        Split --> ChunkList["Chunk Objects\n{chunk_id, text,\nsection, page}"]
+    end
+
+    subgraph Embed["Embedding"]
+        ChunkList --> EmbedAPI["OpenAI API\ntext-embedding-3-small"]
+        EmbedAPI --> Vectors["1536-dim vectors"]
+    end
+
+    subgraph Classify["Classification"]
+        ChunkList --> Regex["Keyword Regex\nCLAUSE_PATTERNS dict\n8 categories"]
+        Regex --> Labels["term, termination,\nliability, payment,\ngoverning_law,\nconfidentiality, ip,\nforce_majeure"]
+    end
+
+    subgraph Store["Storage"]
+        Vectors --> PGVector["pgvector\ncontract_chunks table\nembedding vector(1536)"]
+        Labels --> PG["PostgreSQL\nclause_type column"]
+        ChunkList --> PG
+    end
+</pre>
+</div>
+
+<h3>4.4 Risk Assessment Pipeline (Two Layers)</h3>
+
+<div class="mermaid-wrap">
+<pre class="mermaid">
+flowchart TB
+    subgraph Layer1["Layer 1: Keyword Risk Scan (less than 10ms)"]
+        FullText["Full contract text"] --> R001["R-001: Unlimited Liability\n'unlimited liability'"]
+        FullText --> R002["R-002: Auto-Renewal\n'auto-renew'"]
+        FullText --> R003["R-003: Termination Rigidity\nabsence of 'termination\nfor convenience'"]
+        FullText --> R004["R-004: Missing Governing Law\nabsence of 'governing law'"]
+        FullText --> R005["R-005: Long Payment Cycle\n'net 60' / 'net 90'"]
+    end
+
+    subgraph Layer2["Layer 2: LLM Clause Assessment (5-15s)"]
+        Chunks["Classified Chunks\n(per clause group)"]
+        Library["Clause Library\n(20 standard clauses\nwith approved language)"]
+        Chunks --> Compare["Build Prompt:\nvendor_text +\nstandard_language +\nrisk_notes"]
+        Library --> Compare
+        Compare --> LLM["Claude 3.5 Sonnet\nCLAUSE_RISK_SYSTEM prompt\nStrict JSON output"]
+        LLM --> Output["Per-Clause Result:\nrisk_level, risk_score,\nreason, deviation,\nrecommendation"]
+    end
+
+    subgraph Display["Visual Output"]
+        R001 & R002 & R003 & R004 & R005 --> RiskFlags["Risk Flags\nin Findings Panel"]
+        Output --> Badges["Risk Badges\nH/M/L per clause"]
+        Output --> PDFColors["PDF Highlights\nred / amber / green"]
+        Output --> IntelPanel["Clause Intelligence\nscore bar + deep-dive"]
+        Output --> SummaryBar["Risk Summary Bar\n'3 High, 2 Medium, 5 Low'"]
+    end
+</pre>
+</div>
+
+<p><strong>Scoring guide:</strong></p>
+<ul>
+  <li><strong>0-30 (Low)</strong>: Clause closely matches standard approved language</li>
+  <li><strong>31-60 (Medium)</strong>: Notable deviations that warrant attention</li>
+  <li><strong>61-100 (High)</strong>: Missing protections, one-sided terms, or significant financial exposure</li>
+</ul>
+
+<h3>4.5 Retrieval Pipeline (Hybrid Search)</h3>
+
+<div class="mermaid-wrap">
+<pre class="mermaid">
+flowchart LR
+    Query["User Question"]
+
+    subgraph Semantic["Semantic Path"]
+        EmbedQ["Embed Query\n1536-dim vector"]
+        VecSearch["pgvector Search\nORDER BY\nembedding cosine dist\nASC LIMIT 10"]
+    end
+
+    subgraph Keyword["Keyword Path"]
+        Tokenize["Tokenize Query\nlowercase + split"]
+        Score["Token Overlap\nscore = overlap /\nmax(query_tokens, 1)"]
+    end
+
+    Merge["Merge + Deduplicate\nby chunk_id\ntake best score\nreturn top 10"]
+
+    Context["Build Context\n[Section: Term]\nVendor text here...\n---\n[Section: Liability]\nVendor text here..."]
+
+    LLM["LLM Generation\nQA_SYSTEM prompt\nCitation-required\nINSUFFICIENT_EVIDENCE\nif not grounded"]
+
+    Query --> EmbedQ --> VecSearch --> Merge
+    Query --> Tokenize --> Score --> Merge
+    Merge --> Context --> LLM
+</pre>
+</div>
+
+<p><strong>Why hybrid?</strong> Legal contracts have both semantic concepts ("liability limitation" = "damages cap") and exact references ("Section 3.2", "ARTICLE VII"). Pure vector search misses exact terms. Pure keyword search misses paraphrased concepts.</p>
+
+<h3>4.6 Frontend–PDF Communication (postMessage Protocol)</h3>
+
+<div class="mermaid-wrap">
+<pre class="mermaid">
+sequenceDiagram
+    participant React as React App (page.tsx)
+    participant IFrame as PDF Viewer (iframe)
+
+    React->>IFrame: highlight {texts[], focusText, mode, page, riskMap}
+    Note over IFrame: Draw colored rectangles on overlay canvas. Red = high risk, Amber = medium, Green = low
+
+    React->>IFrame: navigate {page}
+    Note over IFrame: Scroll to specified page
+
+    React->>IFrame: clear
+    Note over IFrame: Remove all highlight overlays
+
+    IFrame->>React: ready {pages}
+    Note over React: PDF loaded, store page count
+
+    IFrame->>React: chunkClick {chunkId}
+    Note over React: User clicked a highlighted chunk. Open Clause Intelligence panel
+</pre>
+</div>
+
+<h3>4.7 API Endpoint Map</h3>
+
+<div class="ascii-diagram">Contract Operations
+├── GET    /api/v1/contracts                          List all contracts
+├── POST   /api/v1/contracts/ingest                   Upload + parse + embed
+├── POST   /api/v1/contracts/{id}/analyze             Run LangGraph workflow
+├── POST   /api/v1/contracts/{id}/ask                 Q&amp;A with citations
+├── GET    /api/v1/contracts/{id}/file                Serve raw PDF
+├── GET    /api/v1/contracts/{id}/chunks              Get parsed chunks
+├── GET    /api/v1/contracts/{id}/highlights           Get clause highlights
+├── GET    /api/v1/contracts/{id}/suggested-questions  AI-generated questions
+├── GET    /api/v1/contracts/{id}/clause-gaps          Compliance gap analysis
+├── GET    /api/v1/contracts/{id}/clause-assessments   Per-clause risk scores
+├── POST   /api/v1/contracts/{id}/clause-assessments/run  Trigger LLM assessment
+├── POST   /api/v1/contracts/{id}/explain              AI explain a clause
+└── POST   /api/v1/contracts/{id}/playbook-compare     Side-by-side comparison
+
+Run Operations
+├── GET    /api/v1/contracts/{id}/runs                List runs
+├── GET    /api/v1/contracts/{id}/risks               Get risk flags
+├── POST   /api/v1/runs/{id}/approve                  Approve/reject run
+├── GET    /api/v1/runs/{id}/trace                    Get execution trace
+└── GET    /api/v1/runs/{id}                          Get run details
+
+Collaboration
+├── GET    /api/v1/contracts/{id}/comments            List comments
+├── POST   /api/v1/contracts/{id}/comments            Add comment
+└── GET    /api/v1/contracts/{id}/activity             Audit trail
+
+Clause Library
+├── GET    /api/v1/clause-library                     List standard clauses
+├── POST   /api/v1/clause-library                     Add clause
+├── PUT    /api/v1/clause-library/{id}                Update clause
+└── DELETE /api/v1/clause-library/{id}                Remove clause
+
+Sentinel AI
+├── GET    /api/v1/sentinel/prompts                   List review templates
+├── POST   /api/v1/sentinel/prompts                   Add template
+├── POST   /api/v1/sentinel/review                    Run structured review
+└── GET    /api/v1/sentinel/sessions                  List review sessions
+
+Autopilot
+├── GET    /api/v1/autopilot/templates                Task templates
+├── POST   /api/v1/autopilot/tasks                    Create task
+└── POST   /api/v1/autopilot/tasks/{id}/execute       Execute task
+
+Document Generation
+├── GET    /api/v1/templates                          List doc templates
+├── POST   /api/v1/templates/{id}/generate            Generate document
+└── GET    /api/v1/generated-docs                     List generated docs
+
+Workflows
+├── GET    /api/v1/workflows                          List workflows
+├── POST   /api/v1/workflows                          Create workflow
+└── PATCH  /api/v1/workflows/{id}/steps/{sid}         Update step
+
+Dashboard
+└── GET    /api/v1/dashboard/insights                 Portfolio analytics</div>
+
+<hr>
+
+<!-- ═══ SECTION 5 ═══ -->
+<h2 id="s5"><span class="section-num">5</span> Data Model</h2>
+
+<h3>5.1 Entity Relationship</h3>
+
+<div class="mermaid-wrap">
+<pre class="mermaid">
+erDiagram
+    contracts ||--o{ contract_chunks : "has many"
+    contracts ||--o{ contract_runs : "has many"
+    contracts ||--o{ clause_risk_assessments : "has many"
+    contracts ||--o{ contract_comments : "has many"
+    contracts ||--o{ contract_activity : "has many"
+    contracts ||--o{ review_sessions : "reviewed by"
+    contracts ||--o{ agent_tasks : "analyzed by"
+
+    contracts {
+        text contract_id PK
+        text filename
+        text status
+        jsonb summary
+        jsonb metadata
+        timestamp created_at
+    }
+
+    contract_chunks {
+        text contract_id FK
+        text chunk_id PK
+        text text
+        text section
+        int page
+        text clause_type
+        vector_1536 embedding
+    }
+
+    contract_runs {
+        text run_id PK
+        text contract_id FK
+        text status
+        jsonb trace
+        jsonb results
+        timestamp created_at
+    }
+
+    clause_risk_assessments {
+        text assessment_id PK
+        text contract_id FK
+        text clause_group
+        text risk_level
+        int risk_score
+        text reason
+        text deviation
+        text recommendation
+        jsonb chunk_ids
+    }
+
+    clause_library {
+        text clause_id PK
+        text name
+        text category
+        text description
+        text standard_language
+        text risk_notes
+        boolean required
+    }
+</pre>
+</div>
+
+<h3>5.2 Key Table: contract_chunks</h3>
+
+<pre><code><span class="kw">CREATE TABLE</span> contract_chunks (
+    contract_id   <span class="typ">TEXT</span> <span class="kw">NOT NULL REFERENCES</span> contracts(contract_id) <span class="kw">ON DELETE CASCADE</span>,
+    chunk_id      <span class="typ">TEXT</span> <span class="kw">NOT NULL</span>,
+    text          <span class="typ">TEXT</span> <span class="kw">NOT NULL</span>,
+    section       <span class="typ">TEXT</span>,
+    page          <span class="typ">INT</span>,
+    clause_type   <span class="typ">TEXT</span>,
+    embedding     <span class="typ">vector(1536)</span>,
+    <span class="kw">PRIMARY KEY</span> (contract_id, chunk_id)
+);
+
+<span class="kw">CREATE INDEX ON</span> contract_chunks
+    <span class="kw">USING</span> hnsw (embedding vector_cosine_ops);</code></pre>
+
+<p>The <code>embedding</code> column uses pgvector's <code>vector(1536)</code> type. The HNSW index enables sub-50ms cosine similarity search at scale.</p>
+
+<hr>
+
+<!-- ═══ SECTION 6 ═══ -->
+<h2 id="s6"><span class="section-num">6</span> Risk Assessment Pipeline</h2>
+
+<h3>Why Two Layers?</h3>
+
+<table>
+  <thead><tr><th>Aspect</th><th>Keyword Scan (Layer 1)</th><th>LLM Assessment (Layer 2)</th></tr></thead>
+  <tbody>
+    <tr><td>Speed</td><td>&lt;10ms</td><td>5-15 seconds</td></tr>
+    <tr><td>Accuracy</td><td>High precision, low recall</td><td>High recall, potential hallucination</td></tr>
+    <tr><td>Hallucination risk</td><td>Zero</td><td>Mitigated by grounding + schema validation</td></tr>
+    <tr><td>Nuance</td><td>None — exact pattern match</td><td>Understands context, detects one-sided terms</td></tr>
+    <tr><td>Dependency</td><td>None</td><td>Requires Clause Library</td></tr>
+    <tr><td>Coverage</td><td>5 known patterns</td><td>Any clause type in the library</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Together</strong>: Keywords catch obvious issues instantly. LLM catches subtle deviations that require language understanding. Neither alone is sufficient.</p>
+
+<h3>Clause Library</h3>
+
+<p>The Clause Library is a database of 20 standard clause definitions. Each entry includes:</p>
+<ul>
+  <li><strong>name</strong>: e.g., "Limitation of Liability"</li>
+  <li><strong>standard_language</strong>: The approved language (what "good" looks like)</li>
+  <li><strong>risk_notes</strong>: What to watch for (e.g., "Watch for uncapped liability")</li>
+  <li><strong>required</strong>: Whether this clause must be present in every contract</li>
+</ul>
+
+<p>The LLM compares vendor text against <code>standard_language</code> to detect deviations. Missing <code>required</code> clauses are automatically flagged as high risk.</p>
+
+<hr>
+
+<!-- ═══ SECTION 7 ═══ -->
+<h2 id="s7"><span class="section-num">7</span> Retrieval Strategy</h2>
+
+<h3>Hybrid Retrieval</h3>
+<p>We combine two retrieval methods:</p>
+<ol>
+  <li><strong>Semantic search</strong>: Embed the query → cosine similarity against pgvector → top-k</li>
+  <li><strong>Keyword search</strong>: Token overlap scoring → top-k</li>
+  <li><strong>Merge</strong>: Deduplicate by chunk_id, take best score, return top 10</li>
+</ol>
+
+<h3>Parameters</h3>
+
+<table>
+  <thead><tr><th>Parameter</th><th>Value</th><th>Rationale</th></tr></thead>
+  <tbody>
+    <tr><td>Embedding model</td><td>text-embedding-3-small</td><td>Strong on legal/business text, cost-effective</td></tr>
+    <tr><td>Dimensions</td><td>1536</td><td>Standard for OpenAI embeddings</td></tr>
+    <tr><td>top_k (Q&amp;A)</td><td>10</td><td>10 chunks × ~300 tokens = 3K tokens — well within Claude's 200K window</td></tr>
+    <tr><td>top_k (risk citations)</td><td>2</td><td>Only need 1-2 supporting chunks</td></tr>
+    <tr><td>Similarity metric</td><td>Cosine distance (<code>&lt;=&gt;</code>)</td><td>Direction-based, robust to chunk length variation</td></tr>
+    <tr><td>Chunk size</td><td>1200 chars max, 100 min</td><td>Captures complete clauses without noise</td></tr>
+  </tbody>
+</table>
+
+<h3>Improvement Roadmap</h3>
+<ol>
+  <li><strong>Cross-encoder reranking</strong> (BGE-reranker) — re-score top 50 → return top 10</li>
+  <li><strong>Reciprocal Rank Fusion</strong> — better score merging across retrieval methods</li>
+  <li><strong>Query expansion</strong> — LLM generates multiple query variants</li>
+  <li><strong>Metadata filtering</strong> — restrict search by contract type</li>
+</ol>
+
+<hr>
+
+<!-- ═══ SECTION 8 ═══ -->
+<h2 id="s8"><span class="section-num">8</span> Model Strategy</h2>
+
+<h3>Models Used</h3>
+
+<table>
+  <thead><tr><th>Model</th><th>Provider</th><th>Purpose</th><th>Context Window</th><th>Dimensions</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Claude 3.5 Sonnet</strong></td><td>Anthropic (via OpenRouter)</td><td>Primary LLM for summarization, Q&amp;A, risk assessment, clause classification</td><td>200K tokens</td><td>—</td></tr>
+    <tr><td><strong>GPT-4o Mini</strong></td><td>OpenAI (via OpenRouter)</td><td>Fallback LLM — used when Claude is unavailable or rate-limited</td><td>128K tokens</td><td>—</td></tr>
+    <tr><td><strong>text-embedding-3-small</strong></td><td>OpenAI (via OpenRouter)</td><td>Embedding generation for semantic search</td><td>8K tokens</td><td>1536</td></tr>
+  </tbody>
+</table>
+
+<h3>Why These Models?</h3>
+
+<table>
+  <thead><tr><th>Decision</th><th>Rationale</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Claude 3.5 Sonnet as primary</strong></td><td>Best-in-class for structured JSON extraction, strong reasoning on legal text, 200K context window handles full contracts, follows complex multi-step prompts reliably.</td></tr>
+    <tr><td><strong>GPT-4o Mini as fallback</strong></td><td>Fast (~3x faster than Sonnet), cheap, different provider than primary (diversifies failure risk — an Anthropic outage doesn't take down the system).</td></tr>
+    <tr><td><strong>text-embedding-3-small for embeddings</strong></td><td>Strong performance on legal/business text, cost-effective ($0.02/1M tokens), 1536 dimensions provide good semantic resolution.</td></tr>
+    <tr><td><strong>OpenRouter as gateway</strong></td><td>Single API key for multiple providers. Enables model swapping without code changes. Usage tracking and rate limiting built in.</td></tr>
+  </tbody>
+</table>
+
+<h3>Model Gateway Architecture</h3>
+
+<div class="ascii-diagram">Application Code
+    │
+    ▼
+Model Gateway (model_gateway.py)
+    ├── litellm.completion(model=PRIMARY_MODEL, ...)
+    │       │
+    │       ├── Success → return response
+    │       └── Failure (timeout, rate limit, error)
+    │               │
+    │               ▼
+    │       litellm.completion(model=FALLBACK_MODEL, ...)
+    │               │
+    │               ├── Success → return response (used_fallback=True)
+    │               └── Failure → raise, record in trace
+    │
+    ├── litellm.embedding(model=EMBEDDING_MODEL, ...)
+    │       └── Returns 1536-dim vector
+    │
+    └── Response includes: content, model_used, used_fallback, token_counts</div>
+
+<p>Every response records <code>used_fallback: bool</code> in the trace so we can monitor primary model health.</p>
+
+<h3>Per-Task Model Usage</h3>
+
+<table>
+  <thead><tr><th>Task</th><th>Model</th><th>Temperature</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Summarization</strong></td><td>Claude 3.5 Sonnet</td><td>0.0</td><td>Deterministic JSON extraction — same contract should always produce the same summary.</td></tr>
+    <tr><td><strong>Q&amp;A</strong></td><td>Claude 3.5 Sonnet</td><td>0.3</td><td>Slight creativity for natural-sounding answers, but still grounded in context.</td></tr>
+    <tr><td><strong>Clause Classification</strong></td><td>Claude 3.5 Sonnet</td><td>0.0</td><td>Classification must be consistent and reproducible.</td></tr>
+    <tr><td><strong>Risk Assessment</strong></td><td>Claude 3.5 Sonnet</td><td>0.0</td><td>Risk scores must be deterministic — a contract reviewed twice should get the same scores.</td></tr>
+    <tr><td><strong>Sentinel Reviews</strong></td><td>Claude 3.5 Sonnet</td><td>0.3</td><td>Structured review with some flexibility in phrasing.</td></tr>
+    <tr><td><strong>Embedding</strong></td><td>text-embedding-3-small</td><td>—</td><td>Offline batch embedding, no temperature parameter.</td></tr>
+  </tbody>
+</table>
+
+<h3>Cost Estimation</h3>
+
+<table>
+  <thead><tr><th>Task</th><th>Input Tokens</th><th>Output Tokens</th><th>Cost per Contract</th></tr></thead>
+  <tbody>
+    <tr><td>Summarization</td><td>~3,000</td><td>~500</td><td>~$0.012</td></tr>
+    <tr><td>Q&amp;A (per question)</td><td>~3,000</td><td>~300</td><td>~$0.010</td></tr>
+    <tr><td>Risk Assessment</td><td>~5,000</td><td>~2,000</td><td>~$0.045</td></tr>
+    <tr><td>Embedding (all chunks)</td><td>~9,000</td><td>—</td><td>~$0.0002</td></tr>
+    <tr><td><strong>Total (full analysis)</strong></td><td></td><td></td><td><strong>~$0.07 per contract</strong></td></tr>
+  </tbody>
+</table>
+
+<p>At scale: ~$70 per 1,000 contracts for full analysis.</p>
+
+<h3>Model Evaluation Approach</h3>
+<ol>
+  <li><strong>A/B testing</strong>: Run the same contracts through both models</li>
+  <li><strong>Compare</strong>: JSON parse success rate, risk flag agreement with human labels, summarization completeness</li>
+  <li><strong>Measure</strong>: Latency, cost per contract, hallucination rate</li>
+  <li><strong>LLM-as-judge</strong>: Use a stronger model to rate output quality on a 1-5 scale</li>
+  <li><strong>Key metric</strong>: "Does the risk assessment match what a human procurement analyst would flag?"</li>
+</ol>
+
+<h3>Production Model Improvements</h3>
+
+<table>
+  <thead><tr><th>Improvement</th><th>Impact</th><th>Effort</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Per-task model routing</strong> — use cheaper models for low-stakes tasks</td><td>30-50% cost reduction</td><td>2 days</td></tr>
+    <tr><td><strong>Streaming responses</strong> — stream LLM tokens to frontend via SSE</td><td>Better UX, no accuracy change</td><td>3 days</td></tr>
+    <tr><td><strong>On-premise option</strong> — Llama 3 / Mistral for data sovereignty</td><td>Data sovereignty</td><td>2 weeks</td></tr>
+    <tr><td><strong>Fine-tuned classifier</strong> — fine-tune a small model for clause classification</td><td>10x faster classification</td><td>1 week</td></tr>
+    <tr><td><strong>Confidence-based routing</strong> — retry with stronger model on low confidence</td><td>Higher accuracy</td><td>3 days</td></tr>
+  </tbody>
+</table>
+
+<hr>
+
+<!-- ═══ SECTION 9 ═══ -->
+<h2 id="s9"><span class="section-num">9</span> Prompting Strategy</h2>
+
+<h3>Five Role-Specific System Prompts</h3>
+
+<table>
+  <thead><tr><th>Prompt</th><th>Role</th><th>Key Constraints</th></tr></thead>
+  <tbody>
+    <tr><td><code>SUMMARIZE_SYSTEM</code></td><td>Contract Summarizer</td><td>Extract to strict JSON schema: parties, dates, terms, obligations. Return ONLY valid JSON.</td></tr>
+    <tr><td><code>QA_SYSTEM</code></td><td>Contract Analyst</td><td>Answer using ONLY provided context. Cite sections. Say INSUFFICIENT_EVIDENCE when not grounded.</td></tr>
+    <tr><td><code>CLASSIFY_SYSTEM</code></td><td>Clause Classifier</td><td>Categorize into 8 types. One label per chunk.</td></tr>
+    <tr><td><code>CLAUSE_RISK_SYSTEM</code></td><td>Risk Analyst</td><td>Compare vendor text vs standard language. Output: risk_level, risk_score, reason, deviation, recommendation.</td></tr>
+    <tr><td>Sentinel templates</td><td>Configurable Reviewer</td><td>8 templates: MSA Review, Vendor Risk, NDA Compliance, Data Protection, IP Rights, Payment Terms, SLA Review, Change Control.</td></tr>
+  </tbody>
+</table>
+
+<h3>Hallucination Mitigation</h3>
+<ol>
+  <li><strong>Strict JSON schemas</strong> — LLM must fill specific fields, not free-text</li>
+  <li><strong>Grounding</strong> — every prompt includes actual contract text as context</li>
+  <li><strong>INSUFFICIENT_EVIDENCE</strong> — Q&amp;A agent must refuse when context doesn't support an answer</li>
+  <li><strong>Score clamping</strong> — <code>max(0, min(100, int(score)))</code> enforces valid range</li>
+  <li><strong>Validation</strong> — if JSON parsing fails, return empty result rather than hallucinated data</li>
+  <li><strong>Human review</strong> — all AI outputs are suggestions, displayed for human verification</li>
+</ol>
+
+<hr>
+
+<!-- ═══ SECTION 10 ═══ -->
+<h2 id="s10"><span class="section-num">10</span> Frontend Architecture</h2>
+
+<h3>Component Structure</h3>
+
+<div class="ascii-diagram">page.tsx (3700 lines — SPA entry point)
+├── Top Navigation
+│   ├── Documents, Clause Library, Workflows, Tools, Dashboard
+│   └── Ask AI button
+├── Contract Detail View
+│   ├── Header + Metadata Grid
+│   ├── Tab Bar: Overview | Contents | Lifecycle | Analytics | Comments | Activity
+│   └── Debug button
+├── Contents Tab (Split Panel)
+│   ├── Left: PdfViewer (iframe + pdf.js)
+│   │   ├── Risk-colored overlays
+│   │   ├── Focus Mode toggle
+│   │   └── Excerpt card (focused clause info)
+│   └── Right: Analysis Panel
+│       ├── Structure tab (section tree)
+│       ├── Findings tab (clause groups + risk badges)
+│       ├── Review tab (compliance gaps + playbook)
+│       └── Key Info tab (extracted terms)
+└── Overlay Panels
+    ├── AI Chat (floating, citations, suggested questions)
+    ├── Debug Panel (timeline trace)
+    ├── Clause Intelligence (deep-dive per clause)
+    └── Playbook Compare (side-by-side)</div>
+
+<h3>State Management</h3>
+
+<p>React hooks only — no Redux/Zustand:</p>
+<ul>
+  <li><code>useState</code> for all UI state (60+ state variables)</li>
+  <li><code>useMemo</code> for computed values (clauseGroups, highlightedList, sectionTree)</li>
+  <li><code>useCallback</code> for stable function references</li>
+  <li><code>useEffect</code> for data loading and side effects</li>
+</ul>
+
+<p><strong>Trade-off acknowledged</strong>: The 3700-line component works for a prototype but should be extracted into 20+ components in production. Custom hooks would include: <code>useContractData</code>, <code>useHighlightState</code>, <code>useDebugTrace</code>.</p>
+
+<h3>PDF Viewer Architecture</h3>
+
+<p>The PDF viewer runs in an <strong>iframe</strong> using pdf.js. This provides:</p>
+<ol>
+  <li><strong>Performance isolation</strong>: PDF canvas rendering doesn't trigger React re-renders</li>
+  <li><strong>Security sandboxing</strong>: Untrusted PDF content is isolated</li>
+  <li><strong>Overlay control</strong>: Draw risk-colored rectangles on a canvas layer above each page</li>
+</ol>
+
+<p>Communication via postMessage:</p>
+<ul>
+  <li><strong>Parent → iframe</strong>: <code>highlight</code>, <code>navigate</code>, <code>clear</code></li>
+  <li><strong>iframe → parent</strong>: <code>ready</code>, <code>chunkClick</code></li>
+</ul>
+
+<hr>
+
+<!-- ═══ SECTION 11 ═══ -->
+<h2 id="s11"><span class="section-num">11</span> Production Readiness</h2>
+
+<h3>What's Production-Ready Now</h3>
+
+<table>
+  <thead><tr><th>Area</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>Multi-agent orchestration with traceability</td><td><span class="status-done">Ready</span></td></tr>
+    <tr><td>Model fallback (Claude → GPT-4o Mini)</td><td><span class="status-done">Ready</span></td></tr>
+    <tr><td>Embedding + vector search</td><td><span class="status-done">Ready</span></td></tr>
+    <tr><td>Risk assessment (keyword + LLM)</td><td><span class="status-done">Ready</span></td></tr>
+    <tr><td>Clause Library with standard language</td><td><span class="status-done">Ready</span></td></tr>
+    <tr><td>Audit trail (contract_activity)</td><td><span class="status-done">Ready</span></td></tr>
+    <tr><td>Structured API with Pydantic validation</td><td><span class="status-done">Ready</span></td></tr>
+    <tr><td>Docker Compose deployment</td><td><span class="status-done">Ready</span></td></tr>
+  </tbody>
+</table>
+
+<h3>What Needs Work for Enterprise</h3>
+
+<table>
+  <thead><tr><th>Gap</th><th>Priority</th><th>Effort</th></tr></thead>
+  <tbody>
+    <tr><td>Authentication (OAuth 2.0 / SSO)</td><td>Critical</td><td>1-2 weeks</td></tr>
+    <tr><td>Row-level security + RBAC</td><td>Critical</td><td>1 week</td></tr>
+    <tr><td>Async job queue (Celery + Redis)</td><td>High</td><td>1 week</td></tr>
+    <tr><td>Streaming LLM responses (SSE)</td><td>High</td><td>3 days</td></tr>
+    <tr><td>Connection pooling (PgBouncer)</td><td>High</td><td>1 day</td></tr>
+    <tr><td>OCR for scanned PDFs (Tesseract / Textract)</td><td>Medium</td><td>1 week</td></tr>
+    <tr><td>Cross-encoder reranking</td><td>Medium</td><td>3 days</td></tr>
+    <tr><td>Component extraction (break up page.tsx)</td><td>Medium</td><td>1 week</td></tr>
+    <tr><td>CI/CD pipeline</td><td>Medium</td><td>3 days</td></tr>
+    <tr><td>Load testing + performance benchmarks</td><td>Medium</td><td>3 days</td></tr>
+  </tbody>
+</table>
+
+<h3>Scaling Path</h3>
+
+<div class="ascii-diagram">Current (prototype)          →  Production v1              →  Enterprise scale
+─────────────────────          ──────────────────            ─────────────────
+Single process                 Multiple FastAPI workers      Auto-scaling ECS/K8s
+Local PostgreSQL               Managed RDS + read replicas   Multi-region
+Local file storage             S3 with CDN                   CloudFront + S3
+Synchronous ingestion          Celery + Redis workers        Temporal workflows
+In-process embedding           Batch embedding pipeline      Dedicated GPU service
+No auth                        OAuth 2.0 + RBAC              Apple SSO + tenant isolation
+No caching                     Redis for hot paths           Multi-layer cache
+No monitoring                  Structured logs + Datadog     Full observability stack</div>
+
+<hr>
+
+<!-- ═══ SECTION 12 ═══ -->
+<h2 id="s12"><span class="section-num">12</span> FAQs</h2>
+
+<h3>Architecture</h3>
+
+<p><strong>Q: Why LangGraph instead of LangChain agents?</strong><br>
+LangGraph gives explicit state transitions, conditional routing, and full traceability. LangChain agents are more autonomous but harder to debug. For contract analysis, determinism matters — every contract must go through the same pipeline.</p>
+
+<p><strong>Q: Why PostgreSQL + pgvector over a dedicated vector database?</strong><br>
+Single database for structured data (contracts, runs, assessments) AND vectors. pgvector handles thousands of contracts well. Reduces infrastructure complexity. If we scaled to millions of contracts, we'd evaluate Pinecone or Weaviate.</p>
+
+<p><strong>Q: Why an iframe for PDF rendering?</strong><br>
+Performance isolation (canvas rendering doesn't affect React), security sandboxing (untrusted PDFs), and direct canvas manipulation for highlight overlays.</p>
+
+<h3>Risk Assessment</h3>
+
+<p><strong>Q: Why keep keyword risk scan if you have LLM assessment?</strong><br>
+Speed (instant), reliability (zero hallucination), and coverage (catches things the library might miss). Defense in depth.</p>
+
+<p><strong>Q: What if the LLM hallucinates a risk score?</strong><br>
+Strict JSON schema in the prompt, score clamping (0-100 range), grounding against actual contract text, JSON parse validation, and human review in the UI.</p>
+
+<p><strong>Q: What if the Clause Library is empty?</strong><br>
+Graceful degradation. LLM assessment is skipped, keyword scan still runs. The UI prompts users to populate the library.</p>
+
+<h3>Retrieval</h3>
+
+<p><strong>Q: Why hybrid search?</strong><br>
+Legal text has semantic concepts ("liability limitation" = "damages cap") AND exact terms ("Section 3.2"). Vector search catches meaning. Keyword search catches exact references. Both are needed.</p>
+
+<p><strong>Q: How do you handle 500-page contracts?</strong><br>
+Chunking produces ~400 chunks. Retrieval returns only the relevant 10. Embeddings make this scalable — the full document is never sent to the LLM.</p>
+
+<h3>Frontend</h3>
+
+<p><strong>Q: Why a 3700-line monolithic page.tsx?</strong><br>
+Speed of development for a take-home project. All state in one component avoids prop-drilling complexity. For production, we'd extract into 20+ components with custom hooks.</p>
+
+<p><strong>Q: How do you handle race conditions?</strong><br>
+Loading guards (<code>assessmentRunning</code> state disables buttons), <code>useCallback</code> with correct dependency arrays, and waiting for server confirmation (no optimistic updates for legal data).</p>
+
+<h3>Data &amp; Security</h3>
+
+<p><strong>Q: How do you protect sensitive contract data?</strong><br>
+Current: prototype without auth. Production plan: OAuth 2.0, RBAC, encryption at rest, audit trail (already implemented), zero-data-retention LLM providers, PII detection before sending to LLMs.</p>
+
+<p><strong>Q: What are the risks of sending contracts to external LLMs?</strong><br>
+Data leakage, compliance issues (GDPR/CCPA), confidentiality. Mitigations: zero-retention providers, on-premise models for sensitive docs, PII stripping.</p>
+
+<hr>
+
+<!-- ═══ SECTION 13 ═══ -->
+<h2 id="s13"><span class="section-num">13</span> Appendix</h2>
+
+<h3>A. Repository Structure</h3>
+
+<div class="ascii-diagram">contract-intelligence/
+├── backend/
+│   ├── app/
+│   │   ├── main.py                   # FastAPI application entry point
+│   │   ├── api/
+│   │   │   └── routes.py             # All API endpoints (30+)
+│   │   ├── agents/
+│   │   │   ├── orchestrator.py       # LangGraph workflow builder
+│   │   │   ├── summarization.py      # Summarization agent
+│   │   │   ├── qa.py                 # Q&amp;A agent with hybrid retrieval
+│   │   │   ├── risk.py               # Risk scan + LLM clause assessment
+│   │   │   ├── clause_extraction.py  # Clause classifier
+│   │   │   ├── ingestion.py          # Document ingestion agent
+│   │   │   └── base.py               # Shared agent utilities
+│   │   ├── graph/
+│   │   │   └── workflow.py           # LangGraph StateGraph definition
+│   │   ├── models/
+│   │   │   └── schemas.py            # Pydantic request/response models
+│   │   ├── services/
+│   │   │   ├── ingestion.py          # Parse, chunk, embed pipeline
+│   │   │   ├── retrieval.py          # Hybrid search (semantic + keyword)
+│   │   │   ├── embeddings.py         # Embedding generation
+│   │   │   ├── model_gateway.py      # LiteLLM + OpenRouter + fallback
+│   │   │   ├── repository.py         # PostgreSQL data access
+│   │   │   ├── analysis.py           # Analysis orchestration
+│   │   │   ├── insights.py           # Dashboard analytics
+│   │   │   └── store.py              # In-memory store (legacy)
+│   │   └── core/
+│   │       ├── config.py             # Settings (Pydantic BaseSettings)
+│   │       └── db.py                 # PostgreSQL connection management
+│   ├── Dockerfile
+│   └── pyproject.toml
+├── frontend/
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── page.tsx              # Main SPA (3700 lines)
+│   │   │   ├── layout.tsx            # Root layout
+│   │   │   └── globals.css           # Custom styles (4700 lines)
+│   │   ├── components/
+│   │   │   ├── PdfViewer.tsx         # PDF viewer wrapper (iframe)
+│   │   │   └── DocumentViewer.tsx    # Non-PDF document viewer
+│   │   ├── lib/
+│   │   │   └── api.ts               # API client (390 lines)
+│   │   └── public/
+│   │       └── pdfviewer.html        # pdf.js viewer with highlight support
+│   ├── next.config.ts
+│   ├── Dockerfile
+│   └── package.json
+├── sample-contracts/
+│   └── acme-supplier-agreement-2023.txt
+├── docs/
+│   ├── system_architecture.md        # Mermaid diagrams
+│   ├── ARCHITECTURE_DIAGRAM.md       # High-level architecture
+│   ├── TECHNICAL_DESIGN.md           # Design decisions + gaps
+│   ├── INTERVIEW_PREP.md             # 155-question prep guide
+│   ├── demo_script.md               # 15-minute demo walkthrough
+│   └── PRESENTATION.md              # Panel slides
+├── evalaution/
+│   ├── golden_queries.json           # Golden test set
+│   ├── llm-as-judge-step.md          # Evaluation methodology
+│   ├── runs/                         # Evaluation run results
+│   └── data/onecle/                  # Real contract test data
+├── docker-compose.yml
+└── acceptance-criteria.md            # 42 requirements, all DONE</div>
+
+<h3>B. Model Configuration</h3>
+
+<pre><code>PRIMARY_MODEL=anthropic/claude-3.5-sonnet
+FALLBACK_MODEL=openai/gpt-4o-mini
+EMBEDDING_MODEL=openai/text-embedding-3-small
+EMBEDDING_DIMENSIONS=1536
+
+OPENROUTER_API_KEY=&lt;key&gt;
+LANGSMITH_TRACING=true
+LANGSMITH_PROJECT=contract-intelligence</code></pre>
+
+<h3>C. Clause Categories (8 types)</h3>
+
+<table>
+  <thead><tr><th>Category</th><th>Regex Pattern</th><th>Example Matches</th></tr></thead>
+  <tbody>
+    <tr><td>term</td><td><code>\b(term|duration|period|effective\s+date)\b</code></td><td>"The initial term of this Agreement..."</td></tr>
+    <tr><td>termination</td><td><code>\b(terminat|cancel|expire)\b</code></td><td>"Either party may terminate..."</td></tr>
+    <tr><td>liability</td><td><code>\b(liabil|indemnif|damages|warranty)\b</code></td><td>"Limitation of Liability..."</td></tr>
+    <tr><td>payment</td><td><code>\b(payment|invoice|fee|price|compensation)\b</code></td><td>"Payment shall be made Net 30..."</td></tr>
+    <tr><td>governing_law</td><td><code>\b(governing\s+law|jurisdiction|arbitrat)\b</code></td><td>"This Agreement shall be governed by..."</td></tr>
+    <tr><td>confidentiality</td><td><code>\b(confidential|non-disclosure|proprietary)\b</code></td><td>"Confidential Information means..."</td></tr>
+    <tr><td>ip</td><td><code>\b(intellectual\s+property|patent|copyright|trademark)\b</code></td><td>"All IP rights shall remain..."</td></tr>
+    <tr><td>force_majeure</td><td><code>\b(force\s+majeure|act\s+of\s+god|unforeseeable)\b</code></td><td>"Neither party shall be liable for..."</td></tr>
+  </tbody>
+</table>
+
+<h3>D. Keyboard Shortcuts</h3>
+
+<table>
+  <thead><tr><th>Key</th><th>Action</th></tr></thead>
+  <tbody>
+    <tr><td>Arrow Left / Up</td><td>Previous highlighted clause</td></tr>
+    <tr><td>Arrow Right / Down</td><td>Next highlighted clause</td></tr>
+    <tr><td>R</td><td>Jump to next high-risk clause</td></tr>
+    <tr><td>Escape</td><td>Clear all highlights</td></tr>
+  </tbody>
+</table>
+
+<h3>E. Risk Flag Rules (Layer 1)</h3>
+
+<table>
+  <thead><tr><th>Rule ID</th><th>Name</th><th>Pattern</th><th>Severity</th></tr></thead>
+  <tbody>
+    <tr><td>R-001</td><td>Unlimited Liability</td><td>Presence of "unlimited liability"</td><td style="color:var(--red);font-weight:700">High</td></tr>
+    <tr><td>R-002</td><td>Auto-Renewal</td><td>Presence of "auto-renew"</td><td style="color:var(--amber);font-weight:700">Medium</td></tr>
+    <tr><td>R-003</td><td>Termination Rigidity</td><td>Absence of "termination for convenience"</td><td style="color:var(--amber);font-weight:700">Medium</td></tr>
+    <tr><td>R-004</td><td>Missing Governing Law</td><td>Absence of "governing law"</td><td style="color:var(--amber);font-weight:700">Medium</td></tr>
+    <tr><td>R-005</td><td>Long Payment Cycle</td><td>Presence of "net 60" or "net 90"</td><td style="color:var(--green);font-weight:700">Low</td></tr>
+  </tbody>
+</table>
+
+<h3>F. Evaluation Results</h3>
+
+<p>The system was evaluated using:</p>
+<ol>
+  <li><strong>Golden test set</strong>: 8+ real contracts from OneCle (leases, employment, PPP loans)</li>
+  <li><strong>LLM-as-judge</strong>: GPT-4 rates system outputs on accuracy, completeness, and actionability</li>
+  <li><strong>Self-evaluation</strong>: System runs queries against its own outputs and scores consistency</li>
+</ol>
+
+<p>Evaluation scripts are in the <code>evalaution/</code> directory with run results in <code>evalaution/runs/</code>.</p>
+
+<h3>G. Competitive Landscape</h3>
+
+<table>
+  <thead><tr><th>Platform</th><th>Approach</th><th>Our Differentiation</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Evisort</strong></td><td>AI-powered CLM, clause extraction</td><td>We have PDF-first UX, not separate analysis view</td></tr>
+    <tr><td><strong>Ironclad</strong></td><td>Contract lifecycle management</td><td>We have LLM-powered risk scoring, not rule-based</td></tr>
+    <tr><td><strong>SpotDraft</strong></td><td>Contract automation</td><td>We have open architecture (swap models/agents)</td></tr>
+    <tr><td><strong>Kira Systems</strong></td><td>ML clause extraction</td><td>We use LLM for nuanced understanding, not just extraction</td></tr>
+    <tr><td><strong>Luminance</strong></td><td>Legal AI review</td><td>We have full traceability (Debug mode)</td></tr>
+  </tbody>
+</table>
+
+<p><strong>What they have that we don't (yet)</strong>: batch processing at enterprise scale, e-signatures, 50+ integrations, enterprise SSO, SOC 2 compliance.</p>
+
+<h3>H. Future Roadmap</h3>
+
+<table>
+  <thead><tr><th>Phase</th><th>Features</th><th>Timeline</th></tr></thead>
+  <tbody>
+    <tr><td><strong>v1.1</strong></td><td>Streaming responses, component extraction, CI/CD</td><td>2 weeks</td></tr>
+    <tr><td><strong>v1.2</strong></td><td>OAuth 2.0 + RBAC, async job queue</td><td>3 weeks</td></tr>
+    <tr><td><strong>v2.0</strong></td><td>Cross-contract comparison, contradiction detection</td><td>6 weeks</td></tr>
+    <tr><td><strong>v2.1</strong></td><td>Multi-language support, OCR pipeline</td><td>8 weeks</td></tr>
+    <tr><td><strong>v3.0</strong></td><td>On-premise LLM option, enterprise SSO, SOC 2 prep</td><td>12 weeks</td></tr>
+  </tbody>
+</table>
+
+</div>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'neutral',
+    themeVariables: {
+      primaryColor: '#eef2ff',
+      primaryBorderColor: '#4f46e5',
+      primaryTextColor: '#1e293b',
+      lineColor: '#94a3b8',
+      secondaryColor: '#fefce8',
+      tertiaryColor: '#f5f3ff',
+      fontSize: '13px',
+    },
+    flowchart: { curve: 'basis', padding: 16 },
+    sequence: { actorMargin: 50, noteMargin: 10 },
+  });
+</script>
+</body>
+</html>

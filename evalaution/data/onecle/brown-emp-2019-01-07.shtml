@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employment Agreement - Beyond Meat Inc. and Ethan Brown - Sample Contracts and Business Forms </title>
+
+<META NAME="description" CONTENT="Employment Agreement dated January 7, 2019 between Beyond Meat, Inc. and President and Chief Executive Officer Ethan Brown">
+
+<META NAME="keywords" CONTENT="competitive intelligence, business contract, business forms, SEC filings, SEC EDGAR, material contracts">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta property="fb:admins" content="609876513" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+
+    }
+/* 
+	div.index li {
+	margin:1em 0;
+	   }
+ */
+	.breadcrumb {
+	margin-bottom:0px;
+	}
+	pre {
+	background-color:#FFFFFF;
+	border:none;
+	}
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #EEE;
+      color: #333;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4BXPCTK7BY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4BXPCTK7BY');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5933846261594825",
+    enable_page_level_ads: true
+  });
+</script></head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="https://www.onecle.com/"><strong><font color="#EEEEEE">one</font><font color="#EE3333">cle</font></strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.onecle.com/">Home</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="http://contracts.onecle.com/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Business Contracts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="http://contracts.onecle.com/type/">By Contract Type</a>
+          <a class="dropdown-item" href="http://contracts.onecle.com/industries/">By Industry</a>
+          <a class="dropdown-item" href="http://contracts.onecle.com/alpha/">By Company Name</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://law.onecle.com/">Laws</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://contracts.onecle.com/consumer/incorporation.shtml">Incorporation</a>
+      </li>
+      	<li class="nav-item">
+        <a class="nav-link" href="http://lawyers.onecle.com/">Lawyer Directory</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+	<li class="breadcrumb-item"><a href="//www.onecle.com/">Home</a></li>
+	<li class="breadcrumb-item"><a href="/index.shtml">Sample Business Contracts</a></li>
+	<li class="breadcrumb-item active" aria-current="page">
+			
+
+	</li>
+</ol>
+</nav>
+<div>
+<script>
+  (function() {
+    var cx = '016782931958625056904:77mdzlxjmx4';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+<div class="container" style="padding-bottom:40pt;">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+
+<p style="text-align:right;font-size:0.8em;"><a href="//print.onecle.com/contracts/beyondmeat/brown-emp-2019-01-07.shtml" target="_blank" rel="noopener">printer-friendly</a></p>
+
+<h1>Sample Business Contracts</h1>
+<p>Employment Agreement - Beyond Meat Inc. and Ethan Brown</p>
+<div class="container">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+
+<h2 class="index">Employment Forms</h2>
+<div class="index">
+<ul class="list-group">
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Femployers-and-hr%2Frecruiting-and-hiring%2Fdocument%2Femployment-contract" rel="nofollow">Employment Contract</a>. Employers can customize an employment agreement that states the salary, benefits, working hours and other important provisions for their new or existing employee.</li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Fbusiness-operations%2Fproduct-or-service-sales%2Fdocument%2Fconsulting-agreement" rel="nofollow">Consulting Agreement</a>. Answer simple questions to build a contract with a consultant. Specify the services rendered, when payment is due, as well as IP rights.</li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Femployers-and-hr%2Fcompensation-and-time-off%2Fdocument%2Fcommission-agreement" rel="nofollow">Commission Agreement</a>. Employers who compensate their sales employees based on commissions can prepare an agreement to reduce misunderstandings by specifying the base salary and how commissions are calculated.</li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Femployers-and-hr%2Frecruiting-and-hiring%2Fdocument%2Fexecutive-employment-agreement" rel="nofollow">Executive Employment Agreement</a>. Companies may offer their business executives a contract that is different from the one provided to their regular employees. Executive employment agreements may be more complex because the compensation structure may include a combination of salary and commissions, provide for bonuses based on sales, stock or other financial targets, and include non-compete, confidentiality and severance provisions.</li>
+	<li class="list-group-item"><a href="https://click.linksynergy.com/deeplink?id=8RT3WzTXjF8&mid=43086&murl=https%3A%2F%2Fwww.rocketlawyer.com%2Fbusiness-and-contracts%2Fservice-contracts%2Fbusiness-service-contracts%2Fdocument%2Fsales-representative-contract" rel="nofollow">Sales Representative Contract</a>. Independent sales representatives offer companies the potential to increase the sale of products or services without the burden of increasing headcount. Both parties should understand how commissions are calculated, when commissions will be paid, as well as how the representative will treat confidential information from the company and whether the representative may also sell a competing line of products or services.</li>
+	<li class="list-group-item"><a href="https://contracts.onecle.com/type/2.shtml">More Employment Agreements</a>	
+</ul>
+</div>
+
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row ">
+		<div class="col-sm-12" style="text-align:left;">
+<h4>Sponsored Links</h4>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Contracts Responsive Top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5933846261594825"
+     data-ad-slot="7098014696"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div></div>
+
+
+
+<div style="line-height:120%;padding-bottom:16px;text-align:center;">
+	[LOGO]
+</div>
+<div style="line-height:120%;padding-bottom:16px;text-align:center;">
+	January 7, 2019
+</div>
+<div style="line-height:120%;padding-bottom:16px;text-align:left;">
+	Ethan Brown
+</div>
+<div style="line-height:120%;padding-bottom:16px;text-align:left;">
+	Re:&#160;&#160;&#160;&#160;EMPLOYMENT AGREEMENT
+</div>
+<div style="line-height:120%;padding-bottom:16px;text-align:left;">
+	Dear Ethan:
+</div>
+<div style="line-height:120%;padding-bottom:16px;text-align:left;text-indent:48px;">
+	On behalf of Beyond Meat, Inc. (the &#8220;Company&#8221;), I am pleased to continue your employment with the Company on the terms and conditions set forth in this employment agreement (the &#8220;Agreement&#8221;). This Agreement amends, restates and replaces in its entirety the employment agreement entered into by and between you and the Company dated November 29, 2018 (the &#8220;Prior Agreement&#8221;).
+</div>
+<div style="line-height:120%;padding-left:48px;padding-bottom:16px;text-align:left;text-indent:0px;">
+	1.Duties and Scope of Employment.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(a)Position.&#160;&#160;For the term of your employment under this Agreement (your &#8220;Employment&#8221;), you will be employed on a full-time basis as the Company&#8217;s President &amp; Chief Executive Officer, reporting to the Company&#8217;s Board of Directors (the &#8220;Board&#8221;), and you will perform the duties and have the responsibilities and authority customarily performed and held by an employee in your position, or as otherwise may be assigned or delegated to you by the Board.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(b)Obligations to the Company.&#160;&#160;During your Employment, you shall devote your full business efforts and time to the Company and shall not assist any person or entity in competing with the Company or in preparing to compete with the Company. Further, unless you have received prior written approval from the Board, during your Employment, you shall not render services in any capacity to any other person or entity and shall not act as a sole proprietor or partner of any other person or entity or own more than five percent (5%) of the securities of any other entity. Notwithstanding the foregoing, you may serve on corporate boards or committees, civic, charitable or other non-profit boards, committees or organizations, deliver lectures, fulfill speaking engagements, or teach at educational institutions, in each case without such advance written consent, provided that such activities do not individually or in the aggregate interfere with the performance of your duties under this Agreement. You shall comply with the Company&#8217;s policies and rules, as they may be in effect from time to time during your Employment.
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		1
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(c)No Conflicting Obligations.&#160;&#160;You represent and warrant to the Company that you are under no obligations or commitments, whether contractual or otherwise, that are inconsistent with your obligations under this Agreement. In connection with your Employment, you shall not use or disclose any trade secrets or other proprietary information or intellectual property in which you or any person or entity other than the Company has any right, title or interest and your employment shall not infringe or violate the rights of any other person or entity. You represent and warrant to the Company that you have returned all property and confidential information belonging to any prior employer.
+</div>
+<div style="line-height:120%;padding-left:48px;padding-bottom:16px;text-align:left;text-indent:0px;">
+	2.Cash and Incentive Compensation.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(a)Salary.&#160;&#160;Effective December 15, 2018, the Company will increase your annual base salary from two hundred ninety thousand dollars ($290,000.00) per year to five hundred thousand dollars ($500,000.00) per year. Such annual base salary shall be payable in accordance with the Company&#8217;s standard payroll procedures. The annual base salary specified in this subsection&#160;(a), together with any modifications in such annual base salary that the Company may make from time to time, is referred to in this Agreement as &#8220;Base Salary.&#8221; Your Base Salary may be reviewed from time to time by the Board or a Compensation Committee of the Board (the &#8220;Compensation Committee&#8221;) based upon available market data.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(b)Annual Bonus.&#160;&#160;You will also be eligible to earn an incentive bonus each calendar year or fiscal year of the Company during the term of your Employment under this Agreement, with the target amount of your incentive bonus for each such year equal to 50% of your Base Salary. Your incentive bonus opportunity each year will be based upon the achievement of certain objective and/or subjective criteria established by the Board or the Compensation Committee and your eligibility to earn an annual incentive bonus shall be governed by the terms and conditions determined by the Board or the Compensation Committee each calendar year. The Board or the Compensation Committee will determine in its sole and absolute discretion, as applicable, whether you have earned an incentive bonus for each year, including whether the established performance objectives have been met and the amount of the bonus, as soon as practicable after the end of the applicable performance year. Any such determination by the Board or the Compensation Committee will be final and binding. Any incentive bonus earned will be paid to you no later than March 15th of the year following the year of performance (or, if later, by the date that is 2&#189; months after the applicable fiscal year of performance); provided that you will not be eligible to earn a bonus unless you are employed by the Company on the date when such bonus is paid.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:48px;">
+	3.Vacation/PTO and Employee Benefits.&#160;&#160;During your Employment, you will be eligible to accrue vacation / paid time off in accordance with the Company&#8217;s vacation / paid time off policy, as it may be amended from time to time, and you will be eligible to participate in the employee benefit plans maintained by the Company and generally available to similarly situated employees of the Company, subject in each case to the generally applicable terms and conditions of the plan in question and to the determinations of any person or committee administering such plan.
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		2
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:48px;">
+	4.Business Expenses.&#160;&#160;The Company will reimburse you for your necessary and reasonable business expenses incurred in connection with your duties hereunder upon presentation of an itemized account and appropriate supporting documentation, all in accordance with the Company&#8217;s generally applicable policies. For the avoidance of doubt and notwithstanding anything stated in this Agreement to the contrary, to the extent that any reimbursements payable or in-kind benefits provided by the Company to you under this Agreement or otherwise constitute deferred compensation under Code Section 409A, the regulations and other guidance there under, and any state law of similar effect (&#8220;Section 409A&#8221;), any such payments, reimbursements and/or benefits (i) will be paid no later than December 31<sup style="vertical-align:top;line-height:120%;font-size:8pt">st</sup>&#32;of the year following the year in which the expense was incurred (or, if earlier, the time required by the Company&#8217;s generally applicable policies), (ii) will not affect the amount eligible for reimbursement, or in-kind benefits to be provided, in any other taxable year, and (iii) will not be subject to liquidation or exchange for another benefit.
+</div>
+<div style="line-height:120%;padding-left:48px;padding-bottom:16px;text-align:left;text-indent:0px;">
+	5.Termination.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(a)Employment at Will.&#160;&#160;Your employment shall be &#8220;at will,&#8221; meaning that either you or the Company shall be entitled to terminate your employment at any time and for any reason, with or without cause or notice. Any contrary representations that may have been made to you shall be superseded by this Agreement. This Agreement constitutes the full and complete agreement between you and the Company on the &#8220;at-will&#8221; nature of your employment, which may only be changed in an express written agreement signed by you and a duly authorized officer of the Company.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(b)Rights Upon Termination.&#160;&#160;Except as expressly provided in Section 6 below, upon the termination of your Employment, you shall only be entitled to: (i) all earned but unpaid salary, all accrued but unpaid vacation and all other earned but unpaid compensation or wages, (ii) any unreimbursed business expenses incurred by you on or before the termination date and which are reimbursable under the Company&#8217;s business expense reimbursement policies, which will be paid to you promptly following your submission of any required receipts and other documentation to the Company in accordance with the Company&#8217;s business expense reimbursement policies, provided such receipts and documents are received by the Company within forty-five (45) days after your termination date, and (iii) such other compensation or benefits due to you under any Company-provided plans, policies, and arrangements or as otherwise required by law.
+</div>
+<div style="line-height:120%;padding-left:48px;padding-bottom:16px;text-align:left;text-indent:0px;">
+	6.Severance.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(a)Conditions.&#160;&#160;Any other provision of this Agreement notwithstanding, subsection&#160;(b)&#32;below shall not apply unless and until (i) you have executed (and not revoked) a general release of all claims in a form provided by the Company, and such release becomes effective and irrevocable no later than the sixtieth (60<sup style="vertical-align:top;line-height:120%;font-size:8pt">th</sup>) day following your termination date (such deadline, the &#8220;Deadline Date&#8221;), and (ii) you have continuously complied with the Confidentiality Agreement (as defined below) and all Company policies.
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		3
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(b)Termination Benefits.&#160;&#160;If, within the period beginning three (3) months prior to, and ending eighteen (18)&#160;months following, a Change in Control (as defined below), the Company (or any parent, subsidiary or successor of the Company) terminates your employment without Cause (as defined below), or you terminate your employment with the Company (or any parent, subsidiary or successor of the Company) for Good Reason (as defined below), then you will receive the severance benefits set forth below from the Company.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(i)Base Salary Severance Payment.&#160;&#160;You will receive a base salary severance payment in an amount equal to eighteen (18) months of your then current Base Salary as in effect immediately prior to the date of such termination (provided, if you resign as a result of Section 6(d)(vi)(2), the base salary used to calculate the base salary severance payment set forth herein shall be the base salary as in effect immediately prior to the reduction triggering Section 6(d)(vi)(2)). The base salary severance payment shall be paid to you in a single lump-sum within thirty (30) days following the Deadline Date.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(ii)Benefits Severance Payment.&#160;&#160;You will receive a benefits severance payment in an amount equal to eighteen (18) months&#8217; of the monthly premiums that would be due for continuation coverage under the Consolidated Omnibus Budget Reconciliation Act of 1985, as amended (&#8220;COBRA&#8221;) if you were to elect COBRA continuation coverage for you and your eligible dependents (based on the coverage levels in effect immediately prior to your termination or resignation and based on the premium amount that would be due for the first month of COBRA coverage if you were to elect COBRA continuation coverage). The benefits severance payment shall be paid to you in a single lump-sum within thirty (30) days following the Deadline Date and will be made, subject to all applicable taxes and withholding for required deductions, and regardless of whether you elect COBRA continuation coverage.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(iii)Equity Awards.&#160;&#160;You shall vest in 100% of any then outstanding and unvested equity awards subject to time-based vesting that relate to the Company&#8217;s common stock that you then hold, whether stock options, stock appreciation rights, shares of restricted stock, restricted stock units, performance shares, performance units or other similar awards (the &#8220;Equity Awards&#8221;). Such Equity Awards will otherwise remain subject to the terms and conditions of the applicable equity award agreement(s) and/or plan(s) (together, the &#8220;Equity Documents&#8221;). Notwithstanding anything stated herein or elsewhere to the contrary, if the successor to the Company or any affiliate of such successor does not agree to assume, substitute or otherwise continue any then outstanding Equity Awards at the time of a Change in Control, then 100% of the then-unvested shares subject to the Equity Awards shall fully vest and, if applicable, become exercisable, as of immediately prior to, and contingent upon, the consummation of such Change in Control, regardless of whether your employment with the Company (or any parent, subsidiary or successor of the Company) continues or terminates unless such termination is due to your resignation without Good Reason or by the Company for Cause.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(c)Breach.&#160;&#160;The Company acknowledges that your entitlement to the severance payments and benefits contained in this Section 6 are of the essence and an integral part of this Agreement, and that, without such severance provisions, you and the Company would not enter into this Agreement. Therefore, if the Company, or any successor to the Company, 
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		4
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;">
+	breaches the terms of this Section 6 by failing or refusing pay or provide any of the severance payments or benefits owed to you in the amounts and/or according to the time periods set forth herein, you shall be entitled to two times (2x) the amount of severance payments and benefits that you would otherwise be entitled to receive, payable and/or provided according to the same terms set forth herein. You and the Company acknowledge and agree that any additional severance payments and benefits paid pursuant to this Section 6 constitute liquidated damages that would be incurred by you and that these additional severance payments and benefits are not a penalty, rather they are a reasonable amount intended as liquidated damages that will compensate you in the circumstances in which they are payable for the efforts and resources expended, and opportunities foregone, while negotiating and/or enforcing this Agreement and in reliance on this Agreement and on the expectation of the consummation of the transactions contemplated by this Agreement, which amounts would otherwise be impossible to calculate with precision.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(d)Definitions.&#160;&#160;For purposes of this Agreement, the following terms shall have the meanings set forth below.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(i)&#8220;Cause&#8221; means (1) your willful, deliberate and repeated failure to substantially perform your assigned duties (other than a failure resulting from your Disability (as defined below)), which failure is not cured within thirty (30) days after a written demand for substantial performance is received by you from the Board which identifies the manner in which the Board believes you have not substantially performed your duties; (2) your illegal or intentional gross misconduct in the performance of your duties hereunder that is materially injurious to the Company&#8217;s business and/or reputation, which, if capable being cured, is not cured within thirty (30) days after written notice from the Board, which written notice shall state that failure to cure may result in termination for Cause; (3) your unauthorized and willful use or disclosure of any proprietary information or trade secrets of the Company where such use or disclosure causes material harm to the Company; or (4)your conviction of, or plea of nolo contendere to, a felony or any crime involving fraud, embezzlement or theft which is materially injurious, or reasonably expected to be materially injurious, to the Company&#8217;s business or reputation. For purposes of clarity, a termination without &#8220;Cause&#8221; does not include any termination that occurs as a result of your death or Disability.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(ii)&#8220;Change in Control&#8221; means the occurrence of any of the following: (1) the consummation of a merger or consolidation of the Company with or into another entity or any other corporate reorganization if the Company&#8217;s stockholders immediately prior to such merger, consolidation or reorganization cease to directly or indirectly own immediately after such merger, consolidation or reorganization at least a majority of the combined voting power of the continuing or surviving entity&#8217;s securities outstanding immediately after such merger, consolidation or reorganization; (2) the consummation of the sale, transfer or other disposition of all or substantially all of the Company&#8217;s assets (other than (x) to a corporation or other entity of which at least a majority of its combined voting power is owned directly or indirectly by the Company, (y) to a corporation or other entity owned directly or indirectly by the shareholders of the Company in substantially the same proportions as their ownership of the Common Stock of the Company or (z) to a continuing or surviving entity described in Section 6(d)(ii)(1) in 
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		5
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;">
+	connection with a merger, consolidation or reorganization which does not result in a Change in Control under Section 6(d)(ii)(1)); (3) a change in the effective control of the Company which occurs on the date that a majority of members of the Board is replaced during any twelve (12) month period by members of the Board whose appointment or election is not endorsed by a majority of the members of the Board prior to the date of the appointment or election; or (4) the consummation of any transaction as a result of which any Person (as defined below) becomes the &#8220;beneficial owner&#8221; (as defined in Rule 13d-3 under the Exchange Act), directly or indirectly, of securities of the Company representing at least fifty percent (50%) of the total voting power represented by the Company&#8217;s then outstanding voting securities, provided, if any Person who is the beneficial owner, directly or indirectly, of securities of the Company representing at least fifty percent (50%) of the total voting power represented by the Company&#8217;s then outstanding voting securities acquires additional securities of the Company, such acquisition of additional securities will not be considered to cause a Change in Control pursuant to this Section 6(d)(ii)(4). A transaction shall not constitute a Change in Control if its sole purpose is to change the state of the Company&#8217;s incorporation or to create a holding company that will be owned in substantially the same proportions by the persons who held the Company&#8217;s securities immediately before such transactions.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(iii)&#8220;Code&#8221; means the Internal Revenue Code of 1986, as amended.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(iv)&#8220;Disability&#8221; means total and permanent disability as defined in Code Section 22(e)(3).
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(v)&#8220;Exchange Act&#8221; means the Securities Exchange Act of 1934, as amended.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(vi)&#8220;Good Reason&#8221; means your resignation due to the occurrence of any of the following conditions which occurs without your written consent, provided that the requirements regarding advance notice and an opportunity to cure set forth below are satisfied: (1) a material adverse change to your authority, duties or responsibilities that, taken as a whole, results in a material diminution in your authority, duties or responsibilities in effect prior to such change; (2) a ten percent (10%) or more reduction in your then-current base salary or a ten percent (10%) or more reduction in your base compensation (including Base Salary and bonus); (3) the Company conditions your continued service with the Company on the relocation of your principal work location to a location that is more than thirty-five (35) miles from your then current principal work location and such relocation results in an increase in your one-way commuting distance from your home by thirty-five (35) miles or more; (4) the failure of the Company to obtain the assumption of this Agreement by any successor to the Company; or (5) any material breach or material violation of a material provision of this Agreement by the Company (or any successor to the Company). In order for you to resign for Good Reason, you must provide written notice to the Company of the existence of the Good Reason condition within ninety (90) days of the initial existence of such Good Reason condition. Upon receipt of such notice, the Company will have thirty (30) days during which it may remedy the Good Reason condition and not be required to provide the severance payments and benefits described herein as a result of such proposed resignation. If the Good Reason condition is not remedied 
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		6
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;">
+	within such thirty (30) day cure period, you may resign based on the Good Reason condition specified in the notice effective no later than ninety (90) days following the expiration of the thirty (30) day cure period.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(vii)&#8220;Person&#8221; shall have the same meaning as when used in sections 13(d) and 14(d) of the Exchange Act but shall exclude: (1) a trustee or other fiduciary holding securities under an employee benefit plan of the Company or an affiliate of the Company; (2) a corporation or other entity owned directly or indirectly by the stockholders of the Company in substantially the same proportions as their ownership of the Company&#8217;s Common Stock; (3) the Company; and (4) a corporation or other entity of which at least a majority of its combined voting power is owned directly or indirectly by the Company.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(e)Code Section 409A.&#160;&#160;For purposes of Section 409A, each payment that is paid pursuant to this Agreement is hereby designated as a separate payment. Further, (i) no severance or benefits to be paid or provided to you, if any, pursuant to this Agreement that, when considered together with any other severance payments or benefits, are considered deferred compensation under Section 409A, will be paid or otherwise provided until you have had a &#8220;separation from service&#8221; within the meaning of Section 409A, (ii) no severance or benefits to be paid or provided to you, if any, pursuant to this Agreement that are intended to be exempt from Section 409A pursuant to Treasury Regulation Section 1.409A-1(b)(9)(iii) will be paid or otherwise provided until you have had an &#8220;involuntary separation from service&#8221; within the meaning of Section 409A, and (iii) in the case of (i) and (ii), any reference in this Agreement to &#8220;termination&#8221; or &#8220;termination of employment&#8221; or any similar term shall be construed to mean a &#8220;separation from service&#8221; within the meaning of Section 409A. The parties intend that all payments and benefits provided or to be provided under this Agreement comply with, or are exempt from, the requirements of Section 409A so that none of the payments or benefits will be subject to the adverse tax penalties imposed under Section 409A, and any ambiguities herein will be interpreted to so comply or be so exempt.&#160; You and the Company agree to work together in good faith to consider amendments to this Agreement, and to take such reasonable actions, which are necessary, appropriate or desirable to avoid imposition of any additional tax or income recognition under Section 409A before payments or benefits are provided to you.&#160; Any severance payments or benefits made in connection with your termination under this Agreement and provided on or before the fifteenth (15<sup style="vertical-align:top;line-height:120%;font-size:8pt">th</sup>) day of the third (3<sup style="vertical-align:top;line-height:120%;font-size:8pt">rd</sup>) month following the end of your first tax year in which your termination occurs or, if later, the fifteenth (15<sup style="vertical-align:top;line-height:120%;font-size:8pt">th</sup>) day of the third (3<sup style="vertical-align:top;line-height:120%;font-size:8pt">rd</sup>) month following the end of the Company&#8217;s first tax year in which your termination occurs, shall be exempt from Section 409A to the maximum extent permitted pursuant to Treasury Regulation Section 1.409A-1(b)(4) and any additional payments or benefits provided in connection with your termination under this Agreement shall be exempt from Section 409A to the maximum extent permitted pursuant to Treasury Regulation Section 1.409A-1(b)(9)(iii) (to the extent it is exempt pursuant to such section it will in any event be provided no later than the last day of your second (2<sup style="vertical-align:top;line-height:120%;font-size:8pt">nd</sup>) taxable year following the taxable year in which your termination occurs).&#160; Notwithstanding the foregoing, if any of the payments or benefits provided in connection with your termination do not qualify for any reason to be exempt from Section 409A pursuant to Treasury Regulation Section 1.409A-1(b)(4), Treasury Regulation Section 1.409A-1(b)(9)(iii), or any other applicable exemption and you are , at the time of your termination, a &#8220;specified 
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		7
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;">
+	employee,&#8221; as defined in Treasury Regulation Section 1.409A-1(i), each such payment or benefit will not be provided until the first regularly scheduled payroll date that occurs on or after the date six (6) months and one (1) day following your termination and, on such date (or, if earlier, another date that occurs as soon as practicable after your death), you will receive all payments and benefits that would have been provided during such period in a single lump sum, if applicable.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(f)Limitation on Payments.&#160;&#160;In the event that the benefits provided for in this Agreement and/or other payments and benefits otherwise provided to you constitute &#8220;parachute payments&#8221; within the meaning of Code Section 280G and, but for this Section 6(f), would be subject to the excise tax imposed by Code Section 4999 then, at your election, your severance benefits under this Section 6 and the other payments and benefits otherwise provided to you, will be either delivered in full, or delivered as to such lesser extent which would result in no portion of such severance benefits being subject to excise tax under Code Section 4999, whichever of the foregoing amounts, taking into account the applicable federal, state and local income taxes and the excise tax imposed by Code Section 4999, results in the receipt by you on an after-tax basis, of the greatest amount of such payments and benefits, notwithstanding that all or some portion of such payments and benefits may be taxable under Code Section 4999. Unless you and the Company otherwise agree in writing, any determination required under this Section 6(f) will be made in writing by the Company&#8217;s outside legal counsel or independent public accountants or other firm selected by the Company (the &#8220;Firm&#8221;), whose determination will be conclusive and binding upon you and the Company for all purposes. For purposes of making the calculations required by this Section 6(f), the Firm may make reasonable assumptions and approximations concerning applicable taxes and may rely on reasonable, good faith interpretations concerning the application of Code Sections 280G and 4999. You and the Company will furnish to the Firm such information and documents as the Firm may reasonably request in order to make a determination under this Section. The Company will bear all costs the Firm may reasonably incur in connection with any calculations contemplated by this Section 6(f). Any reduction made pursuant to this Section 6(f) shall be made in accordance with the following order of priority: (i) stock options whose exercise price exceeds the fair market value of the optioned stock (&#8220;Underwater Options&#8221;) (ii) Full Credit Payments (as defined below) that are payable in cash, (iii) non-cash Full Credit Payments that are taxable, (iv) non-cash Full Credit Payments that are not taxable (v) Partial Credit Payments (as defined below) and (vi) non-cash employee welfare benefits. In each case, reductions shall be made in reverse chronological order such that the payment or benefit owed on the latest date following the occurrence of the event triggering the excise tax will be the first payment or benefit to be reduced (with reductions made pro-rata in the event payments or benefits are owed at the same time). For purposes of this Agreement, a &#8220;Full Credit Payment&#8221; means a payment, distribution or benefit, whether paid or payable or distributed or distributable pursuant to the terms of this Agreement or otherwise, that if reduced in value by one dollar reduces the amount of the parachute payment (as defined in Code Section 280G) by one dollar, determined as if such payment, distribution or benefit had been paid or distributed on the date of the event triggering the excise tax. For purposes of this Agreement, a &#8220;Partial Credit Payment&#8221; means any payment, distribution or benefit that is not a Full Credit Payment. In no event shall you have any discretion with respect to the ordering of payment reductions.
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		8
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(g)No Duty to Mitigate.&#160;&#160;You will not be required to mitigate the amount of any payment contemplated by this Section 6, nor will any earnings that you may receive from any other source reduce any such payment.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:48px;">
+	7.Confidentiality Agreement.&#160;&#160;You will, at all times, continue to remain bound by the Proprietary Information, Inventions, Non-Competition and Non-Solicitation Agreement previously entered into by and between you and the Company (the &#8220;Confidentiality Agreement&#8221;).
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:48px;">
+	8.Taxes, Withholding and Required Deductions.&#160;&#160;All forms of compensation referred to in this Agreement are subject to all applicable taxes, withholding, and any other deductions required by applicable law.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:48px;">
+	9.Miscellaneous.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(a)Governing Law.&#160;&#160;The validity, interpretation, construction and performance of this Agreement, and all acts and transactions pursuant hereto and the rights and obligations of the parties hereto shall be governed, construed and interpreted in accordance with the laws of the state of California, without giving effect to principles of conflicts of law. For purposes of litigating any dispute that may arise directly or indirectly from this Agreement, the parties hereby submit and consent to the exclusive jurisdiction of the state of California and agree that any such litigation shall be conducted only in the courts of California or the federal courts of the United States located in California and no other courts. 
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(b)Entire Agreement.&#160;&#160;This Agreement, the Confidentiality Agreement and the Equity Documents set forth the entire agreement and understanding of the parties relating to the subject matter herein and supersede all other prior or contemporaneous discussions, understandings and agreements, whether oral or written, between them relating to the subject matter hereof, including, without limitation, the Prior Agreement.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(c)Amendments and Waivers.&#160;&#160;No modification of or amendment to this Agreement, nor any waiver of any rights under this Agreement, shall be effective unless in writing signed by the parties to this Agreement. No delay or failure to require performance of any provision of this Agreement shall constitute a waiver of that provision as to that or any other instance. 
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(d)Successors and Assigns.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(i)Company&#8217;s Successors.&#160;&#160;This Agreement shall be binding upon any successor (whether direct or indirect and whether by purchase, lease, merger, consolidation, liquidation or otherwise) to all or substantially all of the Company&#8217;s business and/or assets. For all purposes under this Agreement, the term &#8220;Company&#8221; shall include any successor to the Company&#8217;s business or assets that become bound by this Agreement or any affiliate of any such successor that employs you.
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		9
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:144px;">
+	(ii)Assignment; Your Successors.&#160;&#160;This Agreement and all of your rights and obligations hereunder are personal to you and may not be transferred or assigned by you at any time. This Agreement and all of your rights hereunder shall inure to the benefit of, and be enforceable by, your personal or legal representatives, executors, administrators, successors, heirs, distributees, devisees and legatees.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(e)Notices.&#160;&#160;Any notice, demand or request required or permitted to be given under this Agreement shall be in writing and shall be deemed sufficient when delivered personally or by overnight courier or sent by email, or forty-eight (48) hours after being deposited in the U.S. mail as certified or registered mail with postage prepaid, addressed to the party to be notified at such party&#8217;s address at the most recent address set forth in the Company&#8217;s books and records. Any termination by the Company for Cause or by you for Good Reason will be communicated by a notice of termination to the other party hereto given in accordance with Section 9(e) of this Agreement. Such notice will indicate the specific termination provision in this Agreement relied upon, will set forth in reasonable detail the facts and circumstances claimed to provide a basis for termination under the provision so indicated, and will specify the termination date. 
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(f)Severability.&#160;&#160;If any provision of this Agreement becomes or is deemed invalid, illegal or unenforceable in any applicable jurisdiction by reason of the scope, extent or duration of its coverage, then such provision shall be deemed amended to the minimum extent necessary to conform to applicable law so as to be valid and enforceable or, if such provision cannot be so amended without materially altering the intention of the parties, then such provision shall be stricken and the remainder of this Agreement shall continue in full force and effect. If any provision of this Agreement is rendered illegal by any present or future statute, law, ordinance or regulation (collectively, the &#8220;Law&#8221;) then that provision shall be curtailed or limited only to the minimum extent necessary to bring the provision into compliance with the Law. All the other terms and provisions of this Agreement shall continue in full force and effect without impairment or limitation.
+</div>
+<div style="line-height:120%;padding-left:0px;padding-bottom:16px;text-align:left;text-indent:96px;">
+	(g)Counterparts.&#160;&#160;This Agreement may be executed in any number of counterparts, each of which when so executed and delivered shall be deemed an original, and all of which together shall constitute one and the same agreement. Execution of a facsimile or scanned copy will have the same force and effect as execution of an original, and a facsimile or scanned signature will be deemed an original and valid signature. 
+</div>
+<div style="line-height:240%;padding-bottom:16px;text-align:center;">
+	<br>
+</div>
+<div style="line-height:240%;padding-bottom:16px;text-align:center;">
+	[Signature Page Follows]
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		10
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+<hr style="page-break-after:always">
+<div>
+</div>
+<div>
+</div>
+<div>
+	<br>
+</div>
+<div style="line-height:120%;padding-bottom:16px;text-align:left;text-indent:48px;">
+	We are all delighted to be able to continue your employment on the terms and conditions set forth in this Agreement. To indicate your acceptance of the Company&#8217;s offer and continue your employment with the Company, please sign and date this Agreement in the space provided below and return it to me.
+</div>
+<div style="line-height:120%;text-align:right;">
+	<div style="padding-left:0px;text-indent:0px;line-height:normal;padding-top:10px;text-align:-moz-right;">
+		<table cellpadding="0" cellspacing="0" style="font-family:Times New Roman;width:50.85470085470085%;border-collapse:collapse;text-align:left;margin-left:auto;margin-right:0;">
+			<tr>
+				<td colspan="2"></td>
+			</tr>
+			<tr>
+				<td style="width:16%;"></td>
+				<td style="width:84%;"></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					Very truly yours,
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="overflow:hidden;height:21px;">
+					&#160;
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					BEYOND MEAT, INC.
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="overflow:hidden;height:21px;">
+					&#160;
+				</div>
+				</td>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="overflow:hidden;height:21px;">
+					&#160;
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					By:
+				</div>
+				</td>
+				<td style="vertical-align:bottom;border-bottom:1px solid #000000;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					/s/ Mark Nelson
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="overflow:hidden;">
+					&#160;
+				</div>
+				</td>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					(Signature)
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="padding-top:8px;text-align:left;">
+					Name:
+				</div>
+				</td>
+				<td style="vertical-align:bottom;border-bottom:1px solid #000000;padding-left:20px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="padding-top:8px;text-align:left;">
+					Mark Nelson
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="padding-top:8px;text-align:left;">
+					Title:
+				</div>
+				</td>
+				<td style="vertical-align:bottom;border-bottom:1px solid #000000;padding-left:20px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="padding-top:8px;text-align:left;">
+					Chief Financial Officer
+				</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div style="line-height:120%;padding-bottom:16px;text-align:left;">
+	<br>
+</div>
+<div style="line-height:120%;text-align:left;">
+	<div style="padding-left:0px;text-indent:0px;line-height:normal;padding-top:10px;">
+		<table cellpadding="0" cellspacing="0" style="font-family:Times New Roman;width:47.008547008547005%;border-collapse:collapse;text-align:left;">
+			<tr>
+				<td colspan="1"></td>
+			</tr>
+			<tr>
+				<td style="width:100%;"></td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					ACCEPTED AND AGREED:
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="overflow:hidden;height:20px;">
+					&#160;
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					ETHAN BROWN
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="overflow:hidden;height:20px;">
+					&#160;
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;border-bottom:1px solid #000000;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					/s/ Ethan Brown
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					(Signature)
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;border-bottom:1px solid #000000;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					1/8/2019
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="vertical-align:bottom;padding-left:2px;padding-top:2px;padding-bottom:2px;padding-right:2px;"> 
+				<div style="text-align:left;">
+					Date
+				</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div>
+	<br>
+</div>
+<div>
+	<div style="line-height:100%;text-align:center;">
+		11
+	</div>
+	<div style="line-height:120%;text-align:left;">
+		<br>
+	</div>
+</div>
+
+
+</div></div></div>
+
+
+	<footer class="container-fluid">
+
+<div class="row">
+  <div class="col-sm-6"><h4>Business Contracts</h4>
+  <p><a href="//contracts.onecle.com/type/19.shtml">Asset Purchase</a><br>
+<a href="//contracts.onecle.com/type/35.shtml">Business Separation</a><br>
+<a href="//contracts.onecle.com/type/90.shtml">Collaboration</a><br>
+<a href="//contracts.onecle.com/type/56.shtml">Construction</a><br>
+<a href="//contracts.onecle.com/type/64.shtml">Consulting</a><br>
+<a href="//contracts.onecle.com/type/147.shtml">Distribution</a><br>
+<a href="//contracts.onecle.com/type/2.shtml">Employment</a><br>
+<a href="//contracts.onecle.com/type/79.shtml">Franchise</a><br>
+<a href="//contracts.onecle.com/type/11.shtml">Indemnification</a><br>
+<a href="//contracts.onecle.com/type/60.shtml">Joint Venture</a><br>
+<a href="//contracts.onecle.com/type/16.shtml">Lease</a><br>
+<a href="//contracts.onecle.com/type/32.shtml">License</a><br>
+<a href="//contracts.onecle.com/type/76.shtml">LLC</a><br>
+<a href="//contracts.onecle.com/type/30.shtml">Loan</a><br>
+<a href="//contracts.onecle.com/type/86.shtml">Management</a><br>
+<a href="//contracts.onecle.com/type/47.shtml">Manufacturing/Supply</a><br>
+<a href="//contracts.onecle.com/type/41.shtml">Merger</a><br>
+<a href="//contracts.onecle.com/type/21.shtml">Non-Competition</a><br>
+<a href="//contracts.onecle.com/type/189.shtml">Offer Letter</a><br>
+<a href="//contracts.onecle.com/type/36.shtml">Partnership</a><br>
+<a href="//contracts.onecle.com/type/67.shtml">Promissory Note</a><br>
+<a href="//contracts.onecle.com/type/80.shtml">Sales</a><br>
+<a href="//contracts.onecle.com/type/4.shtml">Services</a><br>
+<a href="//contracts.onecle.com/type/38.shtml">Severance</a><br>
+<a href="//contracts.onecle.com/type/68.shtml">Shareholder</a><br>
+<a href="//contracts.onecle.com/type/6.shtml">Stock Purchase</a></p>
+  </div>
+  <div class="col-sm-6"><h4>Consumer Forms</h4>
+  <p><a href="//contracts.onecle.com/consumer/divorce.shtml">Divorce</a><br>
+<a href="//contracts.onecle.com/consumer/dmv.shtml">DMV</a><br>
+<a href="//contracts.onecle.com/consumer/durable-power-of-attorney.shtml">Durable Power of Attorney</a><br>
+<a href="//contracts.onecle.com/consumer/employment.shtml">Employment</a><br>
+<a href="//contracts.onecle.com/consumer/government-forms.shtml">Government</a><br>
+<a href="//contracts.onecle.com/consumer/identity-theft.shtml">Identity Theft</a><br>
+<a href="//contracts.onecle.com/consumer/landlord-tenant.shtml">Landlord-Tenant</a><br>
+<a href="//contracts.onecle.com/consumer/living-will-advance-directive.shtml">Living Will</a><br>
+<a href="//contracts.onecle.com/consumer/mechanics-lien.shtml">Mechanic's Lien</a><br><a href="//contracts.onecle.com/consumer/medical.shtml">Medical</a><br>
+<a href="//contracts.onecle.com/consumer/probate.shtml">Probate</a><br>
+<a href="//contracts.onecle.com/consumer/workers-compensation.shtml">Workers' Compensation</a></p>
+
+
+  <p class="line"><a href="http://www.onecle.com/blog/index.php">Contracts Blog</a></p>
+<p><a href="//contracts.onecle.com/type/">View All Types</a><br>
+<a href="//contracts.onecle.com/industries/">View All Industries</a><br>
+<a href="//contracts.onecle.com/alpha/">View All Companies</a></p>
+
+  
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-sm-12">
+
+
+		<a href="//www.onecle.com/info/copyright.shtml">Copyright &copy; 2026 Onecle Inc.</a> No claim to contracts derived from securities filings.<br><br>
+		
+		
+		<a href="//www.onecle.com/info/terms.shtml">Terms of Service</a> | <a href="//www.onecle.com/info/privacy.shtml">Privacy Policy</a>
+	</div>
+</div>
+
+</footer>
+</body>
+</html>

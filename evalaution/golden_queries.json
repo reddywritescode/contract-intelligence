@@ -1,0 +1,35 @@
+{
+  "facets": [
+    {
+      "id": "termination",
+      "question": "What are the termination rights and cure/notice periods in this contract?",
+      "keywords": ["terminate", "termination", "notice", "cure"],
+      "min_hits": 3
+    },
+    {
+      "id": "renewal",
+      "question": "Does this contract auto-renew or describe renewal/extension terms?",
+      "keywords": ["renew", "renewal", "extend", "extension", "term"],
+      "min_hits": 3
+    },
+    {
+      "id": "liability",
+      "question": "Summarize limitation of liability and indemnification obligations.",
+      "keywords": ["liability", "indemn", "damages", "limit", "cap"],
+      "min_hits": 3
+    },
+    {
+      "id": "payment",
+      "question": "What are the payment or financial obligations (fees, rent, salary, loan terms)?",
+      "keywords": ["payment", "fee", "rent", "salary", "loan", "interest"],
+      "min_hits": 3
+    },
+    {
+      "id": "governing_law",
+      "question": "What governing law and dispute venue terms are defined?",
+      "keywords": ["governing law", "jurisdiction", "venue", "court", "arbitration"],
+      "min_hits": 1
+    }
+  ],
+  "aggregate_query": "Give a concise risk-oriented summary covering term, termination, renewal, liability and payment obligations with citations."
+}
