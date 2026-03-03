@@ -23,6 +23,7 @@ type Props = {
   activeGroupName?: string;
   activeAssessment?: AssessmentLike;
   onBadgeClick?: (clauseType: string) => void;
+  pulse?: boolean;
 };
 
 const modeLabels: Record<string, string> = {
@@ -49,7 +50,7 @@ export default function PdfViewer({
   fileUrl, chunks, highlightedList, highlightMode,
   highlightIndex, highlightTotal, onPrev, onNext, contractName,
   riskAnnotations, onChunkClick, categoryColor, activeGroupName,
-  activeAssessment, onBadgeClick,
+  activeAssessment, onBadgeClick, pulse,
 }: Props) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const readyRef = useRef(false);
@@ -132,9 +133,10 @@ export default function PdfViewer({
         riskMap,
         categoryColor: categoryColor || null,
         badgeData,
+        pulse: !!pulse,
       },
     });
-  }, [highlightMode, highlightIndex, highlightTotal, currentItem, riskAnnotations, categoryColor, activeAssessment]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [highlightMode, highlightIndex, highlightTotal, currentItem, riskAnnotations, categoryColor, activeAssessment, pulse]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const indicatorColor = categoryColor || modeDotColors[highlightMode || "clauses"] || "#f59e0b";
   const indicatorLabel = activeGroupName || (modeLabels[highlightMode || "clauses"] || "Item");

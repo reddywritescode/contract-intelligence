@@ -1,14 +1,13 @@
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE ?? "/api/v1";
 
-// Direct backend URL — bypasses the Next.js proxy which has a ~30s timeout
-// that kills long-running requests (analyze, ask, ingest)
-const DIRECT_BACKEND = typeof window !== "undefined"
-  ? `http://${window.location.hostname}:8000/api/v1`
-  : "http://127.0.0.1:8000/api/v1";
+const NGROK_HEADERS: Record<string, string> = {
+  "ngrok-skip-browser-warning": "true",
+};
 
 async function safeFetch(input: RequestInfo | URL, init?: RequestInit) {
   try {
-    return await fetch(input, init);
+    const headers = { ...NGROK_HEADERS, ...(init?.headers as Record<string, string>) };
+    return await fetch(input, { ...init, headers });
   } catch (err) {
     const message = err instanceof Error ? err.message : "network error";
     throw new Error(`API fetch failed (${API_BASE}). ${message}`);
@@ -19,7 +18,8 @@ async function longFetch(input: RequestInfo | URL, init?: RequestInit) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 5 * 60 * 1000);
   try {
-    return await fetch(input, { ...init, signal: controller.signal });
+    const headers = { ...NGROK_HEADERS, ...(init?.headers as Record<string, string>) };
+    return await fetch(input, { ...init, headers, signal: controller.signal });
   } catch (err) {
     if (err instanceof DOMException && err.name === "AbortError") {
       throw new Error("Request timed out after 5 minutes");
@@ -34,13 +34,13 @@ async function longFetch(input: RequestInfo | URL, init?: RequestInit) {
 export async function ingestContract(file: File) {
   const form = new FormData();
   form.append("file", file);
-  const res = await longFetch(`${DIRECT_BACKEND}/contracts/ingest`, { method: "POST", body: form });
+  const res = await longFetch(`${API_BASE}/contracts/ingest`, { method: "POST", body: form });
   if (!res.ok) throw new Error(`Ingest failed: ${res.status}`);
   return res.json();
 }
 
 export async function analyzeContract(contractId: string, payload: { mode: "review" | "agent"; tasks: string[]; question?: string }) {
-  const res = await longFetch(`${DIRECT_BACKEND}/contracts/${contractId}/analyze`, {
+  const res = await longFetch(`${API_BASE}/contracts/${contractId}/analyze`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload)
@@ -50,7 +50,7 @@ export async function analyzeContract(contractId: string, payload: { mode: "revi
 }
 
 export async function askAI(contractId: string, question: string) {
-  const res = await longFetch(`${DIRECT_BACKEND}/contracts/${contractId}/ask`, {
+  const res = await longFetch(`${API_BASE}/contracts/${contractId}/ask`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ question }),

@@ -37,6 +37,8 @@
   .risk-badge--high{background:#dc2626}
   .risk-badge--medium{background:#d97706}
   .risk-badge--low{background:#15803d}
+  @keyframes hlPulse{0%{opacity:0.4}50%{opacity:0.85}100%{opacity:0.4}}
+  .ov.ov--pulse canvas{animation:hlPulse 1.2s ease-in-out 2}
 </style>
 </head>
 <body>
@@ -320,6 +322,7 @@ function doHighlight(allTexts,focusText,mode,targetPage,riskMap,categoryColor,ba
       var scoreLabel=lvl==='high'?'H':lvl==='medium'?'M':'L';
       var reasonText=badgeData.reason||'';
       if(reasonText.length>50) reasonText=reasonText.substring(0,48)+'\u2026';
+      badge.title=(badgeData.reason||badgeData.clause_type||'');
       badge.innerHTML='<span class="risk-badge__score">'+scoreLabel+' '+badgeData.risk_score+'</span>'+(reasonText?'<span class="risk-badge__reason">'+reasonText+'</span>':'');
       badge.style.top=(firstRect.y-24)+'px';
       badge.style.left=(firstRect.x)+'px';
@@ -356,6 +359,10 @@ window.addEventListener('message',function(e){
       d.payload.textEntries||null,
       d.payload.focusPage||null
     );
+    if(d.payload.pulse){
+      store.forEach(function(pg){pg.overlay.classList.add('ov--pulse');});
+      setTimeout(function(){store.forEach(function(pg){pg.overlay.classList.remove('ov--pulse');});},2600);
+    }
   }
   if(d.type==='navigate')goTo(d.payload.page);
   if(d.type==='clear')clearHL();

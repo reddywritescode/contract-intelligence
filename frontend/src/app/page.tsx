@@ -70,6 +70,7 @@ type ContractRow = {
   contract_id: string; filename: string; created_at: string; chunk_count: number;
   contract_type?: string | null; counterparty?: string | null;
   agreement_date?: string | null; status?: string | null; risk_level?: string | null;
+  risk_score?: number | null;
 };
 type ChunkItem = { chunk_id: string; text: string; section?: string; page?: number | null };
 type HighlightItem = { chunk_id: string; section?: string; page?: number | null; excerpt?: string };
@@ -97,6 +98,23 @@ type ClauseGap = { clause_key: string; name: string; description: string; requir
 type ClauseAssessment = { assessment_id: string; contract_id: string; chunk_id: string; clause_type: string; risk_level: string; risk_score: number; reason: string; standard_clause?: string; deviation?: string; recommendation?: string; citations: { chunk_id: string }[]; created_at: string };
 
 /* ─── Helpers ─────────────────────────────────────── */
+
+function wordDiff(a: string, b: string): { text: string; type: "same" | "add" | "del" }[] {
+  const wa = a.split(/\s+/), wb = b.split(/\s+/);
+  const bSet = new Set(wb);
+  const aSet = new Set(wa);
+  const result: { text: string; type: "same" | "add" | "del" }[] = [];
+  let bi = 0;
+  for (const w of wa) {
+    if (bi < wb.length && wb[bi] === w) { result.push({ text: w, type: "same" }); bi++; }
+    else if (!bSet.has(w)) { result.push({ text: w, type: "del" }); }
+    else { result.push({ text: w, type: "same" }); }
+  }
+  for (; bi < wb.length; bi++) {
+    if (!aSet.has(wb[bi])) result.push({ text: wb[bi], type: "add" });
+  }
+  return result;
+}
 
 const preferredOrder = ["term", "effective_date", "renewal", "renewal_terms", "termination", "termination_rights", "payment_terms", "liability", "indemnification", "confidentiality", "governing_law", "dispute_resolution"];
 
@@ -138,6 +156,14 @@ const CLAUSE_TOOLTIPS: Record<string, string> = {
   warranties: "Promises about the quality, fitness, or condition of goods or services delivered",
   insurance: "Required insurance coverage types and minimum amounts each party must carry",
   data_protection: "Obligations for handling personal data — GDPR, CCPA, or other privacy compliance",
+};
+
+const SECTION_INFO: Record<string, string> = {
+  summary: "AI-generated executive overview of the contract, including key statistics (clauses found, missing items, risk count) and a reviewer decision workflow. Use this to quickly understand the contract's status before diving into details.",
+  risk: "Per-clause risk assessment scored 0–100 by AI. Each detected clause type is evaluated against procurement best practices. Click any clause to highlight it in the PDF and see why it was flagged.",
+  missing: "Checks whether all required standard clauses (e.g., Governing Law, Indemnification) are present in the contract. Missing clauses represent gaps that could expose your organization to legal or financial risk.",
+  compliance: "Side-by-side comparison of every detected clause against your organization's Clause Library standards. Filter by status, review deviations, accept compliant clauses, or compare vendor text to playbook language inline.",
+  keywords: "Pattern-based scan for high-risk keywords and phrases (e.g., 'unlimited liability', 'auto-renew', 'sole discretion') that may indicate unfavorable terms, even when the AI clause assessment doesn't flag them.",
 };
 
 function prettify(k: string): string { return k.replace(/[_\-]+/g, " ").replace(/\b\w/g, c => c.toUpperCase()); }
@@ -296,6 +322,7 @@ export default function HomePage() {
   const [highlightMode, setHighlightMode] = useState<HighlightMode>(null);
   const [highlightIndex, setHighlightIndex] = useState(0);
   const [activeClauseGroup, setActiveClauseGroup] = useState<string | null>(null);
+  const [hlPulse, setHlPulse] = useState(false);
   const [thread, setThread] = useState<QAThread[]>([]);
   const [query, setQuery] = useState("");
   const [chatScope, setChatScope] = useState<"document" | "all">("document");
@@ -366,7 +393,7 @@ export default function HomePage() {
   const [generating, setGenerating] = useState(false);
 
   /* STATE: Risk filter */
-  const [showHighRiskOnly, setShowHighRiskOnly] = useState(false);
+  const [hideLowRisk, setHideLowRisk] = useState(true);
 
   /* STATE: Clause Risk Assessments */
   const [clauseAssessments, setClauseAssessments] = useState<ClauseAssessment[]>([]);
@@ -394,8 +421,8 @@ export default function HomePage() {
   const [reviewDecidedBy, setReviewDecidedBy] = useState<string | null>(null);
   const [summaryLoading, setSummaryLoading] = useState(false);
   const [savingDecision, setSavingDecision] = useState(false);
-  type CollapsedSections = { risk: boolean; missing: boolean; compliance: boolean; keywords: boolean };
-  const [collapsed, setCollapsed] = useState<CollapsedSections>({ risk: false, missing: false, compliance: true, keywords: true });
+  type CollapsedSections = { summary: boolean; risk: boolean; missing: boolean; compliance: boolean; keywords: boolean };
+  const [collapsed, setCollapsed] = useState<CollapsedSections>({ summary: false, risk: false, missing: false, compliance: true, keywords: true });
 
   /* STATE: Clause annotation */
   const [annotatingClause, setAnnotatingClause] = useState<string | null>(null);
@@ -430,6 +457,9 @@ export default function HomePage() {
   const [explainText, setExplainText] = useState("");
   const [explainLoading, setExplainLoading] = useState(false);
   const [clauseReviewStatus, setClauseReviewStatus] = useState<Record<string, string>>({});
+  const [complianceFilter, setComplianceFilter] = useState<"all" | "detected" | "missing" | "needs_review">("all");
+  const [inlineCompareKey, setInlineCompareKey] = useState<string | null>(null);
+  const [openSectionInfo, setOpenSectionInfo] = useState<string | null>(null);
   const [copiedId, setCopiedId] = useState(false);
 
   /* STATE: Document filters */
@@ -569,7 +599,7 @@ export default function HomePage() {
     void refreshContracts();
   }, [refreshContracts]);
 
-  const loadContractData = useCallback(async (id: string) => {
+  const loadContractData = useCallback(async (id: string): Promise<{ assessmentCount: number; chunkCount: number }> => {
     const [cd, hd, qd, rd, cmt, act, cg, ca, rv] = await Promise.all([
       getChunks(id), getHighlights(id), getSuggestedQuestions(id), listRuns(id),
       getComments(id).catch(() => ({ comments: [] })),
@@ -578,13 +608,15 @@ export default function HomePage() {
       getClauseAssessments(id).catch(() => ({ assessments: [] })),
       getReviewDecision(id).catch(() => ({ decision: "pending", reviewer_notes: null, ai_summary: null, overall_score: null, decided_at: null, decided_by: null })),
     ]);
-    setChunks((cd.chunks || []) as ChunkItem[]);
+    const chunks = (cd.chunks || []) as ChunkItem[];
+    const assessments = (ca.assessments || []) as ClauseAssessment[];
+    setChunks(chunks);
     setHighlights((hd.highlights || {}) as Record<string, HighlightItem[]>);
     setSuggestedQs((qd.questions || []) as string[]);
     setComments((cmt.comments || []) as CommentItem[]);
     setActivity((act.activity || []) as ActivityItem[]);
     setClauseGaps((cg.clause_library || []) as ClauseGap[]);
-    setClauseAssessments((ca.assessments || []) as ClauseAssessment[]);
+    setClauseAssessments(assessments);
     setReviewDecision(rv.decision || "pending");
     setReviewerNotes(rv.reviewer_notes || "");
     setAiSummary(rv.ai_summary || "");
@@ -596,6 +628,7 @@ export default function HomePage() {
       const latest = await getRun(runs[0].run_id);
       setResult({ run_id: latest.run_id, contract_id: latest.contract_id, mode: latest.mode, summary: latest.summary, answer: latest.answer, answer_citations: latest.answer_citations, risks: latest.risks, requires_approval: latest.requires_approval });
     } else { setResult(null); }
+    return { assessmentCount: assessments.length, chunkCount: chunks.length };
   }, []);
 
   useEffect(() => { void refreshContracts(); }, [refreshContracts]);
@@ -719,7 +752,16 @@ export default function HomePage() {
       const out = await analyzeContract(cid, { mode: "agent", tasks: ["summary", "qa", "risk"], question: "Summarize this contract and flag all risks" });
       setResult(out as AnalyzeResult);
       setThread(prev => [...prev, { id: out.run_id, role: "ai", text: out.answer || "Analysis complete." }]);
-      await loadContractData(cid);
+      const { assessmentCount, chunkCount } = await loadContractData(cid);
+      if (assessmentCount === 0 && chunkCount > 0) {
+        setAnalysisProgress(90);
+        setAnalysisPhase("Running per-clause risk assessment…");
+        try {
+          const resp = await runClauseAssessments(cid);
+          setClauseAssessments((resp.assessments || []) as ClauseAssessment[]);
+        } catch { /* best-effort fallback */ }
+        await loadContractData(cid);
+      }
       setAnalysisProgress(100);
       setAnalysisPhase("Analysis complete");
       setTimeout(() => { setAnalysisPhase(""); setAnalysisProgress(0); }, 1500);
@@ -735,9 +777,8 @@ export default function HomePage() {
       const ing = await ingestContract(f);
       await refreshContracts();
       await openContract(ing.contract_id);
-      void runAutoAnalysis(ing.contract_id);
+      await runAutoAnalysis(ing.contract_id);
     } catch (err) { setError(err instanceof Error ? err.message : "Upload failed"); setAnalysisPhase(""); setAnalysisProgress(0); }
-    finally { setLoading(false); setLoadingLabel(""); }
   }, [refreshContracts, openContract, runAutoAnalysis]);
 
   const runPrompt = useCallback(async (prompt: string) => {
@@ -998,6 +1039,8 @@ export default function HomePage() {
     setHighlightIndex(0);
     setDetailTab("contents");
     scrollToChunkRef.current = items[0].chunk_id;
+    setHlPulse(true);
+    setTimeout(() => setHlPulse(false), 100);
   }, [highlights, activeClauseGroup]);
 
   const canRun = Boolean(contractId && !loading);
@@ -1062,18 +1105,70 @@ export default function HomePage() {
           {/* ═══ WELCOME ═══ */}
           {view === "welcome" && (
             <div className="welcome">
-              <div className="welcome__icon">&#128196;</div>
-              <h1 className="welcome__title">Contract Intelligence</h1>
-              <p className="welcome__desc">Upload a supplier agreement, NDA, or any legal document. AI will extract clauses, flag risks, and surface procurement actions.</p>
-              <label className="welcome__uploadBtn">Upload Contract {fileInput}</label>
-              <p className="welcome__hint">Supports PDF, DOCX, HTML, TXT</p>
-              {loading && loadingLabel === "upload" && (
-                <div className="welcomeProgress">
-                  <div className="analysisBar__spinner" style={{ margin: "12px auto 8px" }} />
-                  <p style={{ fontSize: 13, fontWeight: 500, color: "var(--text-muted)" }}>Uploading & processing document…</p>
+              <div className="welcome__icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg></div>
+              <h1 className="welcome__title">AI-Powered Contract Review</h1>
+              <p className="welcome__desc">Upload a supplier agreement, NDA, or any legal document. AI will extract clauses, flag risks, and surface procurement actions — in seconds.</p>
+              <div
+                className={`welcome__dropzone${loading && loadingLabel === "upload" ? " welcome__dropzone--uploading" : ""}`}
+                onDragOver={e => { e.preventDefault(); e.currentTarget.classList.add("welcome__dropzone--hover"); }}
+                onDragLeave={e => { e.preventDefault(); e.currentTarget.classList.remove("welcome__dropzone--hover"); }}
+                onDrop={e => { e.preventDefault(); e.currentTarget.classList.remove("welcome__dropzone--hover"); const f = e.dataTransfer.files[0]; if (f) void onUpload(f); }}
+              >
+                {loading && loadingLabel === "upload" ? (
+                  <div className="welcome__dropzoneUploading">
+                    <div className="analysisBar__spinner" />
+                    <p className="welcome__dropzoneStatus">Uploading &amp; processing document…</p>
+                  </div>
+                ) : (
+                  <>
+                    <div className="welcome__dropzoneIcon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+                    <p className="welcome__dropzoneText">Drag your contract here or <label className="welcome__dropzoneBrowse">click to browse{fileInput}</label></p>
+                    <p className="welcome__dropzoneHint">PDF, DOCX, HTML, TXT — up to 50 MB</p>
+                  </>
+                )}
+              </div>
+              <div className="welcome__features">
+                <div className="welcome__feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg><span>Clause Extraction</span></div>
+                <div className="welcome__feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M12 9v2m0 4h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg><span>Risk Analysis</span></div>
+                <div className="welcome__feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span>AI Q&amp;A</span></div>
+                <div className="welcome__feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Compliance Check</span></div>
+              </div>
+
+              {/* ── Try a Sample ── */}
+              <div className="welcome__samples">
+                <p className="welcome__samplesTitle">Or try a sample contract</p>
+                <div className="welcome__sampleCards">
+                  {([
+                    { file: "/samples/sample-msa.pdf", name: "Master Supplier Agreement", desc: "Multi-clause supplier contract with risk, payment, IP, and termination terms", icon: "MSA", color: "#6366f1" },
+                    { file: "/samples/sample-nda.pdf", name: "Non-Disclosure Agreement", desc: "Mutual NDA covering confidentiality obligations, exclusions, and remedies", icon: "NDA", color: "#0ea5e9" },
+                    { file: "/samples/sample-sow.pdf", name: "Statement of Work", desc: "Cloud migration SOW with milestones, fixed pricing, HIPAA, and liability caps", icon: "SOW", color: "#f59e0b" },
+                  ] as const).map(s => (
+                    <button
+                      key={s.file}
+                      type="button"
+                      className="welcome__sampleCard"
+                      disabled={loading}
+                      onClick={async () => {
+                        try {
+                          const resp = await fetch(s.file);
+                          const blob = await resp.blob();
+                          const file = new File([blob], s.file.split("/").pop()!, { type: blob.type || "application/pdf" });
+                          void onUpload(file);
+                        } catch { setError("Failed to load sample document."); }
+                      }}
+                    >
+                      <span className="welcome__sampleIcon" style={{ background: s.color }}>{s.icon}</span>
+                      <span className="welcome__sampleText">
+                        <strong>{s.name}</strong>
+                        <span>{s.desc}</span>
+                      </span>
+                      <svg className="welcome__sampleArrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    </button>
+                  ))}
                 </div>
-              )}
-              {error && <p className="errorBanner" style={{ maxWidth: 400, margin: "12px auto 0" }}>{error}</p>}
+              </div>
+
+              {error && <p className="errorBanner" style={{ maxWidth: 480, margin: "12px auto 0" }}>{error}</p>}
             </div>
           )}
 
@@ -1178,6 +1273,35 @@ export default function HomePage() {
                   )}
                 </div>
 
+                {/* KPI Tiles */}
+                {contracts.length > 0 && (
+                  <div className="repoKpi">
+                    <div className="repoKpi__tile">
+                      <span className="repoKpi__num">{contracts.length}</span>
+                      <span className="repoKpi__label">Total Contracts</span>
+                    </div>
+                    <div className="repoKpi__tile repoKpi__tile--red">
+                      <span className="repoKpi__num">{contracts.filter(c => c.risk_level?.toLowerCase() === "high").length}</span>
+                      <span className="repoKpi__label">High Risk Flagged</span>
+                    </div>
+                    <div className="repoKpi__tile repoKpi__tile--amber">
+                      <span className="repoKpi__num">
+                        {contracts.filter(c => {
+                          const d = c.agreement_date || c.created_at;
+                          if (!d) return false;
+                          const days = Math.floor((Date.now() - new Date(d).getTime()) / 86400000);
+                          return days > 275;
+                        }).length}
+                      </span>
+                      <span className="repoKpi__label">Upcoming Renewals</span>
+                    </div>
+                    <div className="repoKpi__tile">
+                      <span className="repoKpi__num">{contracts.filter(c => c.status === "Active").length}</span>
+                      <span className="repoKpi__label">Active Contracts</span>
+                    </div>
+                  </div>
+                )}
+
                 {contracts.length === 0 ? (
                   <div className="emptyState">No contracts match the current filters.</div>
                 ) : (
@@ -1199,12 +1323,37 @@ export default function HomePage() {
                           <td><span className="docTable__name">{c.filename}</span></td>
                           <td>{c.counterparty || <span className="text-muted">—</span>}</td>
                           <td>{c.contract_type ? <span className="typeBadge">{c.contract_type}</span> : <span className="text-muted">—</span>}</td>
-                          <td className="text-muted">{c.agreement_date ? new Date(c.agreement_date + "T00:00:00").toLocaleDateString() : new Date(c.created_at).toLocaleDateString()}</td>
+                          <td className="text-muted">
+                            {c.agreement_date ? new Date(c.agreement_date + "T00:00:00").toLocaleDateString() : new Date(c.created_at).toLocaleDateString()}
+                            {(() => {
+                              const d = c.agreement_date || c.created_at;
+                              if (!d) return null;
+                              const ageDays = Math.floor((Date.now() - new Date(d).getTime()) / 86400000);
+                              const remaining = 365 - ageDays;
+                              if (remaining <= 0) return <span className="renewalCountdown renewalCountdown--expired">Expired</span>;
+                              if (remaining <= 90) return <span className="renewalCountdown renewalCountdown--soon">{remaining}d left</span>;
+                              if (remaining <= 180) return <span className="renewalCountdown">{Math.floor(remaining / 30)}mo left</span>;
+                              return null;
+                            })()}
+                          </td>
                           <td>
                             <span className={`statusBadge statusBadge--${(c.status || "Under Review").toLowerCase().replace(/\s/g, "")}`}>{c.status || "Under Review"}</span>
                             {(() => { const d = c.agreement_date || c.created_at; const days = Math.floor((Date.now() - new Date(d).getTime()) / 86400000); return days > 275 ? <span className="expiryBadge">Expiring</span> : null; })()}
                           </td>
-                          <td>{c.risk_level ? <span className={`riskBadge riskBadge--${c.risk_level.toLowerCase()}`}>{c.risk_level}</span> : <span className="text-muted">—</span>}</td>
+                          <td>
+                            {c.risk_level ? (
+                              <span className="riskDonut" title={`${c.risk_level} Risk${c.risk_score != null ? ` — Score: ${c.risk_score}/100` : ""}`}>
+                                <svg width="28" height="28" viewBox="0 0 36 36">
+                                  <circle cx="18" cy="18" r="15.9" fill="none" stroke="var(--border)" strokeWidth="3" />
+                                  <circle cx="18" cy="18" r="15.9" fill="none"
+                                    stroke={c.risk_level.toLowerCase() === "high" ? "#dc2626" : c.risk_level.toLowerCase() === "medium" ? "#f59e0b" : "#22c55e"}
+                                    strokeWidth="3" strokeDasharray={`${(c.risk_score ?? (c.risk_level.toLowerCase() === "high" ? 80 : c.risk_level.toLowerCase() === "medium" ? 50 : 25))} 100`}
+                                    strokeLinecap="round" transform="rotate(-90 18 18)" />
+                                </svg>
+                                <span className="riskDonut__label">{c.risk_level.charAt(0)}</span>
+                              </span>
+                            ) : <span className="text-muted">—</span>}
+                          </td>
                           <td>
                             <button type="button" className="docTable__deleteBtn" title="Delete contract" onClick={async (e) => {
                               e.stopPropagation();
@@ -2457,6 +2606,7 @@ export default function HomePage() {
                       <div className="analysisBar__track">
                         <div className="analysisBar__fill" style={{ width: `${analysisProgress}%` }} />
                       </div>
+                      {analysisProgress < 100 && <span className="analysisBar__eta">Usually takes 30–60 seconds</span>}
                     </div>
                   </div>
                 </div>
@@ -2473,10 +2623,16 @@ export default function HomePage() {
                     <div className="overviewCard">
                       <div className="overviewCard__title">Key Information</div>
                       {summaryView.entries.length === 0 ? (
-                        <div style={{ textAlign: "center", padding: "12px 0" }}>
-                          <p style={{ fontSize: 13, color: "var(--text-muted)", marginBottom: 10 }}>Contract has not been analyzed yet.</p>
-                          {!analysisPhase && <button type="button" className="btn btn--primary btn--sm" onClick={() => contractId && void runAutoAnalysis(contractId)}>Analyze Now</button>}
-                        </div>
+                        analysisPhase && analysisProgress < 100 ? (
+                          <div className="skeletonGroup">
+                            {[1,2,3,4,5].map(i => <div key={i} className="skeleton skeleton--row" />)}
+                          </div>
+                        ) : (
+                          <div style={{ textAlign: "center", padding: "12px 0" }}>
+                            <p style={{ fontSize: 13, color: "var(--text-muted)", marginBottom: 10 }}>Contract has not been analyzed yet.</p>
+                            <button type="button" className="btn btn--primary btn--sm" onClick={() => contractId && void runAutoAnalysis(contractId)}>Analyze Now</button>
+                          </div>
+                        )
                       ) : summaryView.entries.slice(0, 7).map(e => (
                         <div key={e.key} className="overviewCard__row">
                           <span className="overviewCard__label">{e.label}</span>
@@ -2487,7 +2643,14 @@ export default function HomePage() {
                     <div className="overviewCard">
                       <div className="overviewCard__title">Risk Summary</div>
                       {risks.length === 0 ? (
-                        <p style={{ fontSize: 13, color: "var(--text-muted)" }}>No risks flagged yet.</p>
+                        analysisPhase && analysisProgress < 100 ? (
+                          <div className="skeletonGroup">
+                            <div className="skeleton skeleton--circle" />
+                            {[1,2].map(i => <div key={i} className="skeleton skeleton--row" style={{ width: `${70 - i * 15}%` }} />)}
+                          </div>
+                        ) : (
+                          <p style={{ fontSize: 13, color: "var(--text-muted)" }}>No risks flagged yet.</p>
+                        )
                       ) : (
                         <>
                           <div className="riskScoreMini">
@@ -2587,6 +2750,7 @@ export default function HomePage() {
                           const assessment = clauseAssessments.find(a => a.clause_type === clauseType);
                           if (assessment) { setSelectedAssessment(assessment); setPanelTab("review"); }
                         }}
+                        pulse={hlPulse}
                       />
                     ) : (
                       <DocumentViewer
@@ -2760,9 +2924,31 @@ export default function HomePage() {
                             </div>
                           ) : (
                             <>
-                              {/* ── Section 1: AI Summary and Decision (always visible) ── */}
-                              <div className="reviewSummaryCard">
-                                <div className="reviewSummaryCard__header">AI Summary &amp; Decision</div>
+                              {/* ── Collapse / Expand All ── */}
+                              <div className="reviewCollapseBar">
+                                <button type="button" className="reviewCollapseBar__btn" onClick={() => setCollapsed({ summary: false, risk: false, missing: false, compliance: false, keywords: false })}>
+                                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                                  Expand All
+                                </button>
+                                <button type="button" className="reviewCollapseBar__btn" onClick={() => setCollapsed({ summary: true, risk: true, missing: true, compliance: true, keywords: true })}>
+                                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4 2l4 4-4 4" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                                  Collapse All
+                                </button>
+                              </div>
+
+                              {/* ── Section 1: AI Summary and Decision (collapsible) ── */}
+                              <div className="collapsibleSection collapsibleSection--summary">
+                                <button type="button" className="collapsibleSection__header collapsibleSection__header--summary" onClick={() => setCollapsed(p => ({ ...p, summary: !p.summary }))}>
+                                  <svg className={`collapsibleSection__chevron${collapsed.summary ? "" : " collapsibleSection__chevron--open"}`} width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5.5 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                                  <span className="collapsibleSection__title">AI Summary &amp; Decision</span>
+                                  <span className="sectionInfo" onClick={e => { e.stopPropagation(); setOpenSectionInfo(openSectionInfo === "summary" ? null : "summary"); }}>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="1.2"/><path d="M8 7v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/><circle cx="8" cy="5" r="0.7" fill="currentColor"/></svg>
+                                  </span>
+                                  {aiSummary && <span className="collapsibleSection__badge collapsibleSection__badge--ok">&#10003; Generated</span>}
+                                </button>
+                                {openSectionInfo === "summary" && <div className="sectionInfo__popover"><button type="button" className="sectionInfo__close" onClick={() => setOpenSectionInfo(null)}>&times;</button>{SECTION_INFO.summary}</div>}
+                                {!collapsed.summary && (
+                                <div className="reviewSummaryCard__wrap">
                                 <div className="reviewSummaryCard__aiSection">
                                   {aiSummary ? (
                                     <p className="reviewSummaryCard__text">{aiSummary}</p>
@@ -2825,6 +3011,8 @@ export default function HomePage() {
                                     </div>
                                   )}
                                 </div>
+                                </div>
+                                )}
                               </div>
 
                               {/* ── Section 2: Risk Overview (collapsible) ── */}
@@ -2832,16 +3020,20 @@ export default function HomePage() {
                                 <button type="button" className="collapsibleSection__header" onClick={() => setCollapsed(p => ({ ...p, risk: !p.risk }))}>
                                   <svg className={`collapsibleSection__chevron${collapsed.risk ? "" : " collapsibleSection__chevron--open"}`} width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5.5 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                                   <span className="collapsibleSection__title">Risk Overview</span>
+                                  <span className="sectionInfo" onClick={e => { e.stopPropagation(); setOpenSectionInfo(openSectionInfo === "risk" ? null : "risk"); }}>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="1.2"/><path d="M8 7v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/><circle cx="8" cy="5" r="0.7" fill="currentColor"/></svg>
+                                  </span>
                                   {clauseAssessments.length > 0 && (
                                     <span className="collapsibleSection__badge collapsibleSection__badge--risk">{clauseAssessments.filter(a => a.risk_level === "high").length} High Risk</span>
                                   )}
                                 </button>
+                                {openSectionInfo === "risk" && <div className="sectionInfo__popover"><button type="button" className="sectionInfo__close" onClick={() => setOpenSectionInfo(null)}>&times;</button>{SECTION_INFO.risk}</div>}
                                 {!collapsed.risk && (
                                   <div className="collapsibleSection__body">
                                     <div className="panelSection__topBar">
                                       <p className="panelSection__hint">Click a clause type to highlight it in the PDF. Click the chevron for full assessment.</p>
                                       <div className="panelSection__topBarActions">
-                                        <label className="panelSection__toggle"><input type="checkbox" checked={showHighRiskOnly} onChange={e => setShowHighRiskOnly(e.target.checked)} /> <span>High Risk Only</span></label>
+                                        <label className="panelSection__toggle"><input type="checkbox" checked={hideLowRisk} onChange={e => setHideLowRisk(e.target.checked)} /> <span>Hide Low Risk</span></label>
                                         {clauseAssessments.length === 0 && clauseGroups.length > 0 && (
                                           <button type="button" className="btn btn--sm btn--primary" disabled={assessmentRunning} onClick={async () => {
                                             if (!selectedContract) return;
@@ -2871,7 +3063,7 @@ export default function HomePage() {
                                           const assessment = clauseAssessments.find(a => a.clause_type === g.key);
                                           return { ...g, assessment };
                                         })
-                                        .filter(g => !showHighRiskOnly || g.assessment?.risk_level === "high")
+                                        .filter(g => !hideLowRisk || g.assessment?.risk_level !== "low")
                                         .sort((a, b) => (b.assessment?.risk_score ?? -1) - (a.assessment?.risk_score ?? -1))
                                         .map(g => {
                                           const dotClass = g.key.includes("term_and") ? "term" : g.key.includes("terminat") ? "termination" : g.key.includes("liab") ? "liability" : g.key.includes("payment") ? "payment" : g.key.includes("confid") ? "confidentiality" : g.key.includes("intellect") ? "ip" : "governing";
@@ -2921,22 +3113,40 @@ export default function HomePage() {
                                     <button type="button" className="collapsibleSection__header" onClick={() => setCollapsed(p => ({ ...p, missing: !p.missing }))}>
                                       <svg className={`collapsibleSection__chevron${collapsed.missing ? "" : " collapsibleSection__chevron--open"}`} width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5.5 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                                       <span className="collapsibleSection__title">Missing Clauses</span>
+                                      <span className="sectionInfo" onClick={e => { e.stopPropagation(); setOpenSectionInfo(openSectionInfo === "missing" ? null : "missing"); }}>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="1.2"/><path d="M8 7v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/><circle cx="8" cy="5" r="0.7" fill="currentColor"/></svg>
+                                      </span>
                                       {hasMissing ? (
                                         <span className="collapsibleSection__badge collapsibleSection__badge--warn">{missingRequired.length} Missing</span>
                                       ) : clauseGaps.length > 0 ? (
                                         <span className="collapsibleSection__badge collapsibleSection__badge--ok">&#10003; All Present</span>
                                       ) : null}
                                     </button>
+                                    {openSectionInfo === "missing" && <div className="sectionInfo__popover"><button type="button" className="sectionInfo__close" onClick={() => setOpenSectionInfo(null)}>&times;</button>{SECTION_INFO.missing}</div>}
                                     {!collapsed.missing && (
                                       <div className="collapsibleSection__body">
                                         {hasMissing ? (
                                           <div className="clauseLib__warning">
                                             <strong>&#9888; {missingRequired.length} required clause{missingRequired.length > 1 ? "s were" : " was"} not detected</strong>
-                                            <ul style={{ marginTop: 8 }}>
-                                              {missingRequired.map(c => (
-                                                <li key={c.clause_key}><strong>{c.name}</strong> &mdash; {c.description}<br /><span className="clauseLibCard__missingNote">&#9888; Consider adding this clause.</span></li>
-                                              ))}
-                                            </ul>
+                                            <div className="missingClausesList">
+                                              {missingRequired.map(c => {
+                                                const libEntry = clauseLib.find(cl => cl.name.toLowerCase().replace(/[\s_]+/g, "_") === c.clause_key || cl.name.toLowerCase() === c.name.toLowerCase());
+                                                return (
+                                                  <div key={c.clause_key} className="missingClauseCard">
+                                                    <div className="missingClauseCard__header">
+                                                      <strong>{c.name}</strong>
+                                                    </div>
+                                                    <p className="missingClauseCard__desc">{c.description}</p>
+                                                    {libEntry?.standard_language && (
+                                                      <button type="button" className="btn btn--sm missingClauseCard__copyBtn" onClick={() => { navigator.clipboard.writeText(libEntry.standard_language!); showToast("Standard clause copied to clipboard"); }}>
+                                                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><rect x="4.5" y="4.5" width="7" height="7" rx="1.2" stroke="currentColor" strokeWidth="1.2"/><path d="M9.5 4.5V3.3A1.3 1.3 0 008.2 2H3.3A1.3 1.3 0 002 3.3v4.9a1.3 1.3 0 001.3 1.3h1.2" stroke="currentColor" strokeWidth="1.2"/></svg>
+                                                        Copy Standard Clause
+                                                      </button>
+                                                    )}
+                                                  </div>
+                                                );
+                                              })}
+                                            </div>
                                           </div>
                                         ) : clauseGaps.length > 0 ? (
                                           <p className="panelSection__empty" style={{ color: "var(--risk-low)" }}>&#10003; All required clauses were detected in this contract.</p>
@@ -2954,23 +3164,34 @@ export default function HomePage() {
                                 <button type="button" className="collapsibleSection__header" onClick={() => setCollapsed(p => ({ ...p, compliance: !p.compliance }))}>
                                   <svg className={`collapsibleSection__chevron${collapsed.compliance ? "" : " collapsibleSection__chevron--open"}`} width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5.5 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                                   <span className="collapsibleSection__title">Compliance Checklist</span>
+                                  <span className="sectionInfo" onClick={e => { e.stopPropagation(); setOpenSectionInfo(openSectionInfo === "compliance" ? null : "compliance"); }}>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="1.2"/><path d="M8 7v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/><circle cx="8" cy="5" r="0.7" fill="currentColor"/></svg>
+                                  </span>
                                   {clauseGaps.length > 0 && (
                                     <span className="collapsibleSection__badge">{clauseGaps.filter(c => c.status === "detected").length}/{clauseGaps.length}</span>
                                   )}
                                 </button>
+                                {openSectionInfo === "compliance" && <div className="sectionInfo__popover"><button type="button" className="sectionInfo__close" onClick={() => setOpenSectionInfo(null)}>&times;</button>{SECTION_INFO.compliance}</div>}
                                 {!collapsed.compliance && (
                                   <div className="collapsibleSection__body">
                                     {clauseGaps.length === 0 ? (
                                       <p className="panelSection__empty">Run analysis to detect clause types and compliance gaps.</p>
                                     ) : (
                                       <>
-                                        <div className="clauseLib__stats">
-                                          <span className="clauseLib__stat clauseLib__stat--detected" title="Clause types successfully matched in the document">Detected: {clauseGaps.filter(c => c.status === "detected").length}</span>
-                                          <span className="clauseLib__stat clauseLib__stat--missing" title="Required clauses not found in the document">Missing: {clauseGaps.filter(c => c.status === "missing").length}</span>
-                                          <span className="clauseLib__stat clauseLib__stat--review" title="Detected clauses that have not yet been accepted by a reviewer">Needs Review: {clauseGaps.filter(c => (clauseReviewStatus[c.clause_key] || c.review_status) === "needs_review" && c.status === "detected").length}</span>
+                                        <div className="clauseLib__stats clauseLib__stats--interactive">
+                                          <button type="button" className={`clauseLib__stat clauseLib__stat--all${complianceFilter === "all" ? " clauseLib__stat--active" : ""}`} onClick={() => setComplianceFilter("all")}>All: {clauseGaps.length}</button>
+                                          <button type="button" className={`clauseLib__stat clauseLib__stat--detected${complianceFilter === "detected" ? " clauseLib__stat--active" : ""}`} title="Clause types successfully matched in the document" onClick={() => setComplianceFilter(complianceFilter === "detected" ? "all" : "detected")}>Detected: {clauseGaps.filter(c => c.status === "detected").length}</button>
+                                          <button type="button" className={`clauseLib__stat clauseLib__stat--missing${complianceFilter === "missing" ? " clauseLib__stat--active" : ""}`} title="Required clauses not found in the document" onClick={() => setComplianceFilter(complianceFilter === "missing" ? "all" : "missing")}>Missing: {clauseGaps.filter(c => c.status === "missing").length}</button>
+                                          <button type="button" className={`clauseLib__stat clauseLib__stat--review${complianceFilter === "needs_review" ? " clauseLib__stat--active" : ""}`} title="Detected clauses that have not yet been accepted by a reviewer" onClick={() => setComplianceFilter(complianceFilter === "needs_review" ? "all" : "needs_review")}>Needs Review: {clauseGaps.filter(c => (clauseReviewStatus[c.clause_key] || c.review_status) === "needs_review" && c.status === "detected").length}</button>
                                         </div>
                                         <div className="clauseLibCards">
-                                          {clauseGaps.map(gap => {
+                                          {clauseGaps.filter(gap => {
+                                            if (complianceFilter === "all") return true;
+                                            if (complianceFilter === "detected") return gap.status === "detected";
+                                            if (complianceFilter === "missing") return gap.status === "missing";
+                                            if (complianceFilter === "needs_review") return (clauseReviewStatus[gap.clause_key] || gap.review_status) === "needs_review" && gap.status === "detected";
+                                            return true;
+                                          }).map(gap => {
                                             const rStatus = clauseReviewStatus[gap.clause_key] || gap.review_status;
                                             return (
                                               <div key={gap.clause_key} className={`clauseLibCard clauseLibCard--${gap.status}`}>
@@ -3005,15 +3226,20 @@ export default function HomePage() {
                                                         }}>{explainLoading ? "Analyzing…" : "AI Explain"}</button>
                                                       )}
                                                       {gap.excerpts[0] && (
-                                                        <button type="button" className="btn btn--sm" disabled={playbookLoading} onClick={async () => {
-                                                          if (!selectedContract) return;
-                                                          setPlaybookLoading(true);
-                                                          try {
-                                                            const resp = await playbookCompare(selectedContract.contract_id, gap.clause_key, gap.excerpts[0]);
-                                                            setPlaybookData(resp);
-                                                          } catch { setPlaybookData(null); showToast("Playbook comparison failed."); }
-                                                          setPlaybookLoading(false);
-                                                        }}>{playbookLoading ? "Comparing…" : "Compare to Playbook"}</button>
+                                                        <>
+                                                          <button type="button" className="btn btn--sm" onClick={() => setInlineCompareKey(inlineCompareKey === gap.clause_key ? null : gap.clause_key)}>
+                                                            {inlineCompareKey === gap.clause_key ? "Hide Compare" : "Compare Inline"}
+                                                          </button>
+                                                          <button type="button" className="btn btn--sm" disabled={playbookLoading} onClick={async () => {
+                                                            if (!selectedContract) return;
+                                                            setPlaybookLoading(true);
+                                                            try {
+                                                              const resp = await playbookCompare(selectedContract.contract_id, gap.clause_key, gap.excerpts[0]);
+                                                              setPlaybookData(resp);
+                                                            } catch { setPlaybookData(null); showToast("Playbook comparison failed."); }
+                                                            setPlaybookLoading(false);
+                                                          }}>{playbookLoading ? "Comparing…" : "Full Compare"}</button>
+                                                        </>
                                                       )}
                                                     </>
                                                   )}
@@ -3024,6 +3250,32 @@ export default function HomePage() {
                                                 {explainText && rStatus !== "accepted" && gap.excerpts[0] && (
                                                   <div className="clauseLibCard__explain">{explainText}</div>
                                                 )}
+                                                {inlineCompareKey === gap.clause_key && gap.excerpts[0] && (() => {
+                                                  const libEntry = clauseLib.find(cl => cl.name.toLowerCase().replace(/[\s_]+/g, "_") === gap.clause_key || cl.name.toLowerCase() === gap.name.toLowerCase());
+                                                  const stdText = libEntry?.standard_language || "No standard language available in the Clause Library.";
+                                                  const vendorText = gap.excerpts[0];
+                                                  const diffs = libEntry?.standard_language ? wordDiff(vendorText, stdText) : [];
+                                                  return (
+                                                    <div className="inlineCompare">
+                                                      <div className="inlineCompare__col">
+                                                        <div className="inlineCompare__label inlineCompare__label--vendor">Vendor Text</div>
+                                                        <div className="inlineCompare__text">
+                                                          {diffs.length > 0 ? diffs.filter(d => d.type !== "add").map((d, i) => (
+                                                            <span key={i} className={d.type === "del" ? "inlineCompare__del" : ""}>{d.text} </span>
+                                                          )) : vendorText}
+                                                        </div>
+                                                      </div>
+                                                      <div className="inlineCompare__col">
+                                                        <div className="inlineCompare__label inlineCompare__label--standard">Standard</div>
+                                                        <div className="inlineCompare__text">
+                                                          {diffs.length > 0 ? diffs.filter(d => d.type !== "del").map((d, i) => (
+                                                            <span key={i} className={d.type === "add" ? "inlineCompare__add" : ""}>{d.text} </span>
+                                                          )) : stdText}
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  );
+                                                })()}
                                               </div>
                                             );
                                           })}
@@ -3039,10 +3291,14 @@ export default function HomePage() {
                                 <button type="button" className="collapsibleSection__header" onClick={() => setCollapsed(p => ({ ...p, keywords: !p.keywords }))}>
                                   <svg className={`collapsibleSection__chevron${collapsed.keywords ? "" : " collapsibleSection__chevron--open"}`} width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5.5 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                                   <span className="collapsibleSection__title">Keyword Risk Flags</span>
+                                  <span className="sectionInfo" onClick={e => { e.stopPropagation(); setOpenSectionInfo(openSectionInfo === "keywords" ? null : "keywords"); }}>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="1.2"/><path d="M8 7v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/><circle cx="8" cy="5" r="0.7" fill="currentColor"/></svg>
+                                  </span>
                                   {risks.length > 0 && (
                                     <span className="collapsibleSection__badge collapsibleSection__badge--warn">{risks.length}</span>
                                   )}
                                 </button>
+                                {openSectionInfo === "keywords" && <div className="sectionInfo__popover"><button type="button" className="sectionInfo__close" onClick={() => setOpenSectionInfo(null)}>&times;</button>{SECTION_INFO.keywords}</div>}
                                 {!collapsed.keywords && (
                                   <div className="collapsibleSection__body">
                                     {risks.length > 0 ? (

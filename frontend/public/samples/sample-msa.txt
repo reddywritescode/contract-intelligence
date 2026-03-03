@@ -1,0 +1,108 @@
+MASTER SUPPLIER AGREEMENT
+
+This Master Supplier Agreement ("Agreement") is entered into as of January 15, 2025 ("Effective Date") by and between:
+
+Acme Industries Inc., a Delaware corporation with its principal office at 1 Infinite Loop, Cupertino, CA 95014 ("Buyer")
+
+and
+
+Global Components Ltd., a corporation organized under the laws of Taiwan with offices at 8 Technology Road, Hsinchu 300, Taiwan ("Supplier").
+
+RECITALS
+
+WHEREAS, Buyer desires to purchase certain components, materials, and services from Supplier; and
+
+WHEREAS, Supplier desires to sell such components, materials, and services to Buyer under the terms and conditions set forth herein;
+
+NOW, THEREFORE, in consideration of the mutual covenants contained herein, the parties agree as follows:
+
+1. TERM AND RENEWAL
+
+1.1 Initial Term. This Agreement shall commence on the Effective Date and continue for a period of three (3) years ("Initial Term"), unless earlier terminated in accordance with Section 8.
+
+1.2 Renewal. Upon expiration of the Initial Term, this Agreement shall automatically renew for successive one (1) year periods ("Renewal Terms") unless either party provides written notice of non-renewal at least ninety (90) days prior to the end of the then-current term.
+
+2. PAYMENT TERMS
+
+2.1 Pricing. Prices for products and services shall be as set forth in individual Purchase Orders issued under this Agreement. All prices are in United States Dollars (USD) unless otherwise specified.
+
+2.2 Payment. Buyer shall pay all undisputed invoices within Net 90 days of receipt of a valid invoice. Supplier shall submit invoices electronically to Buyer's accounts payable portal.
+
+2.3 Late Payments. Any undisputed amounts not paid when due shall accrue interest at the lesser of 1.5% per month or the maximum rate permitted by applicable law.
+
+2.4 Taxes. Each party shall be responsible for its own taxes. Buyer shall not be responsible for any taxes based on Supplier's income or payroll.
+
+3. CONFIDENTIALITY
+
+3.1 Confidential Information. Each party ("Receiving Party") agrees to hold in confidence all non-public technical, business, financial, and other information received from the other party ("Disclosing Party") that is designated as confidential or that a reasonable person would understand to be confidential ("Confidential Information").
+
+3.2 Obligations. The Receiving Party shall: (a) use Confidential Information solely for the purposes of this Agreement; (b) protect Confidential Information with at least the same degree of care it uses for its own confidential information, but not less than reasonable care; and (c) not disclose Confidential Information to any third party without the Disclosing Party's prior written consent.
+
+3.3 Duration. The obligations of confidentiality shall survive the termination of this Agreement for a period of five (5) years.
+
+4. INTELLECTUAL PROPERTY
+
+4.1 Ownership. All intellectual property rights in products, designs, specifications, and technical data provided by Buyer to Supplier shall remain the exclusive property of Buyer. Supplier shall not use Buyer's intellectual property for any purpose other than performing its obligations under this Agreement.
+
+4.2 License. Supplier grants Buyer a non-exclusive, worldwide, royalty-free license to use any intellectual property embedded in the products delivered under this Agreement.
+
+4.3 Improvements. Any improvements, modifications, or derivative works created by Supplier using Buyer's intellectual property shall be owned exclusively by Buyer.
+
+5. LIABILITY AND INDEMNIFICATION
+
+5.1 Limitation of Liability. EXCEPT FOR BREACHES OF CONFIDENTIALITY OR INTELLECTUAL PROPERTY OBLIGATIONS, NEITHER PARTY SHALL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO THIS AGREEMENT, REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON WARRANTY, CONTRACT, TORT, STRICT LIABILITY, OR ANY OTHER LEGAL THEORY.
+
+5.2 Cap on Liability. Supplier's total aggregate liability under this Agreement shall not exceed the greater of (a) the total amounts paid by Buyer under this Agreement during the twelve (12) months preceding the event giving rise to the claim, or (b) Five Million United States Dollars ($5,000,000).
+
+5.3 Indemnification. Supplier shall indemnify, defend, and hold harmless Buyer and its affiliates, officers, directors, employees, and agents from and against all third-party claims, losses, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising from or related to: (a) any breach of this Agreement by Supplier; (b) any defect in products supplied; (c) Supplier's negligence or willful misconduct; or (d) any claim that products delivered infringe any third-party intellectual property rights.
+
+6. WARRANTIES
+
+6.1 Product Warranty. Supplier warrants that all products delivered under this Agreement shall: (a) conform to the specifications set forth in the applicable Purchase Order; (b) be free from defects in materials and workmanship; and (c) be merchantable and fit for the purpose intended by Buyer.
+
+6.2 Compliance Warranty. Supplier warrants that it shall comply with all applicable laws, regulations, and industry standards in the performance of its obligations under this Agreement.
+
+7. INSURANCE
+
+7.1 Coverage. Supplier shall maintain, at its sole cost and expense, the following minimum insurance coverage: (a) Commercial General Liability with limits of not less than $5,000,000 per occurrence; (b) Professional Liability with limits of not less than $3,000,000 per occurrence; and (c) Workers' Compensation as required by applicable law.
+
+8. TERMINATION
+
+8.1 Termination for Convenience. Either party may terminate this Agreement upon ninety (90) days' prior written notice to the other party.
+
+8.2 Termination for Cause. Either party may terminate this Agreement immediately upon written notice if: (a) the other party commits a material breach that remains uncured for thirty (30) days after written notice; (b) the other party becomes insolvent, files for bankruptcy, or makes an assignment for the benefit of creditors; or (c) a force majeure event continues for more than sixty (60) days.
+
+8.3 Effect of Termination. Upon termination, Supplier shall: (a) immediately cease all work; (b) return or destroy all Buyer Confidential Information; and (c) deliver all completed and in-progress work product to Buyer.
+
+9. DISPUTE RESOLUTION
+
+9.1 Negotiation. The parties shall first attempt to resolve any dispute through good faith negotiation between senior executives of each party for a period of thirty (30) days.
+
+9.2 Arbitration. If the dispute is not resolved through negotiation, it shall be submitted to binding arbitration under the rules of the American Arbitration Association. The arbitration shall be conducted in San Francisco, California by a single arbitrator.
+
+10. GOVERNING LAW
+
+10.1 This Agreement shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of laws principles.
+
+11. FORCE MAJEURE
+
+11.1 Neither party shall be liable for any failure or delay in performing its obligations under this Agreement to the extent such failure or delay results from circumstances beyond its reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, pandemics, government regulations, strikes, or shortages of materials.
+
+12. GENERAL PROVISIONS
+
+12.1 Entire Agreement. This Agreement constitutes the entire agreement between the parties and supersedes all prior negotiations, representations, and agreements relating to its subject matter.
+
+12.2 Amendments. No amendment to this Agreement shall be effective unless in writing and signed by authorized representatives of both parties.
+
+12.3 Assignment. Neither party may assign this Agreement without the prior written consent of the other party, except that Buyer may assign this Agreement to an affiliate or in connection with a merger or acquisition.
+
+12.4 Notices. All notices shall be in writing and delivered to the addresses set forth above.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+ACME INDUSTRIES INC.                    GLOBAL COMPONENTS LTD.
+
+By: _________________________            By: _________________________
+Name: Jane Smith                         Name: Wei Chen
+Title: VP of Procurement                 Title: Chief Commercial Officer
+Date: January 15, 2025                   Date: January 15, 2025

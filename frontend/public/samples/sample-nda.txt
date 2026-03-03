@@ -1,0 +1,76 @@
+MUTUAL NON-DISCLOSURE AGREEMENT
+
+This Mutual Non-Disclosure Agreement ("Agreement") is entered into as of March 1, 2025 ("Effective Date") by and between:
+
+TechVenture Corp., a California corporation ("Party A")
+
+and
+
+DataFlow Systems Inc., a New York corporation ("Party B")
+
+(each a "Party" and collectively the "Parties").
+
+1. PURPOSE
+
+The Parties wish to explore a potential business relationship concerning joint development of enterprise data analytics solutions ("Purpose"). In connection with this Purpose, each Party may disclose to the other certain confidential and proprietary information.
+
+2. DEFINITION OF CONFIDENTIAL INFORMATION
+
+"Confidential Information" means any non-public information disclosed by one Party (the "Disclosing Party") to the other Party (the "Receiving Party"), whether orally, in writing, electronically, or by inspection, including but not limited to: trade secrets, patents, patent applications, inventions, algorithms, source code, software designs, product roadmaps, business plans, financial data, customer lists, pricing information, marketing strategies, and employee information.
+
+3. OBLIGATIONS OF RECEIVING PARTY
+
+3.1 The Receiving Party shall: (a) hold the Confidential Information in strict confidence; (b) not disclose Confidential Information to any third party without prior written consent; (c) use Confidential Information solely for the Purpose; and (d) protect Confidential Information using the same degree of care it uses for its own confidential information, but in no event less than reasonable care.
+
+3.2 The Receiving Party may disclose Confidential Information to its employees, contractors, and advisors who have a need to know and who are bound by confidentiality obligations at least as restrictive as those contained herein.
+
+4. EXCLUSIONS
+
+Confidential Information does not include information that: (a) is or becomes publicly available through no fault of the Receiving Party; (b) was in the Receiving Party's possession prior to disclosure without restriction; (c) is independently developed by the Receiving Party without use of Confidential Information; or (d) is rightfully obtained from a third party without restriction.
+
+5. COMPELLED DISCLOSURE
+
+If the Receiving Party is compelled by law or regulation to disclose Confidential Information, it shall provide prompt written notice to the Disclosing Party (to the extent legally permitted) and cooperate with the Disclosing Party's efforts to obtain a protective order.
+
+6. TERM AND TERMINATION
+
+6.1 This Agreement shall remain in effect for two (2) years from the Effective Date unless terminated earlier by either Party upon thirty (30) days' written notice.
+
+6.2 The confidentiality obligations under this Agreement shall survive termination for a period of three (3) years.
+
+7. RETURN OF MATERIALS
+
+Upon termination or request by the Disclosing Party, the Receiving Party shall promptly return or destroy all Confidential Information and certify such destruction in writing.
+
+8. NO LICENSE OR WARRANTY
+
+8.1 Nothing in this Agreement grants any license or right under any patent, copyright, trademark, or trade secret.
+
+8.2 ALL CONFIDENTIAL INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+
+9. REMEDIES
+
+The Parties acknowledge that a breach of this Agreement may cause irreparable harm for which monetary damages would be inadequate. Accordingly, the Disclosing Party shall be entitled to seek equitable relief, including injunction and specific performance, in addition to all other remedies available at law or in equity.
+
+10. GOVERNING LAW
+
+This Agreement shall be governed by and construed in accordance with the laws of the State of California, without regard to conflict of laws principles. Any disputes shall be resolved in the state or federal courts located in Santa Clara County, California.
+
+11. GENERAL PROVISIONS
+
+11.1 Entire Agreement. This Agreement constitutes the entire understanding between the Parties concerning confidentiality.
+
+11.2 Amendment. This Agreement may only be amended in writing signed by both Parties.
+
+11.3 Assignment. Neither Party may assign this Agreement without the other Party's prior written consent.
+
+11.4 Severability. If any provision is found unenforceable, the remaining provisions shall continue in full force and effect.
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.
+
+TECHVENTURE CORP.                        DATAFLOW SYSTEMS INC.
+
+By: _________________________            By: _________________________
+Name: Sarah Johnson                      Name: Michael Torres
+Title: General Counsel                   Title: VP of Business Development
+Date: March 1, 2025                      Date: March 1, 2025

@@ -124,6 +124,7 @@ def init_db() -> None:
                 ("agreement_date", "DATE"),
                 ("status", "TEXT DEFAULT 'Under Review'"),
                 ("risk_level", "TEXT"),
+                ("risk_score", "INT"),
             ]:
                 cur.execute(f"""
                     DO $$ BEGIN

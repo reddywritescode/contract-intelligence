@@ -1,0 +1,130 @@
+STATEMENT OF WORK
+
+SOW Number: SOW-2025-0042
+Master Agreement Reference: MSA-2024-1187
+
+This Statement of Work ("SOW") is entered into as of February 10, 2025, pursuant to the Master Services Agreement dated June 1, 2024 ("MSA"), by and between:
+
+Pinnacle Healthcare Systems, a Delaware corporation ("Client")
+
+and
+
+CloudBridge Solutions LLC, a Texas limited liability company ("Vendor")
+
+1. PROJECT OVERVIEW
+
+1.1 Project Name: Electronic Health Records (EHR) Cloud Migration & Modernization
+
+1.2 Objective: Vendor shall migrate Client's on-premises EHR system (approximately 2.4 million patient records) to a cloud-native architecture on AWS, ensuring HIPAA compliance, zero data loss, and maximum 4 hours of planned downtime during cutover.
+
+2. SCOPE OF WORK
+
+2.1 Phase 1 — Assessment & Planning (Weeks 1–4)
+- Conduct infrastructure audit of existing on-premises environment
+- Map all data dependencies and integration points
+- Develop detailed migration plan and risk assessment
+- Deliver Architecture Design Document (ADD) for Client approval
+
+2.2 Phase 2 — Development & Testing (Weeks 5–16)
+- Build cloud infrastructure on AWS (VPC, EKS, RDS, S3)
+- Develop data migration scripts and ETL pipelines
+- Implement HIPAA-compliant encryption (AES-256 at rest, TLS 1.3 in transit)
+- Conduct parallel testing with production data subset (anonymized)
+- Perform load testing to validate performance under 3x projected peak load
+
+2.3 Phase 3 — Migration & Cutover (Weeks 17–20)
+- Execute staged migration with rollback capability
+- Cutover production traffic during approved maintenance window
+- Monitor system stability for 72-hour hypercare period
+- Decommission legacy infrastructure upon Client sign-off
+
+2.4 Phase 4 — Post-Migration Support (Weeks 21–32)
+- Provide 90-day post-migration support with 24/7 on-call engineering
+- Conduct performance optimization and cost right-sizing
+- Train Client's IT team (minimum 20 staff) on cloud operations
+- Deliver final documentation and knowledge transfer
+
+3. DELIVERABLES
+
+| # | Deliverable | Due Date | Acceptance Criteria |
+|---|------------|----------|-------------------|
+| 1 | Architecture Design Document | Week 4 | Client written approval |
+| 2 | Migration Test Report | Week 14 | Zero critical defects |
+| 3 | Production Cutover | Week 18 | <4 hrs downtime, zero data loss |
+| 4 | Training Completion Certificate | Week 28 | 80% staff certified |
+| 5 | Final Project Report | Week 32 | Client sign-off |
+
+4. PRICING AND PAYMENT
+
+4.1 Total Fixed Price: $2,850,000 USD
+
+4.2 Payment Schedule:
+- 20% ($570,000) upon SOW execution
+- 30% ($855,000) upon completion of Phase 2
+- 30% ($855,000) upon successful production cutover
+- 20% ($570,000) upon final project acceptance
+
+4.3 Expenses: All travel, hosting, and third-party software costs are included in the fixed price. Any out-of-scope work requires a Change Order signed by both parties.
+
+5. TIMELINE
+
+Total Duration: 32 weeks from SOW execution date
+Go-Live Target: September 30, 2025
+
+6. STAFFING
+
+Vendor shall provide the following dedicated resources:
+- 1 Project Manager (full-time)
+- 1 Solutions Architect (full-time)
+- 4 Cloud Engineers (full-time during Phases 2–3)
+- 2 Data Engineers (full-time during Phases 2–3)
+- 1 Security Engineer (part-time, full-time during Phase 3)
+- 1 QA Lead (full-time during Phase 2)
+
+Key personnel may not be reassigned without Client's written approval.
+
+7. CLIENT RESPONSIBILITIES
+
+Client shall:
+- Provide Vendor with VPN access to existing infrastructure within 5 business days
+- Assign a dedicated Project Sponsor and Technical Lead
+- Participate in weekly status meetings
+- Review and approve deliverables within 10 business days
+- Provide production data access (with appropriate safeguards) for migration testing
+
+8. CHANGE MANAGEMENT
+
+Any changes to scope, timeline, or budget must be documented in a written Change Order signed by authorized representatives of both parties. Vendor shall provide a cost and schedule impact assessment within 5 business days of receiving a change request.
+
+9. ACCEPTANCE
+
+Each deliverable shall be subject to a formal acceptance process. Client shall have 10 business days to review and either accept or reject (with written reasons) each deliverable. Failure to respond within 10 business days constitutes acceptance.
+
+10. WARRANTY
+
+Vendor warrants that all deliverables shall conform to the specifications in this SOW for a period of 90 days following final acceptance. Vendor shall correct any non-conformities at no additional cost.
+
+11. DATA PROTECTION AND HIPAA
+
+11.1 Vendor acknowledges it will have access to Protected Health Information (PHI) and agrees to execute a Business Associate Agreement (BAA) prior to accessing any PHI.
+
+11.2 Vendor shall implement administrative, physical, and technical safeguards consistent with HIPAA Security Rule requirements.
+
+11.3 In the event of a data breach involving PHI, Vendor shall notify Client within 24 hours.
+
+12. TERMINATION
+
+Either party may terminate this SOW for cause upon 30 days' written notice if the other party materially breaches this SOW and fails to cure within such notice period. Upon termination, Vendor shall be compensated for work completed and accepted.
+
+13. LIMITATION OF LIABILITY
+
+Vendor's total liability under this SOW shall not exceed the total SOW value ($2,850,000). Neither party shall be liable for indirect, consequential, or punitive damages.
+
+AGREED AND ACCEPTED:
+
+PINNACLE HEALTHCARE SYSTEMS             CLOUDBRIDGE SOLUTIONS LLC
+
+By: _________________________            By: _________________________
+Name: Dr. Robert Patel                  Name: Amanda Liu
+Title: Chief Information Officer         Title: Engagement Director
+Date: February 10, 2025                 Date: February 10, 2025

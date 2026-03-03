@@ -245,14 +245,14 @@ def list_contracts(
                 f"""
                 SELECT c.contract_id, c.filename, c.created_at,
                        c.contract_type, c.counterparty, c.agreement_date,
-                       c.status, c.risk_level,
+                       c.status, c.risk_level, c.risk_score,
                        COUNT(ch.chunk_id) AS chunk_count
                 FROM contracts c
                 LEFT JOIN contract_chunks ch ON ch.contract_id = c.contract_id
                 {where}
                 GROUP BY c.contract_id, c.filename, c.created_at,
                          c.contract_type, c.counterparty, c.agreement_date,
-                         c.status, c.risk_level
+                         c.status, c.risk_level, c.risk_score
                 ORDER BY c.created_at DESC
                 LIMIT %s
                 """,
@@ -265,7 +265,7 @@ def list_contracts(
 def update_contract_metadata(contract_id: str, metadata: dict) -> bool:
     sets = []
     params: list = []
-    for key in ("contract_type", "counterparty", "agreement_date", "status", "risk_level"):
+    for key in ("contract_type", "counterparty", "agreement_date", "status", "risk_level", "risk_score"):
         if key in metadata and metadata[key] is not None:
             sets.append(f"{key} = %s")
             params.append(metadata[key])
@@ -688,6 +688,23 @@ def save_clause_assessments(contract_id: str, assessments: list[dict]) -> None:
                      a.get("recommendation"),
                      Jsonb(a.get("citations", []))),
                 )
+    update_contract_risk_from_assessments(contract_id, assessments)
+
+
+def update_contract_risk_from_assessments(contract_id: str, assessments: list[dict]) -> None:
+    """Derive overall risk_level and risk_score from clause assessments and persist on the contract."""
+    if not assessments:
+        return
+    scores = [a.get("risk_score", 0) for a in assessments]
+    avg_score = round(sum(scores) / len(scores)) if scores else 0
+    high_count = sum(1 for a in assessments if a.get("risk_level", "").lower() == "high")
+    if high_count >= 2 or avg_score >= 65:
+        level = "High"
+    elif high_count >= 1 or avg_score >= 40:
+        level = "Medium"
+    else:
+        level = "Low"
+    update_contract_metadata(contract_id, {"risk_level": level, "risk_score": avg_score})
 
 
 def list_clause_assessments(contract_id: str) -> list[dict]:
